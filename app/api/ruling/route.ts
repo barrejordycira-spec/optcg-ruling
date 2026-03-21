@@ -62,17 +62,26 @@ Ton comportement doit être équivalent à un juge officiel en événement comp�
 
 export async function POST(request: NextRequest) {
   const apiKey = process.env.GEMINI_API_KEY
+  console.log('[RULING] API key present:', !!apiKey)
+  console.log('[RULING] API key length:', apiKey?.length ?? 0)
+  console.log('[RULING] API key prefix:', apiKey?.substring(0, 8) ?? 'N/A')
+
   if (!apiKey) {
+    console.error('[RULING] GEMINI_API_KEY is not set in environment variables')
     return Response.json({ error: 'GEMINI_API_KEY non configurée' }, { status: 500 })
   }
 
   const { question, history } = await request.json()
+  console.log('[RULING] Question received:', question)
+  console.log('[RULING] History length:', history?.length ?? 0)
+
   if (!question || typeof question !== 'string') {
     return Response.json({ error: 'Question requise' }, { status: 400 })
   }
 
   // Load rules
   const rules = loadRules()
+  console.log('[RULING] Rules loaded successfully')
 
   // Search for relevant cards mentioned in the question
   const relevantCards = searchCards(question)
@@ -108,6 +117,8 @@ export async function POST(request: NextRequest) {
 
   // Call Gemini API with streaming
   const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:streamGenerateContent?alt=sse&key=${apiKey}`
+  console.log('[RULING] Cards found:', topCards.length)
+  console.log('[RULING] Calling Gemini API...')
 
   const geminiResponse = await fetch(geminiUrl, {
     method: 'POST',
@@ -124,14 +135,18 @@ export async function POST(request: NextRequest) {
     }),
   })
 
+  console.log('[RULING] Gemini response status:', geminiResponse.status)
+
   if (!geminiResponse.ok) {
     const errorText = await geminiResponse.text()
-    console.error('Gemini API error:', errorText)
+    console.error('[RULING] Gemini API error:', geminiResponse.status, errorText)
     return Response.json(
       { error: 'Erreur API Gemini', details: errorText },
       { status: geminiResponse.status }
     )
   }
+
+  console.log('[RULING] Gemini OK, starting stream...')
 
   // Stream the response
   const encoder = new TextEncoder()
