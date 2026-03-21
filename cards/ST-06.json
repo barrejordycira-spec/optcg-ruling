@@ -1,0 +1,342 @@
+[
+  {
+    "id": "ST06-010",
+    "name": "Helmeppo",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "[On Play] Give up to 1 of your opponent's Characters -3 cost during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-010.jpg"
+  },
+  {
+    "id": "ST06-006",
+    "name": "Tashigi",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "[Activate:Main] You may rest this Character: Give up to 1 of your opponent's Characters -2 cost during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-006.jpg"
+  },
+  {
+    "id": "ST06-008",
+    "name": "Hina",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "[On Play] Give up to 1 of your opponent's Characters -4 cost during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-008.jpg"
+  },
+  {
+    "id": "ST06-004",
+    "name": "Smoker",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "SR",
+    "effectText": "This Character cannot be K.O.'d by effects. [DON!! x1] If there is a Character with a cost of 0, this Character gains [Double Attack]. (This card deals 2 damage.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-004.jpg"
+  },
+  {
+    "id": "ST06-014",
+    "name": "Shockwave",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +4000 power during this battle. Then, K.O. up to 1 of your opponent's active Characters with a cost of 3 or less. [Trigger] K.O. up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-014.jpg"
+  },
+  {
+    "id": "ST06-012",
+    "name": "Monkey.D.Garp",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "SR",
+    "effectText": "[Activate:Main] You may trash 1 card from your hand and rest this Character: K.O. up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-012.jpg"
+  },
+  {
+    "id": "ST06-015",
+    "name": "Great Eruption",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "[Main] Draw 1 card. Then, give up to 1 of your opponent's Characters -2 cost during this turn. [Trigger] Your opponent chooses 1 card from their hand and trashes it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-015.jpg"
+  },
+  {
+    "id": "ST06-017",
+    "name": "Navy HQ",
+    "type": "stage",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": 0,
+    "life": null,
+    "attribute": "null",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "[On Play] Give up to 1 of your opponent's Characters -1 cost during this turn. [Activate:Main] You may rest this Stage: If your Leader has the [Navy] type, give up to 1 of your opponent's Characters -1 cost during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-017.jpg"
+  },
+  {
+    "id": "ST06-001",
+    "name": "Sakazuki",
+    "type": "leader",
+    "colors": [
+      "black"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "L",
+    "effectText": "[Activate:Main] [Once Per Turn] (3) (You may rest the specified number of DON!! cards in your cost area.) You may trash 1 card from your hand: K.O. up to 1 of your opponent's Characters with a cost of 0.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-001.jpg"
+  },
+  {
+    "id": "ST06-016",
+    "name": "White Out",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. [Trigger] Draw 1 card and none of your Characters can be K.O.'d during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-016.jpg"
+  },
+  {
+    "id": "ST06-005",
+    "name": "Sengoku",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "[When Attacking] Give up to 1 of your opponent's Characters -4 cost during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-005.jpg"
+  },
+  {
+    "id": "ST06-002",
+    "name": "Koby",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "[On Play] You may trash 1 card from your hand: K.O. up to 1 of your opponent's Characters with a cost of 0.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-002.jpg"
+  },
+  {
+    "id": "ST06-013",
+    "name": "T-Bone",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-013.jpg"
+  },
+  {
+    "id": "ST06-007",
+    "name": "Tsuru",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-007.jpg"
+  },
+  {
+    "id": "ST06-011",
+    "name": "Momonga",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-011.jpg"
+  },
+  {
+    "id": "ST06-009",
+    "name": "Fullbody",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-009.jpg"
+  },
+  {
+    "id": "ST06-003",
+    "name": "Jango",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Navy"
+    ],
+    "set": "ST-06",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST06-003.jpg"
+  }
+]

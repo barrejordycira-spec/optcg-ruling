@@ -1,0 +1,2426 @@
+[
+  {
+    "id": "OP13-031",
+    "name": "Trafalgar Law",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 6,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "FILM Heart Pirates Supernovas"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "If you have 1 or less Life cards, this Character gains [Blocker].\n[On Play] You may return 1 of your Characters to the owner's hand: Play up to 1 Character card with a cost of 5 or less from your hand rested.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-031_RqMf0Sh.jpg"
+  },
+  {
+    "id": "OP13-037",
+    "name": "Roronoa Zoro",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "FILM Straw Hat Crew Supernovas"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[On Play] If your Leader has the \"FILM\" or \"Straw Hat Crew\" type, set up to 2 of your DON!! cards as active.\n[End of Your Turn] Set this Character as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-037_K98Ufjr.jpg"
+  },
+  {
+    "id": "OP13-016",
+    "name": "Monkey.D.Garp",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[On Play] If your Leader is [Sabo], [Portgas.D.Ace] or [Monkey.D.Luffy], look at 4 cards from the top of your deck; reveal up to 1 card with a cost of 3 or more and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-016_rlIRRz1.jpg"
+  },
+  {
+    "id": "OP13-054",
+    "name": "Yamato",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "OP-13",
+    "rarity": "SR",
+    "effectText": "[On Play] If you have 3 or less Life cards, draw 2 cards. Then, give up to 1 rested DON!! card to your Leader.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-054_3WUipek.jpg"
+  },
+  {
+    "id": "OP13-043",
+    "name": "Otama",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[On Play] If you have 3 or less Life cards, draw 2 cards and trash 1 card from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-043_ARa00EL.jpg"
+  },
+  {
+    "id": "OP13-042",
+    "name": "Edward.Newgate",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 10,
+    "power": 12000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "The Four Emperors Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "SR",
+    "effectText": "[Blocker]\n[On Play] Draw 2 cards and trash 1 card from your hand. Then, give your Leader and 1 Character up to 2 rested DON!! cards each.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-042_cORQUwo.jpg"
+  },
+  {
+    "id": "OP13-091",
+    "name": "St. Marcus Mars",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 6,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Celestial Dragons Five Elders"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "If you have 7 or more cards in your trash, this Character cannot be removed from the field by your opponent's effects and gains [Blocker].\n[On Play] You may trash 1 card from your hand: K.O. up to 1 of your opponent's Characters with a base cost of 5 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-091_YnVly4a.jpg"
+  },
+  {
+    "id": "OP13-080",
+    "name": "St. Ethanbaron V. Nusjuro",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 6,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Celestial Dragons Five Elders"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "If you have 7 or more cards in your trash, this Character cannot be removed from the field by your opponent's effects and gains [Rush].\n[When Attacking] If you have 10 or more cards in your trash, give up to 1 of your opponent's Characters 2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-080_CwJlWfT.jpg"
+  },
+  {
+    "id": "OP13-083",
+    "name": "St. Jaygarcia Saturn",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Celestial Dragons Five Elders"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "If you have 7 or more cards in your trash, this Character cannot be removed from the field by your opponent's effects.\n[On Play] Look at 5 cards from the top of your deck; reveal up to 1 \"Five Elders\" type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-083_FZex9YP.jpg"
+  },
+  {
+    "id": "OP13-084",
+    "name": "St. Shepherd Ju Peter",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 7,
+    "power": 5000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Celestial Dragons Five Elders"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "If you have 7 or more cards in your trash, this Character cannot be removed from the field by your opponent's effects.\n[On Play] Look at 5 cards from the top of your deck; reveal up to 1 \"Five Elders\" type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-084_sHvqdwa.jpg"
+  },
+  {
+    "id": "OP13-089",
+    "name": "St. Topman Warcury",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Celestial Dragons Five Elders"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "If you have 7 or more cards in your trash, this Character cannot be removed from the field by your opponent's effects and gains [Blocker].\n[On K.O.] Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-089_SkVFeiF.jpg"
+  },
+  {
+    "id": "OP13-096",
+    "name": "The Five Elders Are at Your Service!!!",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Celestial Dragons Five Elders"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[Main] Look at 3 cards from the top of your deck; reveal up to 1 \"Celestial Dragons\" type card other than [The Five Elders Are at Your Service!!!] and add it to your hand. Then, trash the rest.\n[Trigger] Activate this card's [Main] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-096_vcdbRZo.jpg"
+  },
+  {
+    "id": "OP13-108",
+    "name": "Jewelry Bonney (108)",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 9,
+    "power": 10000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Bonney Pirates Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "SR",
+    "effectText": "[On Play] If your Leader has the \"Egghead\" type, this Character gains [Rush] during this turn. Then, your opponent adds 1 card from the top of their Life cards to their hand.\n[Trigger] If you have 1 or less Life cards, rest up to 1 of your opponent's Characters with a cost of 7 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-108_MzSUtnf.jpg"
+  },
+  {
+    "id": "OP13-066",
+    "name": "Silvers Rayleigh",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 8,
+    "power": 9000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "SR",
+    "effectText": "[Rush]\n[On Play] If you have any DON!! cards given, rest up to 1 of your opponent's Characters with a cost of 5 or less. Then, add up to 1 DON!! card from your DON!! deck and set it as active at the end of this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-066_mZjUgJ3.jpg"
+  },
+  {
+    "id": "OP13-028",
+    "name": "Shanks (028)",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 10,
+    "power": 12000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "FILM The Four Emperors Red-Haired Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "SR",
+    "effectText": "[On Play] Set all of your DON!! cards as active. Then, you cannot play cards from your hand during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-028_UaROPGm.jpg"
+  },
+  {
+    "id": "OP13-023",
+    "name": "Uta",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM"
+    ],
+    "set": "OP-13",
+    "rarity": "SR",
+    "effectText": "[On Play] Set up to 2 of your DON!! cards as active. Then, you cannot play Character cards with a base cost of 5 or more during this turn.\n[On K.O.] Play up to 1 Character card with a cost of 5 or less from your hand rested.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-023_BcP4IIz.jpg"
+  },
+  {
+    "id": "OP13-098",
+    "name": "Never Existed... in the First Place...",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Celestial Dragons Five Elders"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[Main] You may rest 1 of your DON!! cards: If your Leader is [Imu], K.O. up to 1 of your opponent's Stages with a cost of 7.\n[Counter] If your Leader is [Imu], up to 1 of your Leader or Character cards gains +4000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-098_HPLmiCG.jpg"
+  },
+  {
+    "id": "OP13-086",
+    "name": "Saint Shalria",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Celestial Dragons"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[On Play] Look at 3 cards from the top of your deck; reveal up to 1 \"Celestial Dragons\" type card other than [Saint Shalria] and add it to your hand. Then, trash the rest and trash 1 card from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-086_Yli6slR.jpg"
+  },
+  {
+    "id": "OP13-110",
+    "name": "Stussy",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 7,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "CP0 Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "SR",
+    "effectText": "[Blocker]\n[On Play] If your Leader has the \"Egghead\" type, play up to 1 Character card with a cost of 5 or less and a [Trigger] from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-110_4U0fObw.jpg"
+  },
+  {
+    "id": "OP13-027",
+    "name": "Sanji",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Straw Hat Crew"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[On Play] Set up to 2 of your DON!! cards as active.\n[End of Your Turn] If your Leader has the \"FILM\" or \"Straw Hat Crew\" type, set up to 1 of your DON!! cards as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-027_361y5hF.jpg"
+  },
+  {
+    "id": "OP13-007",
+    "name": "Ace & Sabo & Luffy",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Goa Kingdom"
+    ],
+    "set": "OP-13",
+    "rarity": "SR",
+    "effectText": "[Activate: Main] You may give 1 of your active DON!! cards to 1 of your Leader or Character cards and trash this Character: Give up to 1 of your opponent's Characters 3000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-007_cqp8TzS.jpg"
+  },
+  {
+    "id": "OP13-113",
+    "name": "Lilith",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Scientist Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[On Play] Look at 4 cards from the top of your deck; reveal up to 1 card with a [Trigger] other than [Lilith] and add it to your hand. Then, place the rest at the bottom of your deck in any order.\n[Trigger] Activate this card's [On Play] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-113_7rwG6l3.jpg"
+  },
+  {
+    "id": "OP13-064",
+    "name": "Gol.D.Roger (064)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 10,
+    "power": 13000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Roger Pirates King of the Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "SR",
+    "effectText": "Your Leader and all of your Characters that do not have a type including \"Roger Pirates\" have their effects negated.\n[On Play] DON!! 3: Your Leader gains +2000 power until the end of your opponent's next End Phase. Then, give all of your opponent's Characters -2000 power until the end of your opponent's next End Phase.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-064_a6yIXi4.jpg"
+  },
+  {
+    "id": "OP13-076",
+    "name": "Divine Departure",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 0,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Roger Pirates King of the Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[Main] You may rest 5 of your DON!! cards: If you have any DON!! cards given, give up to 1 of your opponent's Characters 8000 power during this turn.\n[Counter] You may trash 1 card from your hand: Up to 1 of your Leader or Character cards gains +3000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-076_z2cuyIl.jpg"
+  },
+  {
+    "id": "OP13-072",
+    "name": "Buggy",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[On Play] If your Leader's type includes \"Roger Pirates\" and you have any DON!! cards given, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-072_0FKRXGi.jpg"
+  },
+  {
+    "id": "OP13-092",
+    "name": "Saint Mjosgard",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Celestial Dragons"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] If you have 3 or less Life cards, play up to 1 \"Mary Geoise\" type Stage card with a cost of 1 from your trash.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-092_NBO2Ijh.jpg"
+  },
+  {
+    "id": "OP13-097",
+    "name": "The World's Equilibrium Cannot Be Maintained Forever",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Celestial Dragons Five Elders"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Main] You may rest 5 of your DON!! cards: If the only Characters on your field are \"Celestial Dragons\" type Characters, K.O. up to 1 of your opponent's Characters with a base cost of 6 or less.\n[Counter] Your Leader gains +3000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-097_w3lAhtv.jpg"
+  },
+  {
+    "id": "OP13-065",
+    "name": "Shanks (065)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 card with a type including \"Roger Pirates\" other than [Shanks] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-065_0dbztAH.jpg"
+  },
+  {
+    "id": "OP13-104",
+    "name": "Kouzuki Hiyori",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 4,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Land of Wano Kouzuki Clan"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[Blocker][On K.O.] You may trash 1 card from your hand: If your Leader is multicolored, add up to 1 card from the top of your deck to the top of your Life cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-104_oLjaCOM.jpg"
+  },
+  {
+    "id": "OP13-087",
+    "name": "Saint Charlos",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Celestial Dragons"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Play] Trash 1 card from the top of your deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-087_99GpR8n.jpg"
+  },
+  {
+    "id": "OP13-067",
+    "name": "Scopper Gaban",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[On Play] If your Leader's type includes \"Roger Pirates\", draw 2 cards and trash 1 card from your hand. Then, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-067_lH0Gl8k.jpg"
+  },
+  {
+    "id": "OP13-118",
+    "name": "Monkey.D.Luffy (118)",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Straw Hat Crew Supernovas Fish-Man Island"
+    ],
+    "set": "OP-13",
+    "rarity": "SEC",
+    "effectText": "[Double Attack]\n[On Play] If your Leader is multicolored, set up to 4 of your DON!! cards as active. Then, you cannot play Character cards with a base cost of 5 or more during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-118_AZWGnsD.jpg"
+  },
+  {
+    "id": "OP13-075",
+    "name": "Guess We'll Have Another Scrap. You Can Only Risk Death While You're Still Alive!!",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Roger Pirates King of the Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[Main] You may rest 1 of your DON!! cards: If your Leader is [Gol.D.Roger] and you have any DON!! cards given, add up to 1 DON!! card from your DON!! deck and rest it.\n[Counter] Your Leader gains +3000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-075_6zeTlfR.jpg"
+  },
+  {
+    "id": "OP13-120",
+    "name": "Sabo (120) (SP)",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Revolutionary Army Dressrosa"
+    ],
+    "set": "OP-13",
+    "rarity": "SEC",
+    "effectText": "[Blocker]\n[Activate: Main] [Once Per Turn] Up to 1 of your Characters gains +2 cost until the end of your opponent's next turn. Then, give up to 1 rested DON!! card to your Leader.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-120_z0pbdkv.jpg"
+  },
+  {
+    "id": "OP13-068",
+    "name": "Douglas Bullet",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM Former Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "If you have 8 or more DON!! cards on your field, this Character gains +2000 power.\n[On Play] If your Leader's type includes \"Roger Pirates\", add up to 1 DON!! card from your DON!! deck and rest it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-068_UVCBWz9.jpg"
+  },
+  {
+    "id": "OP13-114",
+    "name": "S-Snake",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Egghead Seraphim"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[On Play]/[When Attacking] You may turn 1 card from the top of your Life cards face-up: Give up to 1 of your opponent's Characters 2000 power during this turn.\n[Trigger] You may trash 1 card from your hand: Play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-114_3xn0b40.jpg"
+  },
+  {
+    "id": "OP13-063",
+    "name": "Kouzuki Oden",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano Kouzuki Clan Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On Play] If you have any DON!! cards given, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-063_xRFLk17.jpg"
+  },
+  {
+    "id": "OP13-119",
+    "name": "Portgas.D.Ace (119)",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "SEC",
+    "effectText": "If you have 3 or less Life cards, this Character gains [Rush].\n[On Play] Give up to 1 rested DON!! card to your Leader. Then, you may return up to 1 of your opponent's Characters with a cost of 5 or less to the owner's hand. If you do, your opponent plays up to 1 Character card with a cost of 4 or less from their hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-119_2YugQh1.jpg"
+  },
+  {
+    "id": "OP13-051",
+    "name": "Boa Hancock",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Kuja Pirates The Seven Warlords of the Sea"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[On K.O.] If your Leader is [Boa Hancock] or multicolored, draw 2 cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-051_gxxw7PU.jpg"
+  },
+  {
+    "id": "OP13-012",
+    "name": "Nefeltari Vivi",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Alabasta"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[On Play] Look at 4 cards from the top of your deck; reveal up to 1 \"Alabasta\" or \"Straw Hat Crew\" type card with a cost of 2 or more and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-012_76uztI0.jpg"
+  },
+  {
+    "id": "OP13-102",
+    "name": "Edison",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 2000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Scientist Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[Activate: Main] You may trash this Character: If the number of your Life cards is equal to or less than the number of your opponent's Life cards, draw 1 card. Then, rest up to 1 of your opponent's Characters with a cost of 3 or less.\n[Trigger] Draw 1 card and rest up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-102_t91X9iE.jpg"
+  },
+  {
+    "id": "OP13-071",
+    "name": "Nekomamushi",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Minks Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[On Play] If you have 8 or more DON!! cards on your field, K.O. up to 1 of your opponent's Characters with 3000 base power or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-071_WLqEGIM.jpg"
+  },
+  {
+    "id": "OP13-099",
+    "name": "The Empty Throne",
+    "type": "stage",
+    "colors": [
+      "black"
+    ],
+    "cost": 7,
+    "power": null,
+    "counter": 0,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Mary Geoise"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Your Turn] If you have 19 or more cards in your trash, your Leader gains +1000 power.\n[Activate: Main] You may rest this card and 3 of your DON!! cards: Play up to 1 black \"Five Elders\" type Character card with a cost equal to or less than the number of DON!! cards on your field from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-099_2ZhUgA5.jpg"
+  },
+  {
+    "id": "OP13-057",
+    "name": "If I Bowed Down to Power, What's the Point in Living?",
+    "type": "event",
+    "colors": [
+      "blue"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[Main] You may rest 1 of your DON!! cards: If you have 1 or less Life cards, your opponent cannot activate [Blocker] whenever your Leader attacks during this turn.\n[Counter] Your Leader gains +3000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-057_eVMqv9V.jpg"
+  },
+  {
+    "id": "OP13-046",
+    "name": "Vista",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 6,
+    "power": 8000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[Double Attack]\n[Once Per Turn] If this Character would be K.O.'d or would be removed from the field by your opponent's effect, you may trash 1 card with a type including \"Whitebeard Pirates\" from your hand instead.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-046_gsKHqVM.jpg"
+  },
+  {
+    "id": "OP13-040",
+    "name": "I Know You're Strong... So I'll Go All Out from the Very Start!!!",
+    "type": "event",
+    "colors": [
+      "green"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew Supernovas"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[Main] You may rest 2 of your DON!! cards: Up to 2 of your opponent's rested Characters with a cost of 7 or less will not become active in your opponent's next Refresh Phase.\n[Counter] Your Leader gains +3000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-040_DJGa6YR.jpg"
+  },
+  {
+    "id": "OP13-061",
+    "name": "Inuarashi",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Minks Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] If you have any DON!! cards given, add up to 1 DON!! card from your DON!! deck and rest it. Then, K.O. up to 1 of your opponent's Characters with a cost of 1 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-061_JJ2fDPe.jpg"
+  },
+  {
+    "id": "OP13-032",
+    "name": "Nico Robin",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 7,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Straw Hat Crew"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[On Play] Up to 1 of your opponent's Characters with a cost of 8 or less cannot be rested until the end of your opponent's next End Phase.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-032_V1pvczB.jpg"
+  },
+  {
+    "id": "OP13-090",
+    "name": "Hack",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Fish-Man Revolutionary Army Dressrosa"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-090_IPtyyHd.jpg"
+  },
+  {
+    "id": "OP13-079",
+    "name": "Imu",
+    "type": "leader",
+    "colors": [
+      "black"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 4,
+    "attribute": "?",
+    "traits": [
+      "?"
+    ],
+    "set": "OP-13",
+    "rarity": "L",
+    "effectText": "Under the rules of this game, you cannot include Events with a cost of 2 or more in your deck and at the start of the game, play up to 1 [Mary Geoise] type Stage card from your deck.[Activate: Main] [Once Per Turn] You may trash 1 of your [Celestial Dragons] type Characters or 1 card from your hand: Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-079_9T9oN7C.jpg"
+  },
+  {
+    "id": "OP13-117",
+    "name": "Gum-Gum Dawn Stamp",
+    "type": "event",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew The Four Emperors Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[Main] You may turn 1 card from the top of your Life cards face-up: K.O. up to 1 of your opponent's Characters with a base cost of 6 or less.\n[Trigger] Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-117_6Nnfp7Z.jpg"
+  },
+  {
+    "id": "OP13-095",
+    "name": "Saint Rosward",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 3,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Celestial Dragons"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] You may trash 1 card from your hand: If you only have \"Celestial Dragons\" type Characters, K.O. up to 2 of your opponent's Characters with a base cost of 3 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-095_agyG3al.jpg"
+  },
+  {
+    "id": "OP13-107",
+    "name": "Shaka",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Scientist Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-107_8J2oXLY.jpg"
+  },
+  {
+    "id": "OP13-052",
+    "name": "Boa Marigold",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Kuja Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[Blocker]\n[On Play] If your Leader is [Boa Hancock], play up to 1 [Boa Hancock] with a cost of 6 or less from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-052_dEx8k6x.jpg"
+  },
+  {
+    "id": "OP13-019",
+    "name": "But Ace Here Said You Deserved It!!",
+    "type": "event",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Revolutionary Army Dressrosa"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[Main] You may rest 4 of your DON!! cards: Give up to 1 of your opponent's Characters 3000 power during this turn. Then, K.O. up to 1 of your opponent's Characters with 3000 power or less.\n[Counter] Your Leader gains +3000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-019_BJl9obT.jpg"
+  },
+  {
+    "id": "OP13-062",
+    "name": "Crocus",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[On Play] If you have any DON!! cards given, add up to 1 DON!! card from your DON!! deck and set it as active.\n[When Attacking] Return up to 1 of your opponent's Characters with a base power of 3000 or less to the owner's hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-062_SRuM73G.jpg"
+  },
+  {
+    "id": "OP13-017",
+    "name": "Monkey.D.Dragon",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Revolutionary Army"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "[Once Per Turn] If your \"Revolutionary Army\" type Character would be removed from the field by your opponent's effect, you may give this Character 2000 power during this turn instead.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-017_b2nvh5F.jpg"
+  },
+  {
+    "id": "OP13-081",
+    "name": "Koala",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Revolutionary Army Dressrosa"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "If your Leader has the \"Revolutionary Army\" type, this Character gains +3 cost.\n[Activate: Main] [Once Per Turn] You may place 1 card from your trash at the bottom of your deck: Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-081_t5A5rdV.jpg"
+  },
+  {
+    "id": "OP13-030",
+    "name": "Tony Tony.Chopper",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Animal FILM Straw Hat Crew"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[On Play] Set up to 2 of your DON!! cards as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-030_gs8JzGD.jpg"
+  },
+  {
+    "id": "OP13-036",
+    "name": "Helmeppo",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "FILM Navy"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-036_5dHg4Pe.jpg"
+  },
+  {
+    "id": "OP13-035",
+    "name": "Bepo",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Heart Pirates Minks"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[End of Your Turn] Set this Character or up to 1 of your DON!! cards as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-035_hbo71ZB.jpg"
+  },
+  {
+    "id": "OP13-109",
+    "name": "Jewelry Bonney (109)",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Bonney Pirates Supernovas"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "If this Character would be removed from the field by your opponent's effect, you may turn 1 card from the top of your Life cards face-up instead.\n[Trigger] Draw 2 cards and trash 1 card from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-109_JWqhWXc.jpg"
+  },
+  {
+    "id": "OP13-112",
+    "name": "Vegapunk",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Scientist Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "If you have a total of 2 or more given DON!! cards, this Character gains [Blocker].\n(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-112_HNVPF9X.jpg"
+  },
+  {
+    "id": "OP13-025",
+    "name": "Koby",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Navy"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On Play] If your Leader has the \"FILM\" type or the \"Strike\" attribute, set up to 1 of your DON!! cards as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-025_JEY4yj2.jpg"
+  },
+  {
+    "id": "OP13-077",
+    "name": "Go All the Way to the Top!!",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Former Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Main] You may rest 3 of your DON!! cards: If you have any DON!! cards given, K.O. up to 1 of your opponent's Characters with 4000 base power or less and up to 1 of your opponent's Characters with 3000 base power or less.\n[Counter] Your Leader gains +3000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-077_NYPK8cS.jpg"
+  },
+  {
+    "id": "OP13-002",
+    "name": "Portgas.D.Ace (002)",
+    "type": "leader",
+    "colors": [
+      "blue",
+      "red"
+    ],
+    "cost": null,
+    "power": 6000,
+    "counter": null,
+    "life": 3,
+    "attribute": "special",
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "L",
+    "effectText": "[On Your Opponent's Attack] [Once Per Turn] You may trash 1 card from your hand: Give up to 1 of your opponent's Leader or Character cards 2000 power during this battle.\n[DON!! x1] [Once Per Turn] When you take damage or your Character with 6000 base power or more is K.O.'d, draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-002_sy67sYO.jpg"
+  },
+  {
+    "id": "OP13-003",
+    "name": "Gol.D.Roger (003)",
+    "type": "leader",
+    "colors": [
+      "purple",
+      "red"
+    ],
+    "cost": null,
+    "power": 7000,
+    "counter": null,
+    "life": 5,
+    "attribute": "slash",
+    "traits": [
+      "Roger Pirates King of the Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "L",
+    "effectText": "If you have any DON!! cards on your field, 1 DON!! card placed during your DON!! Phase is given to your Leader.\nIf you have 9 or less DON!! cards on your field, give this Leader 2000 power.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-003_iGc1KIf.jpg"
+  },
+  {
+    "id": "OP13-078",
+    "name": "Oro Jackson",
+    "type": "stage",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": 0,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Once Per Turn] When your Character with a type including \"Roger Pirates\" is removed from the field by your opponent's effect, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-078_HORRusH.jpg"
+  },
+  {
+    "id": "OP13-058",
+    "name": "Phoenix Pyreapple",
+    "type": "event",
+    "colors": [
+      "blue"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Former Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[Main] You may rest 1 of your DON!! cards: Place up to 1 of your opponent's Characters with 3000 power or less at the bottom of the owner's deck.\n[Counter] Your Leader gains +3000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-058_JTm84sx.jpg"
+  },
+  {
+    "id": "OP13-115",
+    "name": "Paper Art Afterimage",
+    "type": "event",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "CP0 Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +3000 power during this battle. Then, if your opponent has 2 or less Life cards, up to 1 of your Leader or Character cards gains +1000 power during this turn.\n[Trigger] Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-115_zQQJNmf.jpg"
+  },
+  {
+    "id": "OP13-005",
+    "name": "Inazuma",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Revolutionary Army"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[On Play] Give up to 1 rested DON!! card to your Leader.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-005_wmAe722.jpg"
+  },
+  {
+    "id": "OP13-101",
+    "name": "Atlas",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Scientist Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-101_UWB1rSb.jpg"
+  },
+  {
+    "id": "OP13-034",
+    "name": "Brook",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "FILM Straw Hat Crew"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] If your Leader has the \"FILM\" or \"Straw Hat Crew\" type, set up to 1 of your DON!! cards as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-034_ClOTfZF.jpg"
+  },
+  {
+    "id": "OP13-050",
+    "name": "Boa Sandersonia",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Kuja Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] If your Leader is [Boa Hancock], play up to 1 [Boa Hancock] with a cost of 3 or less from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-050_7oBtlKP.jpg"
+  },
+  {
+    "id": "OP13-100",
+    "name": "Jewelry Bonney (100)",
+    "type": "leader",
+    "colors": [
+      "yellow"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "attribute": "special",
+    "traits": [
+      "Bonney Pirates Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "L",
+    "effectText": "[Your Turn] [Once Per Turn] This effect can be activated when you play a Character with a [Trigger]. Give up to 2 rested DON!! cards to 1 of your Leader or Character cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-100_JM8KNLW.jpg"
+  },
+  {
+    "id": "OP13-041",
+    "name": "Izo",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 6,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Land of Wano Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[On Play] Draw 2 cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-041_0EVdio1.jpg"
+  },
+  {
+    "id": "OP13-116",
+    "name": "The One Who Is the Most Free Is the Pirate King!!!",
+    "type": "event",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew Supernovas"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[Main] Look at 5 cards from the top of your deck; reveal up to 1 \"Supernovas\" type Character card and add it to your hand. Then, place the rest at the bottom of your deck in any order.\n[Trigger] Activate this card's [Main] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-116_yr69sF2.jpg"
+  },
+  {
+    "id": "OP13-060",
+    "name": "Amatsuki Toki",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Land of Wano Roger Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "If your Character with a type including \"Roger Pirates\" would be K.O.'d by your opponent's effect, you may trash this Character instead.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-060_CsSydRY.jpg"
+  },
+  {
+    "id": "OP13-024",
+    "name": "Gordon",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "FILM"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] You may reveal 1 \"Music\" or \"FILM\" type card from your hand: Set up to 2 of your DON!! cards as active at the end of this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-024_gyMopd2.jpg"
+  },
+  {
+    "id": "OP13-029",
+    "name": "Jinbe",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Fish-Man Straw Hat Crew"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-029_yPaBkLN.jpg"
+  },
+  {
+    "id": "OP13-038",
+    "name": "Gum-Gum Elephant Gun",
+    "type": "event",
+    "colors": [
+      "green"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew Supernovas"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[Main] Rest up to 1 of your opponent's Characters with a cost of 5 or less. Then, set up to 2 of your DON!! cards as active at the end of this turn.\n[Trigger] Rest up to 1 of your opponent's Characters with a cost of 5 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-038_9dTA9Ab.jpg"
+  },
+  {
+    "id": "OP13-033",
+    "name": "Franky",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Straw Hat Crew"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On K.O.] Rest up to 2 of your opponent's cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-033_HVso4X8.jpg"
+  },
+  {
+    "id": "OP13-001",
+    "name": "Monkey.D.Luffy (001)",
+    "type": "leader",
+    "colors": [
+      "green",
+      "red"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 4,
+    "attribute": "strike",
+    "traits": [
+      "Straw Hat Crew Supernovas"
+    ],
+    "set": "OP-13",
+    "rarity": "L",
+    "effectText": "[DON!! x1] [On Your Opponent's Attack] If you have 5 or less active DON!! cards, you may rest any number of your DON!! cards. For every DON!! card rested this way, this Leader or up to 1 of your \"Straw Hat Crew\" type Characters gains +2000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-001_8pgvmZO.jpg"
+  },
+  {
+    "id": "OP13-111",
+    "name": "Pythagoras",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Scientist Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-111_jvjjnPd.jpg"
+  },
+  {
+    "id": "OP13-004",
+    "name": "Sabo (004)",
+    "type": "leader",
+    "colors": [
+      "black",
+      "red"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "attribute": "special",
+    "traits": [
+      "Revolutionary Army Dressrosa"
+    ],
+    "set": "OP-13",
+    "rarity": "L",
+    "effectText": "If you have 4 or more Life cards, give this Leader 1000 power.\n[DON!! x1] If you have a Character with a cost of 8 or more, your Leader and all of your Characters gain +1000 power.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-004_5MtMhxW.jpg"
+  },
+  {
+    "id": "OP13-008",
+    "name": "Emporio.Ivankov",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Revolutionary Army"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "If your \"Revolutionary Army\" type Character would be K.O.'d by your opponent's effect, you may trash this Character instead.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-008_VwdC444.jpg"
+  },
+  {
+    "id": "OP13-026",
+    "name": "Sunny-Kun",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "FILM Straw Hat Crew"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Activate: Main] [Once Per Turn] You may rest 1 of your DON!! cards: This Character gains +2000 power until the end of your opponent's next turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-026_AwRsgvG.jpg"
+  },
+  {
+    "id": "OP13-020",
+    "name": "Meteor Fist",
+    "type": "event",
+    "colors": [
+      "red"
+    ],
+    "cost": 3,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[Main] Give up to 1 of your opponent's Characters 5000 power during this turn.\n[Trigger] Activate this card's [Main] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-020_3lFUhF1.jpg"
+  },
+  {
+    "id": "OP13-093",
+    "name": "Morgans",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Journalist"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On Play] Draw 2 cards and trash 2 cards from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-093_tNZlMud.jpg"
+  },
+  {
+    "id": "OP13-047",
+    "name": "Fossa",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "If your Character with a type including \"Whitebeard Pirates\" would be K.O.'d by your opponent's effect, you may trash this Character instead.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-047_ttYExC8.jpg"
+  },
+  {
+    "id": "OP13-015",
+    "name": "Makino",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Windmill Village"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "[Activate: Main] You may rest this Character: Up to 1 of your [Monkey.D.Luffy] cards gains +2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-015_kUxGSoS.jpg"
+  },
+  {
+    "id": "OP13-105",
+    "name": "Kouzuki Momonosuke",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano Kouzuki Clan"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] Look at all of your Life cards and place them back in your Life area in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-105_QxnP6lI.jpg"
+  },
+  {
+    "id": "OP13-039",
+    "name": "Gum-Gum Snake Shot",
+    "type": "event",
+    "colors": [
+      "green"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew Supernovas Fish-Man Island"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Counter] K.O. up to 1 of your opponent's rested Characters with a cost of 4 or less.\n[Trigger] Activate this card's [Counter] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-039_kalbkOx.jpg"
+  },
+  {
+    "id": "OP13-059",
+    "name": "Brilliant Punk",
+    "type": "event",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Main] You may return 1 of your Characters to the owner's hand: Return up to 1 Character with a cost of 6 or less to the owner's hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-059_4k6NxT7.jpg"
+  },
+  {
+    "id": "OP13-021",
+    "name": "Gum-Gum Gatling Gun",
+    "type": "event",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Main] Give up to 1 rested DON!! card to 1 of your [Monkey.D.Luffy] cards. Then, give up to 1 of your opponent's Characters 2000 power during this turn.\n[Trigger] Give up to 1 of your opponent's Characters 2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-021_coQV5ky.jpg"
+  },
+  {
+    "id": "OP13-011",
+    "name": "Nefeltari Cobra",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Alabasta"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-011_53FS5nP.jpg"
+  },
+  {
+    "id": "OP13-053",
+    "name": "Marshall.D.Teach",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[When Attacking] You may trash 1 of your Characters with a type including \"Whitebeard Pirates\": Draw 1 card and this Character gains [Banish] during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-053_4lZ6pN9.jpg"
+  },
+  {
+    "id": "OP13-055",
+    "name": "Rakuyo",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[When Attacking] If you have 4 or less cards in your hand, all of your Characters with a type including \"Whitebeard Pirates\" gain +1000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-055_3hg2dZz.jpg"
+  },
+  {
+    "id": "OP13-106",
+    "name": "Conney",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Bonney Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Opponent's Turn] When a [Trigger] activates, this Character gains [Blocker] during this turn.\n[Trigger] Play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-106_mNTwrvF.jpg"
+  },
+  {
+    "id": "OP13-044",
+    "name": "Curiel",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 0,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[When Attacking] Give up to 1 rested DON!! card to your Leader with a type including \"Whitebeard Pirates\" or 1 Character with a type including \"Whitebeard Pirates\".\n[On K.O.] Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-044_2TEeOfQ.jpg"
+  },
+  {
+    "id": "OP13-014",
+    "name": "Portgas.D.Rouge",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Baterilla"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Trigger] Up to 1 of your [Portgas.D.Ace] cards gains +3000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-014_KYkcWZW.jpg"
+  },
+  {
+    "id": "OP13-056",
+    "name": "LittleOars Jr.",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 7,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Giant Whitebeard Pirates Allies"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[When Attacking] If your Leader's type includes \"Whitebeard Pirates\", draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-056_reiNFsd.jpg"
+  },
+  {
+    "id": "OP13-045",
+    "name": "Haruta",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[When Attacking] If you have 4 or less cards in your hand, draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-045_ftCaASV.jpg"
+  },
+  {
+    "id": "OP13-088",
+    "name": "Terry Gilteo",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Revolutionary Army"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-088_QNMqEg1.jpg"
+  },
+  {
+    "id": "OP13-094",
+    "name": "York",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Scientist Egghead"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] Up to 1 of your \"Celestial Dragons\" type Characters gains +2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-094_xsMhQ1k.jpg"
+  },
+  {
+    "id": "OP13-073",
+    "name": "Prometheus",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Big Mom Pirates Homies"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-073_AazqEJI.jpg"
+  },
+  {
+    "id": "OP13-049",
+    "name": "Blenheim",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-049_cQMyJNS.jpg"
+  },
+  {
+    "id": "OP13-022",
+    "name": "Windmill Village",
+    "type": "stage",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": 0,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Windmill Village"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[Activate: Main] You may rest this Stage: Up to 1 of your Characters with 2000 base power or less gains +1000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-022_HfJTKSB.jpg"
+  },
+  {
+    "id": "OP13-069",
+    "name": "Tom",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Fish-Man Water Seven"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] DON!! -1: Add up to 1 Stage card with a cost of 3 or less from your trash to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-069_vCk65mp.jpg"
+  },
+  {
+    "id": "OP13-074",
+    "name": "Hera",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Big Mom Pirates Homies"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] Play up to 1 [Homies] type Character card with 3000 power or less from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-074_lIyM5hL.jpg"
+  },
+  {
+    "id": "OP13-085",
+    "name": "Saint Jalmac",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Celestial Dragons"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-085_Lfy7m2J.jpg"
+  },
+  {
+    "id": "OP13-006",
+    "name": "Woop Slap",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Windmill Village"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] Give up to 2 rested DON!! cards to 1 of your [Monkey.D.Luffy] cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-006_7BIDucC.jpg"
+  },
+  {
+    "id": "OP13-018",
+    "name": "Wapol",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Evil Black Drum Kingdom"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-018_4Dm06t2.jpg"
+  },
+  {
+    "id": "OP13-048",
+    "name": "Blamenco",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-048_zr15xba.jpg"
+  },
+  {
+    "id": "OP13-070",
+    "name": "Napoleon",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Big Mom Pirates Homies"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-070_v85HbM8.jpg"
+  },
+  {
+    "id": "OP13-009",
+    "name": "Curly.Dadan",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Mountain Bandits Mountain Bandits"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "If you have a \"Mountain Bandits\" type Character other than this card, this Character gains [Double Attack].",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-009_WWKMdip.jpg"
+  },
+  {
+    "id": "OP13-013",
+    "name": "Higuma",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 3000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Mountain Bandits Mountain Bandits"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "[On Play] K.O. up to 1 of your opponent's Characters with 0 power or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-013_cG2OBxq.jpg"
+  },
+  {
+    "id": "OP13-010",
+    "name": "Lord of the Coast",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 6,
+    "power": 8000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "East Blue Neptunian"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-010_5hyWBG8.jpg"
+  },
+  {
+    "id": "OP13-103",
+    "name": "Gyogyo",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Bonney Pirates"
+    ],
+    "set": "OP-13",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-103_dBDGlnT.jpg"
+  },
+  {
+    "id": "OP13-084",
+    "name": "St. Shepherd Ju Peter (Parallel)",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 7,
+    "power": 5000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Celestial Dragons Five Elders"
+    ],
+    "set": "OP-13",
+    "rarity": "R",
+    "effectText": "If you have 7 or more cards in your trash, this Character cannot be removed from the field by your opponent's effects.\n[Your Turn] If you have 10 or more cards in your trash, set the base power of all of your \"Five Elders\" type Characters to 7000.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-084_4G64N0X.jpg"
+  },
+  {
+    "id": "OP13-082",
+    "name": "Five Elders",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 10,
+    "power": 12000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash / special",
+    "traits": [
+      "Celestial Dragons Five Elders"
+    ],
+    "set": "OP-13",
+    "rarity": "SR",
+    "effectText": "[Activate: Main] If your Leader is [Imu], you may rest 1 of your DON!! cards and trash 1 card from your hand: Trash all of your Characters and play up to 5 \"Five Elders\" type Character cards with 5000 power and different card names from your trash.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP13-082.png"
+  }
+]

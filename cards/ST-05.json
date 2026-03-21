@@ -1,0 +1,342 @@
+[
+  {
+    "id": "ST05-011",
+    "name": "Douglas Bullet",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 8,
+    "power": 10000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Film The Pirates Fest"
+    ],
+    "set": "ST-05",
+    "rarity": "SR",
+    "effectText": "[Activate:Main] [Once Per Turn] DON!! -4 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Rest up to 2 of your opponent's Characters with a cost of 6 or less. Then, this Character gains [Double Attack] during this turn. (This card deals 2 damage.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-011.jpg"
+  },
+  {
+    "id": "ST05-002",
+    "name": "Ain",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Film Neo Navy"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "[On Play] Add up to 1 DON!! card from your DON!! deck and rest it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-002.jpg"
+  },
+  {
+    "id": "ST05-004",
+    "name": "Uta",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Film"
+    ],
+    "set": "ST-05",
+    "rarity": "SR",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Block] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Rest up to 1 of your opponent's Characters with a cost of 5 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-004.jpg"
+  },
+  {
+    "id": "ST05-006",
+    "name": "Gild Tesoro",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Film Grantesoro"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "[When Attacking] DON!! -2 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Draw 2 cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-006.jpg"
+  },
+  {
+    "id": "ST05-014",
+    "name": "Buena Festa",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Film The Pirates Fest"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 \"FILM\" type card other than [Buena Festa] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-014.jpg"
+  },
+  {
+    "id": "ST05-001",
+    "name": "Shanks",
+    "type": "leader",
+    "colors": [
+      "purple"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "attribute": "slash",
+    "traits": [
+      "Film The Four Emperors Red-Haired Pirates"
+    ],
+    "set": "ST-05",
+    "rarity": "L",
+    "effectText": "[Activate:Main] [Once Per Turn] DON!! -3 (You may return the specified number of DON!! cards from your field to your DON!! deck.): All of your \"FILM\" type Characters gain +2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-001.jpg"
+  },
+  {
+    "id": "ST05-010",
+    "name": "Zephyr",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 7,
+    "power": 8000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Film Neo Navy"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "When this Character battles \"Strike\" attribute Characters, this Character gains +3000 power during this turn. [Activate:Main] [Once Per Turn] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): This Character gains +2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-010.jpg"
+  },
+  {
+    "id": "ST05-005",
+    "name": "Carina",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Film Grantesoro"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "[Activate:Main] [Once Per Turn] You may rest this Character and trash 1 \"FILM\" type card from your hand: If your opponent has more DON!! cards on their field than you, add 2 DON!! cards from your DON!! deck and rest them.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-005.jpg"
+  },
+  {
+    "id": "ST05-017",
+    "name": "Union Armada",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Film The Pirates Fest"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "[Counter] Up to 1 of your \"FILM\" type Leader or Character cards gains +4000 power during this battle. If that card is a Character, that Character cannot be K.O.'d during this turn. [Trigger] Add up to 1 DON!! card from your DON!! deck and set it as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-017.jpg"
+  },
+  {
+    "id": "ST05-016",
+    "name": "Lion's Threat Imperial Earth Bind",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 3,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Film Golden Lion Pirates"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "[Main] DON!! -2 (You may return the specified number of DON!! cards from your field to your DON!! deck.): K.O. up to 1 of your opponent's Characters with a cost of 5 or less. [Trigger] Add up to 1 DON!! card from your DON!! deck and set it as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-016.jpg"
+  },
+  {
+    "id": "ST05-008",
+    "name": "Shiki",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Film Golden Lion Pirates"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "If you have 8 or more DON!! cards on your field, this Character cannot be K.O.'d in battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-008.jpg"
+  },
+  {
+    "id": "ST05-015",
+    "name": "Dr. Indigo",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Film Scientist Golden Lion Pirates"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-015.jpg"
+  },
+  {
+    "id": "ST05-012",
+    "name": "Baccarat",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Film Grantesoro"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-012.jpg"
+  },
+  {
+    "id": "ST05-013",
+    "name": "Bins",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Film Neo Navy"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-013.jpg"
+  },
+  {
+    "id": "ST05-003",
+    "name": "Ann",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Film The Pirates Fest"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-003.jpg"
+  },
+  {
+    "id": "ST05-007",
+    "name": "Gordon",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Film"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-007.jpg"
+  },
+  {
+    "id": "ST05-009",
+    "name": "Scarlet",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Animal Film Golden Lion Pirates"
+    ],
+    "set": "ST-05",
+    "rarity": "C",
+    "effectText": "[Trigger] Play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST05-009.jpg"
+  }
+]

@@ -1,0 +1,413 @@
+{
+  "meta": {
+    "game": "One Piece Card Game (OPTCG)",
+    "version": "1.1.9",
+    "lastUpdated": "2025-10-17",
+    "source": "fr.onepiece-cardgame.com/pdf/rule_comprehensive.pdf",
+    "language": "fr",
+    "note": "Ce fichier est en LECTURE SEULE. Il sert de reference pour l'IA. Les regles mecaniques sont appliquees par le game engine (game-rules.ts)."
+  },
+
+  "deckBuilding": {
+    "summary": "Chaque joueur prepare 1 carte Leader, un deck de 50 cartes et un deck DON!! de 10 cartes.",
+    "rules": [
+      "Le deck contient exactement 50 cartes (Personnage, Evenement, Lieu).",
+      "Le deck DON!! contient exactement 10 cartes DON!!.",
+      "Maximum 4 cartes avec le meme numero de carte dans le deck.",
+      "Seules les cartes dont la couleur figure sur la carte Leader peuvent etre incluses dans le deck.",
+      "Certains Leaders ont des regles de construction de deck specifiques indiquees dans leur texte."
+    ]
+  },
+
+  "cardCategories": {
+    "leader": {
+      "description": "Carte placee dans la zone du Leader au debut de la partie. Represente votre capitaine.",
+      "properties": ["nom", "couleur", "type", "attribut", "puissance", "vie", "texte"],
+      "rules": [
+        "Chaque joueur a exactement 1 Leader.",
+        "Le Leader ne peut jamais etre deplace hors de sa zone.",
+        "Le Leader ne peut pas etre mis KO.",
+        "La valeur de Vie du Leader determine le nombre de cartes de Vie au debut de la partie."
+      ]
+    },
+    "character": {
+      "description": "Cartes jouees depuis la main vers la zone de Personnage en payant leur cout en DON!!.",
+      "properties": ["nom", "couleur", "type", "attribut", "puissance", "cout", "contre", "texte"],
+      "rules": [
+        "Maximum 5 Personnages sur le terrain.",
+        "Pour jouer un 6eme Personnage, il faut defausser 1 Personnage existant (traitement de regle, pas un KO).",
+        "Les Personnages sont joues redresses.",
+        "Un Personnage ne peut pas attaquer le tour ou il est joue, sauf s'il a Rush.",
+        "Un Personnage mis KO est place dans la Defausse (sauf Banish)."
+      ]
+    },
+    "event": {
+      "description": "Cartes jouees depuis la main en payant leur cout. Elles sont defaussees pour activer leur effet.",
+      "properties": ["nom", "couleur", "type", "cout", "texte"],
+      "rules": [
+        "Les Evenements avec [Principale] s'activent pendant votre phase Principale.",
+        "Les Evenements avec [Contre] s'activent pendant l'etape de Contre d'un combat.",
+        "L'Evenement est defausse au moment de l'activation, pas apres.",
+        "Certains Evenements ont un symbole Contre et peuvent etre utilises comme Contre classique."
+      ]
+    },
+    "stage": {
+      "description": "Cartes jouees depuis la main vers la zone de Lieu en payant leur cout.",
+      "properties": ["nom", "couleur", "type", "cout", "texte"],
+      "rules": [
+        "Maximum 1 Lieu sur le terrain.",
+        "Pour jouer un nouveau Lieu, il faut defausser l'ancien.",
+        "Les Lieux sont joues redresses.",
+        "Les Lieux ont des effets permanents ou activables."
+      ]
+    },
+    "don": {
+      "description": "Cartes DON!! utilisees comme ressource pour payer les couts et booster la puissance.",
+      "properties": [],
+      "rules": [
+        "Le deck DON!! contient 10 cartes identiques.",
+        "Les DON!! sont places dans la zone de Cout pendant la phase DON!!.",
+        "Les DON!! redresses dans la zone de Cout servent a payer les couts des cartes.",
+        "On peut donner 1 DON!! redresse de la zone de Cout a un Leader ou Personnage.",
+        "Chaque DON!! donne ajoute +1000 de puissance PENDANT VOTRE TOUR uniquement.",
+        "Les DON!! donnes retournent en zone de Cout EPUISES au debut de votre prochain tour (phase Refresh).",
+        "Quand une carte avec des DON!! donnes change de zone, les DON!! retournent en zone de Cout epuises."
+      ]
+    }
+  },
+
+  "gameZones": {
+    "deck": {
+      "description": "Pile de cartes face cachee. On pioche depuis le dessus.",
+      "visibility": "secrete",
+      "rules": ["Aucun joueur ne peut consulter le contenu ou l'ordre.", "Si le deck est vide, le joueur perd la partie."]
+    },
+    "donDeck": {
+      "description": "Pile de 10 cartes DON!! face cachee.",
+      "visibility": "ouverte",
+      "rules": ["Les deux joueurs peuvent consulter le contenu.", "Les DON!! sont places en zone de Cout pendant la phase DON!!."]
+    },
+    "hand": {
+      "description": "Cartes en main du joueur, piochees depuis le deck.",
+      "visibility": "secrete (visible par le proprietaire)",
+      "rules": ["L'adversaire ne peut pas voir votre main.", "Pas de limite de taille de main."]
+    },
+    "trash": {
+      "description": "Defausse. Personnages KO et Evenements actives y sont places.",
+      "visibility": "ouverte",
+      "rules": ["Les deux joueurs peuvent consulter le contenu.", "Les cartes sont empilees face visible."]
+    },
+    "leaderZone": {
+      "description": "Zone ou se trouve la carte Leader.",
+      "visibility": "ouverte",
+      "rules": ["Le Leader ne peut jamais quitter cette zone.", "Le Leader peut etre redresse ou epuise."]
+    },
+    "characterZone": {
+      "description": "Zone ou sont places les Personnages joues.",
+      "visibility": "ouverte",
+      "maxCards": 5,
+      "rules": ["Maximum 5 Personnages.", "Les Personnages sont places face visible."]
+    },
+    "stageZone": {
+      "description": "Zone ou est place le Lieu actif.",
+      "visibility": "ouverte",
+      "maxCards": 1,
+      "rules": ["Maximum 1 Lieu.", "Jouer un nouveau Lieu defausse l'ancien."]
+    },
+    "costZone": {
+      "description": "Zone ou sont placees les cartes DON!! disponibles.",
+      "visibility": "ouverte",
+      "rules": ["Les DON!! redresses peuvent payer des couts ou etre donnes.", "Les DON!! epuises ne peuvent rien faire jusqu'au Refresh."]
+    },
+    "lifeZone": {
+      "description": "Cartes de Vie placees face cachee au debut de la partie.",
+      "visibility": "secrete",
+      "rules": [
+        "Nombre initial = valeur de Vie du Leader.",
+        "Quand le Leader subit des degats, la carte du dessus de la Vie va en main.",
+        "Si la carte a [Declenchement], le joueur peut l'activer au lieu de l'ajouter a sa main.",
+        "Plus de Vie + degats au Leader = defaite."
+      ]
+    }
+  },
+
+  "turnStructure": {
+    "summary": "Un tour se compose de 5 phases executees dans l'ordre: Refresh, Draw, DON!!, Main, End.",
+    "phases": {
+      "refresh": {
+        "order": 1,
+        "name": "Phase de Recharge",
+        "steps": [
+          "Les effets 'jusqu'au debut de votre prochain tour' prennent fin.",
+          "Les effets 'au debut de votre tour' s'activent.",
+          "Retourner tous les DON!! donnes aux cartes vers la zone de Cout (ils arrivent EPUISES).",
+          "Redresser toutes les cartes epuisees dans les zones Leader, Personnage, Lieu et Cout."
+        ],
+        "notes": "L'ordre est important: les DON!! reviennent d'abord epuises, PUIS tout est redresse."
+      },
+      "draw": {
+        "order": 2,
+        "name": "Phase de Pioche",
+        "steps": [
+          "Piocher 1 carte du dessus du deck."
+        ],
+        "exceptions": [
+          "Le premier joueur ne pioche PAS pendant son premier tour."
+        ]
+      },
+      "don": {
+        "order": 3,
+        "name": "Phase DON!!",
+        "steps": [
+          "Placer 2 cartes DON!! du deck DON!! vers la zone de Cout (face visible, redressees)."
+        ],
+        "exceptions": [
+          "Le premier joueur ne place que 1 DON!! pendant son premier tour.",
+          "S'il ne reste qu'1 DON!! dans le deck DON!!, en placer 1 seul.",
+          "S'il n'en reste plus, ne rien placer."
+        ]
+      },
+      "main": {
+        "order": 4,
+        "name": "Phase Principale",
+        "steps": [
+          "Les effets 'au debut de la phase Principale' s'activent.",
+          "Le joueur peut effectuer les actions suivantes dans n'importe quel ordre, autant de fois que souhaite:",
+          "- Jouer une carte (Personnage, Lieu, ou Evenement [Principale]) en payant son cout",
+          "- Activer un effet [Principale] ou [Activation: Principale]",
+          "- Donner des DON!! (1 DON!! redresse de la zone de Cout vers Leader/Personnage)",
+          "- Declarer un combat",
+          "Quand le joueur declare la fin de la phase Principale, on passe a la phase de Fin."
+        ]
+      },
+      "end": {
+        "order": 5,
+        "name": "Phase de Fin",
+        "steps": [
+          "Les effets 'Fin de votre tour' s'activent (1 seule fois).",
+          "Les effets 'pour tout le tour' et 'jusqu'a la fin du tour' du joueur actif deviennent invalides.",
+          "Les effets 'pour tout le tour' et 'jusqu'a la fin du tour' du joueur non actif deviennent invalides.",
+          "Le tour se termine. L'adversaire devient le joueur actif et commence son tour."
+        ]
+      }
+    }
+  },
+
+  "combat": {
+    "summary": "Le joueur actif peut epuiser une carte redressee pour attaquer le Leader adverse ou un Personnage adverse epuise.",
+    "restriction": "AUCUN joueur ne peut attaquer pendant son premier tour. Cela s'applique au premier tour de CHAQUE joueur.",
+    "steps": {
+      "attackStep": {
+        "order": 1,
+        "name": "Etape d'Attaque",
+        "description": [
+          "Le joueur actif epuise 1 carte redressee (Leader ou Personnage) pour declarer une attaque.",
+          "Il choisit une cible: le Leader adverse OU 1 Personnage EPUISE adverse.",
+          "Les effets [En attaquant] et [Attaque adverse] s'activent.",
+          "Si l'attaquant ou la cible change de zone, aller directement a Fin du combat."
+        ]
+      },
+      "blockStep": {
+        "order": 2,
+        "name": "Etape de Blocage",
+        "description": [
+          "Le defenseur peut activer [Bloqueur] sur 1 de ses cartes (1 seule fois par combat).",
+          "La carte avec [Bloqueur] doit etre redressee. Elle est epuisee et devient la nouvelle cible.",
+          "Les effets [En bloquant] s'activent.",
+          "Si l'attaquant ou la cible change de zone, aller directement a Fin du combat."
+        ]
+      },
+      "counterStep": {
+        "order": 3,
+        "name": "Etape de Contre",
+        "description": [
+          "Les effets 'quand il est attaque' du defenseur s'activent.",
+          "Le defenseur peut, dans n'importe quel ordre et autant de fois qu'il veut:",
+          "- Defausser une carte Personnage avec Contre de sa main pour augmenter la puissance de la cible attaquee du montant du Contre (pour ce combat uniquement).",
+          "- Activer une carte Evenement [Contre] de sa main en payant son cout et en la defaussant.",
+          "Si l'attaquant ou la cible change de zone, aller directement a Fin du combat."
+        ]
+      },
+      "damageStep": {
+        "order": 4,
+        "name": "Etape de Degats",
+        "description": [
+          "Comparer la puissance de l'attaquant et de la cible.",
+          "Si attaquant >= cible (victoire):",
+          "  - Cible = Leader: infliger 1 degat (carte du dessus de la Vie -> main, avec option Declenchement).",
+          "  - Cible = Personnage: le Personnage est mis KO (-> Defausse, sauf Banish).",
+          "Si attaquant < cible: rien ne se passe.",
+          "Si le Leader n'a plus de Vie et subit des degats, le proprietaire du Leader perd la partie."
+        ]
+      },
+      "endOfBattle": {
+        "order": 5,
+        "name": "Fin du combat",
+        "description": [
+          "Les effets 'a la fin de ce combat' s'activent.",
+          "Les effets 'pour tout le combat' deviennent invalides.",
+          "Retour a la phase Principale."
+        ]
+      }
+    }
+  },
+
+  "powerCalculation": {
+    "summary": "La puissance d'une carte au combat est calculee ainsi:",
+    "formula": "Puissance de base + (DON!! donnes x 1000, seulement pendant votre tour) + modificateurs d'effets + Contre (pendant ce combat uniquement)",
+    "rules": [
+      "La puissance de base est celle inscrite sur la carte.",
+      "Chaque DON!! donne ajoute +1000, mais UNIQUEMENT pendant le tour du proprietaire de la carte.",
+      "Les effets peuvent augmenter ou reduire la puissance.",
+      "Le Contre augmente la puissance pour la duree du combat uniquement.",
+      "La puissance peut devenir negative mais la carte n'est pas detruite pour autant."
+    ]
+  },
+
+  "keywords": {
+    "rush": {
+      "name": "Hate (Rush)",
+      "effect": "Ce Personnage peut attaquer le tour ou il est joue.",
+      "details": "Normalement, un Personnage ne peut pas attaquer le tour ou il est joue. Rush supprime cette restriction."
+    },
+    "blocker": {
+      "name": "Bloqueur (Blocker)",
+      "effect": "Epuiser cette carte permet de rediriger une attaque vers elle.",
+      "details": [
+        "La carte doit etre redressee pour activer [Bloqueur].",
+        "La carte est epuisee et devient la nouvelle cible de l'attaque.",
+        "Un seul [Bloqueur] peut etre active par combat.",
+        "[Bloqueur] peut etre active meme si la cible d'origine est le Leader."
+      ]
+    },
+    "doubleAttack": {
+      "name": "Double attaque (Double Attack)",
+      "effect": "Quand cette carte attaque et gagne contre un Leader, elle inflige 2 degats au lieu de 1.",
+      "details": [
+        "Ne s'applique que contre un Leader, pas contre un Personnage.",
+        "Les 2 degats sont infliges un par un (chaque carte de Vie peut declencher un Trigger).",
+        "Si l'adversaire a 1 carte de Vie, Double Attack ne peut PAS gagner la partie : le 1er degat retire la derniere Vie, mais le 2eme degat ne peut pas infliger le coup fatal dans la meme attaque",
+        "Le joueur ne peut pas choisir de n'infliger qu'1 seul degat avec Double Attack (Q34).",
+        "Si le Personnage avec Double Attack quitte le terrain ou perd le keyword a cause d'un Trigger du 1er degat, le 2eme degat est quand meme inflige (Q35).",
+        "Le Trigger de la 1ere carte de Vie est active AVANT que le 2eme degat ne soit inflige (Q51)."
+      ]
+    },
+    "banish": {
+      "name": "Banish",
+      "effect": "Quand cette carte met KO un Personnage adverse au combat, ce Personnage est retire du jeu au lieu d'aller dans la Defausse.",
+      "details": [
+        "Le Personnage est completement retire du jeu, il ne va pas en Defausse.",
+        "Les effets [En cas de KO] qui referencent la Defausse ne s'appliquent pas."
+      ]
+    },
+    "counter": {
+      "name": "Contre (Counter)",
+      "effect": "Defausser cette carte Personnage de votre main pendant l'etape de Contre pour augmenter la puissance d'une de vos cartes.",
+      "details": [
+        "La valeur du Contre est indiquee sur la carte (ex: +1000, +2000).",
+        "Le bonus de puissance ne dure que pour ce combat.",
+        "Plusieurs cartes Contre peuvent etre utilisees dans le meme combat."
+      ]
+    },
+    "trigger": {
+      "name": "Declenchement (Trigger)",
+      "effect": "Quand cette carte quitte la zone de Vie pour aller en main suite a des degats, le joueur peut choisir d'activer l'effet [Declenchement] au lieu de l'ajouter a sa main.",
+      "details": [
+        "Le joueur doit reveler la carte pour activer le Trigger.",
+        "L'activation est optionnelle.",
+        "Si la carte ne peut pas etre ajoutee a la main a cause d'un effet, le Trigger ne peut pas etre active."
+      ]
+    }
+  },
+
+  "defeatConditions": {
+    "summary": "Un joueur perd la partie dans l'une de ces situations:",
+    "conditions": [
+      {
+        "name": "Degats sans Vie",
+        "description": "Le Leader du joueur subit des degats alors qu'il n'a plus de cartes dans sa zone de Vie."
+      },
+      {
+        "name": "Deck-out",
+        "description": "Le joueur n'a plus de cartes dans son deck."
+      },
+      {
+        "name": "Abandon",
+        "description": "Le joueur peut abandonner a tout moment. L'abandon est immediat et ne peut etre empeche par aucun effet."
+      }
+    ]
+  },
+
+  "mulligan": {
+    "summary": "Au debut de la partie, chaque joueur pioche 5 cartes puis peut choisir de repiocher.",
+    "procedure": [
+      "Chaque joueur pioche 5 cartes pour former sa main de depart.",
+      "En commencant par le premier joueur, chaque joueur peut choisir de repiocher.",
+      "Pour repiocher: remettre TOUTES les cartes de la main dans le deck, remelanger, repiocher 5 cartes.",
+      "Le mulligan est tout-ou-rien: on ne peut pas garder certaines cartes et en repiocher d'autres.",
+      "Un seul mulligan est autorise par joueur."
+    ]
+  },
+
+  "donSystem": {
+    "summary": "Le systeme DON!! est la ressource principale du jeu. Les DON!! servent a payer les couts et a booster la puissance des cartes.",
+    "mechanics": {
+      "costPayment": {
+        "description": "Pour jouer une carte, epuiser un nombre de DON!! redresses en zone de Cout egal au cout de la carte.",
+        "example": "Jouer un Personnage de cout 5 = epuiser 5 DON!! redresses."
+      },
+      "donAttachment": {
+        "description": "Donner 1 DON!! redresse de la zone de Cout a un Leader ou Personnage.",
+        "rules": [
+          "1 DON!! a la fois seulement.",
+          "Le DON!! doit etre redresse.",
+          "+1000 puissance par DON!! donne, mais UNIQUEMENT pendant votre tour.",
+          "Les DON!! donnes reviennent en zone de Cout epuises au debut de votre prochain tour (Refresh).",
+          "Si la carte quitte sa zone, les DON!! reviennent en zone de Cout epuises."
+        ]
+      },
+      "donProgression": {
+        "description": "Nombre de DON!! gagnes par tour depuis le deck DON!!.",
+        "schedule": [
+          "Tour 1 du premier joueur: 1 DON!!",
+          "Tous les autres tours: 2 DON!!",
+          "Maximum: 10 DON!! (taille du deck DON!!)"
+        ]
+      }
+    }
+  },
+
+  "strategicConcepts": {
+    "summary": "Concepts strategiques importants pour l'IA.",
+    "concepts": [
+      {
+        "name": "Gestion du tempo",
+        "description": "Equilibrer entre jouer des cartes (investir des DON!!) et attaquer. Jouer trop de cartes sans attaquer laisse l'adversaire construire son board."
+      },
+      {
+        "name": "Allocation des DON!!",
+        "description": "Decider combien de DON!! donner vs garder pour payer des couts. Donner des DON!! augmente la puissance d'attaque mais reduit les ressources disponibles pour jouer des cartes ou contrer."
+      },
+      {
+        "name": "Gestion de la Vie",
+        "description": "Les cartes de Vie vont en main quand le Leader est touche. Perdre de la Vie donne des cartes mais rapproche de la defaite. Parfois il vaut mieux prendre des degats pour avoir plus de cartes en main."
+      },
+      {
+        "name": "Attaquer le Leader vs les Personnages",
+        "description": "Attaquer le Leader inflige des degats mais donne des cartes a l'adversaire. Attaquer les Personnages epuises reduit le board adverse mais ne fait pas avancer la victoire directement."
+      },
+      {
+        "name": "Utilisation du Contre",
+        "description": "Garder des cartes avec Contre en main pour se defendre. Utiliser trop de Contres reduit les options de jeu, mais ne pas contrer peut mener a des pertes de Vie critiques."
+      },
+      {
+        "name": "Timing du Bloqueur",
+        "description": "Le Bloqueur redirige une attaque mais epuise la carte, la rendant vulnerable aux attaques suivantes. Bien choisir quand bloquer est crucial."
+      },
+      {
+        "name": "Pression vs Controle",
+        "description": "Certains decks cherchent a finir vite (aggro/rush), d'autres controlent le board et gagnent en valeur a long terme. L'IA doit adapter sa strategie a son deck et a celui de l'adversaire."
+      }
+    ]
+  }
+}

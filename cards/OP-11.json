@@ -1,0 +1,2386 @@
+[
+  {
+    "id": "OP11-106",
+    "name": "Zeus",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Big Mom Pirates Homies"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[On Play] You may add 1 card from the top or bottom of your Life cards to your hand: K.O. up to 1 of your opponent's Characters with a cost of 5 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-106.jpg"
+  },
+  {
+    "id": "OP11-067",
+    "name": "Charlotte Katakuri (067)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 8,
+    "power": 8000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "SR",
+    "effectText": "[Blocker]\n[End of Your Turn] Set up to 2 of your \"Big Mom Pirates\" type Characters with a cost of 3 or more as active. Then, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-067.jpg"
+  },
+  {
+    "id": "OP11-054",
+    "name": "Nami (054)",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "SR",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On Play] If your Leader is multicolored, draw 3 cards and place 2 cards from your hand at the top or bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-054.jpg"
+  },
+  {
+    "id": "OP11-004",
+    "name": "Kujyaku",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy SWORD"
+    ],
+    "set": "OP-11",
+    "rarity": "SR",
+    "effectText": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 \"Navy\" type card other than \"Kujyaku\" and add it to your hand. Then, place the rest at the bottom of your deck in any order.[Activate: Main] You may trash this Character: Up to 1 of your Characters gains +1000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-004.jpg"
+  },
+  {
+    "id": "OP11-101",
+    "name": "Capone\"Gang\"Bege (101)",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 2,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Firetank Pirates Supernovas"
+    ],
+    "set": "OP-11",
+    "rarity": "SR",
+    "effectText": "[Blocker]\n[Once Per Turn] If your \"Supernovas\" type Character other than [Capone\"Gang\"Bege] would be removed from the field by your opponent's effect, you may add it to the top of your Life cards face-down instead.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-101.jpg"
+  },
+  {
+    "id": "OP11-010",
+    "name": "Hibari",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Navy SWORD"
+    ],
+    "set": "OP-11",
+    "rarity": "SR",
+    "effectText": "[On Play] Give up to 1 of your opponent's Characters 2000 power during this turn.\n[When Attacking] This Character gains +1000 power during this turn. Then, up to 1 of your \"Navy\" type Leader can also attack active Characters during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-010.jpg"
+  },
+  {
+    "id": "OP11-070",
+    "name": "Charlotte Pudding",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "SR",
+    "effectText": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 \"Big Mom Pirates\" type card with a cost of 2 or more and add it to your hand. Then, place the rest at the bottom of your deck in any order.[Activate: Main] DON!! 1, You may rest this Character: Look at 1 card from the top of your opponent's deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-070.jpg"
+  },
+  {
+    "id": "OP11-031",
+    "name": "Jinbe (031)",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 6,
+    "power": 8000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "The Sun Pirates Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "SR",
+    "effectText": "[On Play] If your Leader has the \"Fish-Man\" or \"Merfolk\" type, rest up to 1 of your opponent's Characters with a cost of 5 or less.\n[Activate: Main] [Once Per Turn] Up to 1 of your \"Fish-Man\" or \"Merfolk\" type Characters can attack Characters on the turn in which it is played.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-031.jpg"
+  },
+  {
+    "id": "OP11-092",
+    "name": "Helmeppo",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Navy SWORD"
+    ],
+    "set": "OP-11",
+    "rarity": "SR",
+    "effectText": "[On Play] You may trash 1 card from your hand: Draw 1 card and play up to 1 \"SWORD\" type Character card with a cost of 8 or less other than [Helmeppo] from your trash. Then, place the 1 Character played by this effect at the bottom of the owner's deck at the end of this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-092.jpg"
+  },
+  {
+    "id": "OP11-119",
+    "name": "Koby (119)",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 8,
+    "power": 9000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy SWORD"
+    ],
+    "set": "OP-11",
+    "rarity": "SEC",
+    "effectText": "[On Play] Up to 1 of your Characters can also attack active Characters during this turn.\n[When Attacking] You may place 2 cards from your trash at the bottom of your deck in any order: Up to 1 of your Leader or Character cards gains +1000 power until the end of your opponent's next turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-119.jpg"
+  },
+  {
+    "id": "OP11-118",
+    "name": "Monkey.D.Luffy (118)",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 8,
+    "power": 8000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "SEC",
+    "effectText": "[Rush]\n[When Attacking] You may trash 1 card from your hand: Return up to 1 Character with a cost of 4 or less to the owner's hand. Then, give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-118.jpg"
+  },
+  {
+    "id": "OP11-095",
+    "name": "Monkey.D.Garp",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 8,
+    "power": 8000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "SR",
+    "effectText": "[On Play] You may place 3 \"Navy\" type cards from your trash at the bottom of your deck in any order: Give up to 1 rested DON!! card to 1 of your Leader. Then, if there is a Character with a cost of 9 or more, K.O. up to 1 of your opponent's Characters with a cost of 7 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-095.jpg"
+  },
+  {
+    "id": "OP11-080",
+    "name": "Gear Two",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Main] You may rest 2 of your DON!! cards: If your Leader's colors include blue, add up to 1 DON!! card from your DON!! deck and rest it.\n[Counter] Up to 1 of your Leader gains +3000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-080.jpg"
+  },
+  {
+    "id": "OP11-051",
+    "name": "Sanji",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Straw Hat Crew The Vinsmoke Family"
+    ],
+    "set": "OP-11",
+    "rarity": "SR",
+    "effectText": "When this Character is K.O.'d by your opponent's effect, look at 5 cards from the top of your deck and play up to 1 \"Straw Hat Crew\" type Character card with a cost of 5 or less. Then, place the rest at the bottom of your deck in any order.\n[On Play] Return up to 1 Character with 5000 base power or less to the owner's hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-051.jpg"
+  },
+  {
+    "id": "OP11-114",
+    "name": "Gum-Gum Fire-Fist Pistol Red Hawk",
+    "type": "event",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Main] You may rest 3 of your DON!! cards: If you and your opponent have a total of 5 or more Life cards, K.O. up to 1 of your opponent's Characters with a base cost of 5 or less.\n[Counter] Up to 1 of your Leader gains +3000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-114.jpg"
+  },
+  {
+    "id": "OP11-083",
+    "name": "Caribou",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Caribou Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On Play] Trash 2 cards from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-083.jpg"
+  },
+  {
+    "id": "OP11-018",
+    "name": "Honesty Impact",
+    "type": "event",
+    "colors": [
+      "red"
+    ],
+    "cost": 6,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy SWORD"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Main] Give up to 1 of your opponent's Characters 4000 power during this turn. Then, K.O. up to 1 of your opponent's Characters with 6000 power or less.\n[Trigger] K.O. up to 1 of your opponent's Characters with 6000 power or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-018.jpg"
+  },
+  {
+    "id": "OP11-047",
+    "name": "Vinsmoke Reiju",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[On Play] If your Leader has the \"The Vinsmoke Family\" type, look at 5 cards from the top of your deck; reveal up to 1 card with a type including \"GERMA\" and add it to your hand. Then, trash the rest.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-047.jpg"
+  },
+  {
+    "id": "OP11-038",
+    "name": "Gum-Gum Elephant Gatling",
+    "type": "event",
+    "colors": [
+      "green"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew Supernovas Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Main] You may rest 1 of your DON!! cards: Rest up to 1 of your opponent's Characters with a cost of 5 or less.\n[Counter] Up to 1 of your Leader gains +3000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-038.jpg"
+  },
+  {
+    "id": "OP11-099",
+    "name": "I'm Gonna Be a Navy Officer!!!",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy East Blue"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Main] Look at 3 cards from the top of your deck; reveal up to 1 \"Navy\" type card other than [I'm Gonna Be a Navy Officer!!!] and add it to your hand. Then, trash the rest.\n[Trigger] Activate this card's [Main] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-099.jpg"
+  },
+  {
+    "id": "OP11-073",
+    "name": "Charlotte Linlin",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 10,
+    "power": 12000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "The Four Emperors Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "If your Leader has the \"Big Mom Pirates\" type, this Character gains [Rush].\n[On Your Opponent's Attack] [Once Per Turn] DON!! 5: Choose a cost and reveal 1 card from the top of your opponent's deck. If the revealed card has the chosen cost, up to 1 of your Leader gains +2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-073.jpg"
+  },
+  {
+    "id": "OP11-084",
+    "name": "Kuzan",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[On Play] Trash 3 cards from the top of your deck.\n[When Attacking] Up to 1 of your \"Navy\" type Leader or Character cards can also attack active Characters during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-084.jpg"
+  },
+  {
+    "id": "OP11-082",
+    "name": "Aramaki",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Activate: Main] You may trash this Character: If your Leader has the \"Navy\" type, up to 1 of your \"Navy\" type Characters can also attack active Characters during this turn. Then, trash 2 cards from the top of your deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-082.jpg"
+  },
+  {
+    "id": "OP11-013",
+    "name": "Prince Grus",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy SWORD"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[When Attacking] All of your opponent's Characters with 2000 power or less cannot activate [Blocker] during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-013.jpg"
+  },
+  {
+    "id": "OP11-014",
+    "name": "Borsalino",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Blocker]\n[Activate: Main] You may rest this Character: Up to 1 of your \"Navy\" type Leader or Character cards can also attack active Characters during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-014.jpg"
+  },
+  {
+    "id": "OP11-008",
+    "name": "Doll",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 4,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Blocker]\n[On Play] You may trash 1 card from your hand: If your Leader has the \"Navy\" type, give up to 1 of your opponent's Characters 6000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-008.jpg"
+  },
+  {
+    "id": "OP11-071",
+    "name": "Charlotte Perospero",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Activate: Main] [Once Per Turn] You may trash 1 card from your hand: Choose a cost and reveal 1 card from the top of your opponent's deck. If the revealed card has the chosen cost, draw 1 card and add up to 1 DON!! card from your DON!! deck and set it as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-071.jpg"
+  },
+  {
+    "id": "OP11-030",
+    "name": "Shirahoshi (030)",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Activate: Main] You may rest 1 of your DON!! cards and this Character: Look at 5 cards from the top of your deck; reveal up to 1 \"Neptunian\" or \"Fish-Man Island\" type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-030.jpg"
+  },
+  {
+    "id": "OP11-104",
+    "name": "Shirley",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Blocker]\n[On Play] You may turn 1 card from the top of your Life cards face-down: Look at 3 cards from the top of your deck; reveal up to 1 \"Fish-Man Island\" type card and add it to your hand. Then, place the rest at the top or bottom of the deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-104.jpg"
+  },
+  {
+    "id": "OP11-023",
+    "name": "Arlong",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 7,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Fish-Man The Sun Pirates Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "If your Leader has the \"Fish-Man\" type, you have 3 or less Life cards and your opponent has 5 or more rested cards, give this card in your hand 3 cost.\n[Trigger] Rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-023.jpg"
+  },
+  {
+    "id": "OP11-096",
+    "name": "Ripper",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Navy East Blue"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "If you have a black \"Navy\" type Character other than [Ripper], this Character gains [Blocker].\n(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-096.jpg"
+  },
+  {
+    "id": "OP11-017",
+    "name": "X.Drake",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Drake Pirates Navy SWORD"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-017.jpg"
+  },
+  {
+    "id": "OP11-028",
+    "name": "Lord of the Coast",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "East Blue Neptunian"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[On Play] Up to 1 of your opponent's rested Characters will not become active in your opponent's next Refresh Phase.\n[Trigger] K.O. up to 1 of your opponent's rested Characters with a cost of 3 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-028.jpg"
+  },
+  {
+    "id": "OP11-043",
+    "name": "Vinsmoke Ichiji",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 7,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Blocker]\n[On Your Opponent's Attack] [Once Per Turn] This effect can be activated when you only have Characters with a type including \"GERMA\". Up to 1 of your Leader or Character cards gains +1000 power during this battle. Then, trash 2 cards from the top of your deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-043.jpg"
+  },
+  {
+    "id": "OP11-065",
+    "name": "Charlotte Anana",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "If you have a purple \"Big Mom Pirates\" type Character other than [Charlotte Anana], this Character gains [Blocker].\n(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-065.jpg"
+  },
+  {
+    "id": "OP11-069",
+    "name": "Charlotte Brulee",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[On Play] You may add 1 card from the top of your Life cards to your hand: If your Leader has the \"Big Mom Pirates\" type, add up to 1 DON!! card from your DON!! deck and set it as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-069.jpg"
+  },
+  {
+    "id": "OP11-045",
+    "name": "Vinsmoke Niji",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-045.jpg"
+  },
+  {
+    "id": "OP11-049",
+    "name": "Carrot",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Minks"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[On Play] Look at 3 cards from the top of your deck and place them at the top or bottom of the deck in any order.\n[On Your Opponent's Attack] You may trash this Character: Up to 1 of your Leader gains +1000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-049.jpg"
+  },
+  {
+    "id": "OP11-108",
+    "name": "Neptune",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[On Play] If your Leader is [Shirahoshi], you may turn 1 card from the top of your Life cards face-down: Draw 2 cards and trash 1 card from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-108.jpg"
+  },
+  {
+    "id": "OP11-066",
+    "name": "Charlotte Oven",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Activate: Main] You may rest this Character: Choose a cost and reveal 1 card from the top of your opponent's deck. If the revealed card has the chosen cost, K.O. up to 1 of your opponent's Characters with a base cost of 3 or less. Then, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-066.jpg"
+  },
+  {
+    "id": "OP11-060",
+    "name": "Let's Crash This Wedding!!!",
+    "type": "event",
+    "colors": [
+      "blue"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Main] If your Leader is multicolored, look at 5 cards from the top of your deck; reveal up to 1 \"Straw Hat Crew\" type card other than [Let's Crash This Wedding!!!] and add it to your hand. Then, place the rest at the bottom of your deck in any order.\n[Trigger] Activate this card's [Main] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-060.jpg"
+  },
+  {
+    "id": "OP11-091",
+    "name": "Berry Good",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[On Play] Your opponent places 3 Events from their trash at the bottom of their deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-091.jpg"
+  },
+  {
+    "id": "OP11-046",
+    "name": "Vinsmoke Yonji",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\nIf you only have Characters with a type including \"GERMA\", this Character cannot be K.O.'d or rested by your opponent's effects.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-046.jpg"
+  },
+  {
+    "id": "OP11-048",
+    "name": "Capone\"Gang\"Bege (048)",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Firetank Pirates Supernovas"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[On Play] Look at 4 cards from the top of your deck; reveal up to 1 \"Firetank Pirates\" or \"Straw Hat Crew\" type card with a cost of 2 or more and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-048.jpg"
+  },
+  {
+    "id": "OP11-074",
+    "name": "Streusen",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Activate: Main] [Once Per Turn] DON!! 1, You may rest this Character: Choose a cost and reveal 1 card from the top of your opponent's deck. If the revealed card has the chosen cost, rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-074.jpg"
+  },
+  {
+    "id": "OP11-033",
+    "name": "Bird Neptunian",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Neptunian"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-033.jpg"
+  },
+  {
+    "id": "OP11-012",
+    "name": "Franky",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 4,
+    "power": 4000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy SWORD"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Your Turn] [Once Per Turn] When your opponent activates an Event, all of your Characters gain +2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-012.jpg"
+  },
+  {
+    "id": "OP11-115",
+    "name": "You're Just Not My Type!",
+    "type": "event",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Counter] If your Leader is [Shirahoshi], up to 1 of your Leader or Character cards gains +4000 power during this battle.\n[Trigger] K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-115.jpg"
+  },
+  {
+    "id": "OP11-036",
+    "name": "Spotted Neptunian",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Neptunian"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[On Play] If your Leader is \"Shirahoshi\", look at 5 cards from the top of your deck; reveal up to 1 \"Neptunian\" type card or \"Shirahoshi\" and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-036.jpg"
+  },
+  {
+    "id": "OP11-112",
+    "name": "Megalo",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Animal Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[Opponent's Turn] If your Leader is [Shirahoshi], this Character gains +4000 power.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-112.jpg"
+  },
+  {
+    "id": "OP11-068",
+    "name": "Charlotte Daifuku",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-068.jpg"
+  },
+  {
+    "id": "OP11-032",
+    "name": "Surume",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Animal Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-032.jpg"
+  },
+  {
+    "id": "OP11-056",
+    "name": "Brook",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "R",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On Play] Place up to 1 Character with a base cost of 1 at the bottom of the owner's deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-056.jpg"
+  },
+  {
+    "id": "OP11-039",
+    "name": "Vagabond Drill",
+    "type": "event",
+    "colors": [
+      "green"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Fish-Man The Sun Pirates Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Counter] Up to 1 of your \"Fish-Man\" or \"Merfolk\" type Leader or Character cards gains +3000 power during this battle. Then, rest up to 1 of your opponent's Characters with a cost of 3 or less.\n[Trigger] Rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-039.jpg"
+  },
+  {
+    "id": "OP11-100",
+    "name": "Otohime",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[On Play] If your Leader is [Shirahoshi], you may turn 1 card from the top of your Life cards face-down: Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-100.jpg"
+  },
+  {
+    "id": "OP11-102",
+    "name": "Camie",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Your Turn] [Once Per Turn] This effect can be activated when your opponent activates an Event or [Trigger]. If your opponent has 2 or more Life cards, trash 1 card from the top of each of your and your opponent's Life cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-102.jpg"
+  },
+  {
+    "id": "OP11-058",
+    "name": "Monkey.D.Luffy (058)",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "If you have 5 or more cards in your hand, this Character cannot attack.\n[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-058.jpg"
+  },
+  {
+    "id": "OP11-079",
+    "name": "When Two Men Are Fighting the Last Thing I Need Is Some Half-Hearted Assistance!!!!",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Counter] Choose a cost and reveal 1 card from the top of your opponent's deck. If the revealed card has the chosen cost, up to 1 of your Leader or Character cards gains +5000 power during this battle.\n[Trigger] Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-079.jpg"
+  },
+  {
+    "id": "OP11-107",
+    "name": "Topknot Neptunian",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Neptunian"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Blocker]\n[Activate: Main] [Once Per Turn] If your Leader is [Shirahoshi], you may turn 1 card from the top of your Life cards face-down: Set this Character as active at the end of this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-107.jpg"
+  },
+  {
+    "id": "OP11-041",
+    "name": "Nami (041)",
+    "type": "leader",
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 4,
+    "attribute": "special",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "L",
+    "effectText": "[Your Turn] [Once Per Turn] This effect can be activated when a card is removed from your or your opponent's Life cards. If you have 7 or less cards in your hand, draw 1 card.[DON!! x1] [On Your Opponent's Attack] [Once Per Turn] You may trash 1 card from your hand: This Leader gains +2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-041.jpg"
+  },
+  {
+    "id": "OP11-026",
+    "name": "Scaled Neptunian",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 6,
+    "power": 8000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Neptunian"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-026.jpg"
+  },
+  {
+    "id": "OP11-053",
+    "name": "Tony Tony.Chopper",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Animal Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-053.jpg"
+  },
+  {
+    "id": "OP11-016",
+    "name": "Roronoa Zoro",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Activate: Main] [Once Per Turn] Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-016.jpg"
+  },
+  {
+    "id": "OP11-103",
+    "name": "Long-Jaw Neptunian",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Neptunian"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Activate: Main] If your Leader is [Shirahoshi], you may rest this Character and turn 1 card from the top of your Life cards face-down: K.O. up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-103.jpg"
+  },
+  {
+    "id": "OP11-044",
+    "name": "Vinsmoke Judge",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 6,
+    "power": 8000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Activate: Main] [Once Per Turn] You may trash 1 card from your hand: All of your \"GERMA 66\" type Characters gain +1000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-044.jpg"
+  },
+  {
+    "id": "OP11-037",
+    "name": "Ancient Weapon Poseidon",
+    "type": "event",
+    "colors": [
+      "green"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Main] Look at 4 cards from the top of your deck; reveal up to 1 \"Neptunian\" or \"Fish-Man Island\" type Character card and add it to your hand. Then, place the rest at the bottom of your deck in any order.\n[Trigger] Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-037.jpg"
+  },
+  {
+    "id": "OP11-061",
+    "name": "Gum-Gum Jet Culverin",
+    "type": "event",
+    "colors": [
+      "blue"
+    ],
+    "cost": 3,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Main] Place up to 1 of your opponent's Characters with a base cost of 4 or less at the bottom of the owner's deck.\n[Trigger] Place up to 1 Character with a cost of 1 or less at the bottom of the owner's deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-061.jpg"
+  },
+  {
+    "id": "OP11-093",
+    "name": "Bogard",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-093.jpg"
+  },
+  {
+    "id": "OP11-035",
+    "name": "Fisher Tiger",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Fish-Man The Sun Pirates Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "When this Character is K.O.'d by your opponent's effect, you may rest 1 of your DON!! cards. If you do, play up to 1 \"Fish-Man\" or \"Merfolk\" type Character card with a cost of 4 or less from your hand.\n[On Play] Rest up to 1 of your opponent's Characters.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-035.jpg"
+  },
+  {
+    "id": "OP11-007",
+    "name": "Tashigi",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Activate: Main] You may rest this Character: If your Leader has the \"Navy\" type, up to 1 of your \"Navy\" type Characters gains +2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-007.jpg"
+  },
+  {
+    "id": "OP11-020",
+    "name": "X Calibur",
+    "type": "event",
+    "colors": [
+      "red"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Drake Pirates Navy SWORD"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Main] Give up to 2 of your opponent's Characters 2000 power during this turn. Then, up to 1 of your \"Navy\" type Characters gains +1000 power during this turn.\n[Trigger] K.O. up to 1 of your opponent's Characters with 4000 power or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-020.jpg"
+  },
+  {
+    "id": "OP11-009",
+    "name": "Nico Robin",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[DON!! x2] [When Attacking] Give up to 1 of your opponent's Characters 2000 power until the end of your opponent's next turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-009.jpg"
+  },
+  {
+    "id": "OP11-059",
+    "name": "Gum-Gum King Cobra",
+    "type": "event",
+    "colors": [
+      "blue"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, if you have 4 or less cards in your hand, that card gains an additional +2000 power during this battle.\n[Trigger] Return up to 1 Character with a cost of 2 or less to the owner's hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-059.jpg"
+  },
+  {
+    "id": "OP11-027",
+    "name": "Bulge-Eyed Neptunian",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Neptunian"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "If your Leader is [Shirahoshi], this Character can attack Characters on the turn in which it is played.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-027.jpg"
+  },
+  {
+    "id": "OP11-078",
+    "name": "Decuplets",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-078.jpg"
+  },
+  {
+    "id": "OP11-072",
+    "name": "Charlotte Mont-d'or",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Activate: Main] [Once Per Turn] DON!! 1, You may rest this Character: Your opponent places 2 cards from their trash at the bottom of their deck in any order. Then, add 1 card from the top of your Life cards to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-072.jpg"
+  },
+  {
+    "id": "OP11-029",
+    "name": "Charlotte Praline",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "The Sun Pirates Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On Play] Rest up to 1 of your opponent's Characters with a cost of 1 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-029.jpg"
+  },
+  {
+    "id": "OP11-005",
+    "name": "Smoker",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[DON!! x1] This Character cannot be K.O.'d by effects of Characters without the (Special) attribute.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-005.jpg"
+  },
+  {
+    "id": "OP11-097",
+    "name": "After All These Years I'm Losing My Edge!!!",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +1000 power during this battle. Then, if you have 10 or more cards in your trash, add up to 1 black Character card with a cost of 3 or less from your trash to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-097.jpg"
+  },
+  {
+    "id": "OP11-040",
+    "name": "Monkey.D.Luffy (040)",
+    "type": "leader",
+    "colors": [
+      "blue",
+      "purple"
+    ],
+    "cost": null,
+    "power": 6000,
+    "counter": null,
+    "life": 3,
+    "attribute": "strike",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "L",
+    "effectText": "This effect can be activated at the start of your turn. If you have 8 or more DON!! cards on your field, look at 5 cards from the top of your deck; reveal up to 1 \"Straw Hat Crew\" type card and add it to your hand. Then, place the rest at the top or bottom of the deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-040.jpg"
+  },
+  {
+    "id": "OP11-019",
+    "name": "Glorp Web!!",
+    "type": "event",
+    "colors": [
+      "red"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy SWORD"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, if your opponent has a Character with 6000 power or more, up to 1 of your Leader or Character cards gains +1000 power during this turn.\n[Trigger] Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-019.jpg"
+  },
+  {
+    "id": "OP11-024",
+    "name": "Aladine",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "The Sun Pirates Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "When this Character is K.O.'d by your opponent's effect, you may trash 1 card from your hand and rest 1 of your DON!! cards. If you do, play up to 1 \"Fish-Man\" or \"Merfolk\" type Character card with a cost of 6 or less from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-024.jpg"
+  },
+  {
+    "id": "OP11-088",
+    "name": "Shu",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[Once Per Turn] This effect can be activated when your opponent's Character attacks. If that Character has the (Slash) attribute, this Character gains +5000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-088.jpg"
+  },
+  {
+    "id": "OP11-001",
+    "name": "Koby (001)",
+    "type": "leader",
+    "colors": [
+      "black",
+      "red"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 4,
+    "attribute": "strike",
+    "traits": [
+      "Navy SWORD"
+    ],
+    "set": "OP-11",
+    "rarity": "L",
+    "effectText": "Your \"SWORD\" type Characters can attack Characters on the turn in which they are played.\n[Once Per Turn] If your \"Navy\" type Character with 7000 base power or less would be removed from the field by your opponent's effect, you may place 3 cards from your trash at the bottom of your deck in any order instead.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-001.jpg"
+  },
+  {
+    "id": "OP11-117",
+    "name": "Fish-Man Island",
+    "type": "stage",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": 0,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Activate: Main] [Once Per Turn] If your Leader is [Shirahoshi], you may turn 1 card from the top of your Life cards face-up: Up to 1 of your \"Neptunian\", \"Fish-Man\", or \"Merfolk\" type Characters gains +1000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-117.jpg"
+  },
+  {
+    "id": "OP11-062",
+    "name": "Charlotte Katakuri (062)",
+    "type": "leader",
+    "colors": [
+      "purple"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "attribute": "strike",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "L",
+    "effectText": "[When Attacking]/[On Your Opponent's Attack] [Once Per Turn] DON!! 1: Look at 1 card from the top of your opponent's deck. Then, this Leader gains +1000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-062.jpg"
+  },
+  {
+    "id": "OP11-111",
+    "name": "Mamboshi",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-111.jpg"
+  },
+  {
+    "id": "OP11-075",
+    "name": "Jaguar.D.Saul",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 6,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Giant Former Navy Ohara"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[On Play] If your Leader is [Nico Robin] and you have 7 or more DON!! cards on your field, draw 2 cards.\n[Trigger] Activate this card's [On Play] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-075.jpg"
+  },
+  {
+    "id": "OP11-110",
+    "name": "Fukaboshi",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "If this Character would be K.O.'d, you may rest 1 of your [Fish-Man Island] or your [Shirahoshi] Leader instead.\n[On Play] You may add 1 card from the top or bottom of your Life cards to your hand: K.O. up to 1 of your opponent's Characters with a cost of 1 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-110.jpg"
+  },
+  {
+    "id": "OP11-003",
+    "name": "Usopp",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-003.jpg"
+  },
+  {
+    "id": "OP11-025",
+    "name": "Ishilly",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 2,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[On Your Opponent's Attack] [Once Per Turn] You may rest 1 of your DON!! cards and this Character: Up to 1 of your Leader or Character cards gains +1000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-025.jpg"
+  },
+  {
+    "id": "OP11-116",
+    "name": "Merman Combat Ultramarine",
+    "type": "event",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 6,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Main] Add up to 1 Character with a cost of 6 or less to the top or bottom of the owner's Life cards face-up.\n[Trigger] Add up to 1 of your opponent's Characters with a cost of 4 or less to the top or bottom of the owner's Life cards face-up.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-116.jpg"
+  },
+  {
+    "id": "OP11-081",
+    "name": "Cognac Mama-Mash",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 6,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "The Four Emperors Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Main] Choose a cost and reveal 1 card from the top of your opponent's deck. If the revealed card has the chosen cost, K.O. up to 1 of your opponent's Characters with a base cost of 8 or less.\n[Trigger] Add up to 1 DON!! card from your DON!! deck and set it as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-081.jpg"
+  },
+  {
+    "id": "OP11-098",
+    "name": "Blue Hole",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 3,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Main] You may trash 3 cards from the top of your deck: K.O. up to 1 of your opponent's Characters with a cost of 2 or less.\n[Trigger] Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-098.jpg"
+  },
+  {
+    "id": "OP11-022",
+    "name": "Shirahoshi (022)",
+    "type": "leader",
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "attribute": "wisdom",
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "L",
+    "effectText": "This Leader cannot attack.\n[Activate: Main] [Once Per Turn] You may rest 1 of your DON!! cards and turn 1 card from the top of your Life cards face-up: Play up to 1 \"Neptunian\" type Character card or \"Megalo\" with a cost equal to or less than the number of DON!! cards on your field from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-022.jpg"
+  },
+  {
+    "id": "OP11-063",
+    "name": "Little Sadi",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Impel Down"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[On Play] DON!! 1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your Leader has the \"Impel Down\" type, rest up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-063.jpg"
+  },
+  {
+    "id": "OP11-034",
+    "name": "Hatchan",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Fish-Man Former Arlong Pirates Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Activate: Main] You may rest this Character: If your Leader has the \"Fish-Man\" or \"Merfolk\" type, up to 1 of your opponent's Characters with a cost of 3 or less cannot be rested until the end of your opponent's next turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-034.jpg"
+  },
+  {
+    "id": "OP11-021",
+    "name": "Jinbe (021)",
+    "type": "leader",
+    "colors": [
+      "green"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "attribute": "strike",
+    "traits": [
+      "Fish-Man Straw Hat Crew"
+    ],
+    "set": "OP-11",
+    "rarity": "L",
+    "effectText": "[End of Your Turn] If you have 6 or less cards in your hand, set up to 1 of your \"Fish-Man\" or \"Merfolk\" type Characters and up to 1 of your DON!! cards as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-021.jpg"
+  },
+  {
+    "id": "OP11-087",
+    "name": "Miss Sarahebi",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Animal Kingdom Pirates SMILE"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-087.jpg"
+  },
+  {
+    "id": "OP11-002",
+    "name": "Ain",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM Neo Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[On Play] Give up to 1 of your opponent's Characters 1000 power during this turn. Then, K.O. up to 1 of your opponent's Characters with 0 power or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-002.jpg"
+  },
+  {
+    "id": "OP11-076",
+    "name": "Hannyabal",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Impel Down"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Blocker]\n[On Play] If your Leader has the \"Impel Down\" type, play up to 1 \"Impel Down\" type Character card with a cost of 3 or less from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-076.jpg"
+  },
+  {
+    "id": "OP11-055",
+    "name": "Bartolomeo",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Supernovas Dressrosa"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-055.jpg"
+  },
+  {
+    "id": "OP11-077",
+    "name": "Randolph",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Big Mom Pirates Homies"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Your Turn] [Once Per Turn] When a DON!! card on your field is returned to your DON!! deck, up to 1 of your \"Big Mom Pirates\" type Characters gains +2 cost until the end of your opponent's next turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-077.jpg"
+  },
+  {
+    "id": "OP11-089",
+    "name": "Black Maria",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Animal Kingdom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-089.jpg"
+  },
+  {
+    "id": "OP11-105",
+    "name": "Charlotte Chiffon",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Firetank Pirates Former Big Mom Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "UC",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-105.jpg"
+  },
+  {
+    "id": "OP11-113",
+    "name": "Ryuboshi",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Merfolk Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-113.jpg"
+  },
+  {
+    "id": "OP11-109",
+    "name": "Pappag",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Animal Fish-Man Island"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[On Play] If you have [Camie], draw 2 cards and trash 2 cards from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-109.jpg"
+  },
+  {
+    "id": "OP11-006",
+    "name": "Zephyr",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Neo Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[DON!! x1] [When Attacking] Give up to 1 of your opponent's (Special) attribute Characters 5000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-006.jpg"
+  },
+  {
+    "id": "OP11-094",
+    "name": "Morgan",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 6,
+    "power": 8000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-094.jpg"
+  },
+  {
+    "id": "OP11-057",
+    "name": "Pedro",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Minks"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "If you have 4 or less cards in your hand, this Character gains [Blocker].\n(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-057.jpg"
+  },
+  {
+    "id": "OP11-090",
+    "name": "Briscola",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Animal Kingdom Pirates SMILE"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-090.jpg"
+  },
+  {
+    "id": "OP11-064",
+    "name": "Saldeath",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 6,
+    "power": 8000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Impel Down"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-064.jpg"
+  },
+  {
+    "id": "OP11-086",
+    "name": "Coribou",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Caribou Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[On Play] Trash 1 card from your hand.\n[Activate: Main] You may trash this Character: Play up to 1 [Caribou] with a cost of 4 or less from your trash.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-086.jpg"
+  },
+  {
+    "id": "OP11-015",
+    "name": "Mocha",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Punk Hazard"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-015.jpg"
+  },
+  {
+    "id": "OP11-085",
+    "name": "Kurozumi Orochi",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Land of Wano Kurozumi Clan"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[On Play] Add up to 1 \"SMILE\" type card with a cost of 5 or less from your trash to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-085.jpg"
+  },
+  {
+    "id": "OP11-050",
+    "name": "Gotti",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Firetank Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[When Attacking] You may trash 1 \"Firetank Pirates\" type card from your hand: Return up to 1 Character with a cost of 1 or less to the owner's hand or place it at the bottom of their deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-050.jpg"
+  },
+  {
+    "id": "OP11-011",
+    "name": "Bins",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM Neo Navy"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-011.jpg"
+  },
+  {
+    "id": "OP11-042",
+    "name": "Vito",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Firetank Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "[On Play] You may trash 1 \"Firetank Pirates\" type card from your hand: This Character gains [Rush] during this turn.\n(This card can attack on the turn in which it is played.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-042.jpg"
+  },
+  {
+    "id": "OP11-052",
+    "name": "Charlotte Lola",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Firetank Pirates Former Rolling Pirates"
+    ],
+    "set": "OP-11",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP11-052.jpg"
+  }
+]

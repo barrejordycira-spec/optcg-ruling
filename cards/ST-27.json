@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ST27-005",
+    "name": "Marshall.D.Teach (ST27-005)",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 7,
+    "power": 8000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Blackbeard Pirates The Four Emperors"
+    ],
+    "set": "ST-27",
+    "rarity": "SR",
+    "effectText": "[Activate:Main] You may rest this Character: K.O. up to 1 Character with a cost of 3 or less.\n[On K.O.] Add up to 1 black card from your trash to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST27-005.jpg"
+  },
+  {
+    "id": "ST27-003",
+    "name": "Kuzan",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 6,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Blackbeard Pirates Former Navy"
+    ],
+    "set": "ST-27",
+    "rarity": "SR",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On K.O.] Play up to 1 \"Blackbeard Pirates\" type Character card with a cost of 5 or less from your trash rested.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST27-003.jpg"
+  },
+  {
+    "id": "ST27-002",
+    "name": "Catarina Devon",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Blackbeard Pirates"
+    ],
+    "set": "ST-27",
+    "rarity": "C",
+    "effectText": "[Activate:Main] You may trash this Character: If your Leader has the \"Blackbeard Pirates\" type, give up to 1 of your opponent's Characters -1 cost during this turn.\n[On K.O.] Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST27-002.jpg"
+  },
+  {
+    "id": "ST27-004",
+    "name": "Sanjuan.Wolf",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Blackbeard Pirates Giant"
+    ],
+    "set": "ST-27",
+    "rarity": "C",
+    "effectText": "If your Leader has the \"Blackbeard Pirates\" type, this Character gains [Blocker] and +1 cost for every 4 cards in your trash.\n(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On Play] Trash 1 card from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST27-004.jpg"
+  },
+  {
+    "id": "ST27-001",
+    "name": "Avalo Pizarro",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Blackbeard Pirates"
+    ],
+    "set": "ST-27",
+    "rarity": "C",
+    "effectText": "[Activate:Main] [Once Per Turn] You may rest 1 of your [Fullalead] cards: If your Leader has the \"Blackbeard Pirates\" type, this Character gains +4000 power during this turn.\n[On K.O.] Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST27-001.jpg"
+  }
+]

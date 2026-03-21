@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ST16-004",
+    "name": "Shanks",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 9,
+    "power": 11000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "FILM The Four Emperors Red-Haired Pirates"
+    ],
+    "set": "ST-16",
+    "rarity": "SR",
+    "effectText": "[On Play] K.O. up to 1 of your opponent's rested Characters.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST16-004.jpg"
+  },
+  {
+    "id": "ST16-001",
+    "name": "Uta (ST16-001)",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM"
+    ],
+    "set": "ST-16",
+    "rarity": "SR",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n\n[Activate: Main] [Once Per Turn] You may trash 1 \"FILM\" type card from your hand: Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST16-001.jpg"
+  },
+  {
+    "id": "ST16-005",
+    "name": "Monkey.D.Luffy (ST16-005)",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Straw Hat Crew Supernovas"
+    ],
+    "set": "ST-16",
+    "rarity": "C",
+    "effectText": "If you have a rested [Uta], this Character gains +1000 power.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST16-005.jpg"
+  },
+  {
+    "id": "ST16-003",
+    "name": "Charlotte Katakuri",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Big Mom Pirates"
+    ],
+    "set": "ST-16",
+    "rarity": "C",
+    "effectText": "If your Leader has the \"FILM\" type and you have 6 or more rested cards, this Character gains +2000 power.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST16-003.jpg"
+  },
+  {
+    "id": "ST16-002",
+    "name": "Gordon",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 2,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "FILM"
+    ],
+    "set": "ST-16",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Your Opponent's Attack] You may trash any number of \"Music\" type cards from your hand. Your Leader or 1 of your Characters gains +1000 power during this battle for every card trashed.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST16-002.jpg"
+  }
+]

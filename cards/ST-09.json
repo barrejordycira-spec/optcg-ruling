@@ -1,0 +1,302 @@
+[
+  {
+    "id": "ST09-005",
+    "name": "Kouzuki Oden",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 7,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano Kouzuki Clan"
+    ],
+    "set": "ST-09",
+    "rarity": "SR",
+    "effectText": "[DON!! x1] This Character gains [Double Attack]. (This card deals 2 damage.) [On K.O.] You may trash 2 cards from your hand: Add up to 1 card from the top of your deck to the top of your Life cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-005.jpg"
+  },
+  {
+    "id": "ST09-010",
+    "name": "Portgas.D.Ace",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Land of Wano Whitebeard Pirates"
+    ],
+    "set": "ST-09",
+    "rarity": "SR",
+    "effectText": "[Once Per Turn] If this Character would be K.O.'d, you may trash 1 card from the top or bottom of your Life cards instead.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-010.jpg"
+  },
+  {
+    "id": "ST09-015",
+    "name": "Thunder Bagua",
+    "type": "event",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +4000 power during this battle. Then, if you have 2 or less Life cards, add up to 1 of your opponent's Characters with a cost of 3 or less to the top or bottom of the owner's Life cards face-up. [Trigger] Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-015.jpg"
+  },
+  {
+    "id": "ST09-003",
+    "name": "Ulti",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Animal Kingdom Pirates"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-003.jpg"
+  },
+  {
+    "id": "ST09-001",
+    "name": "Yamato (001)",
+    "type": "leader",
+    "colors": [
+      "yellow"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "attribute": "strike",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "ST-09",
+    "rarity": "L",
+    "effectText": "[DON!! x1] [Opponent's Turn] If you have 2 or less Life cards, this Leader gains +1000 power.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-001.jpg"
+  },
+  {
+    "id": "ST09-014",
+    "name": "Narikabura Arrow",
+    "type": "event",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "[Counter] If you have 2 or less Life cards, give up to 1 of your opponent's Leader or Character cards -3000 power during this turn. [Trigger] You may trash 2 cards from your hand: Add up to 1 card from the top of your deck to the top of your Life cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-014.jpg"
+  },
+  {
+    "id": "ST09-012",
+    "name": "Yamato (012)",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "[When Attacking] You may add 1 card from the top or bottom of your Life cards to your hand: This Character gains +2000 power until the start of your next turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-012.jpg"
+  },
+  {
+    "id": "ST09-013",
+    "name": "Yamato (013)",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-013.jpg"
+  },
+  {
+    "id": "ST09-007",
+    "name": "Shinobu",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 2000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.) [On Block] You may add 1 card from the top or bottom of your Life cards to your hand: This Character gains +4000 power during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-007.jpg"
+  },
+  {
+    "id": "ST09-004",
+    "name": "Kaido",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Animal Kingdom Pirates The Four Emperors"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "[DON!! x1] If you have 2 or less Life cards, this Character cannot be K.O.'d in battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-004.jpg"
+  },
+  {
+    "id": "ST09-008",
+    "name": "Shimotsuki Ushimaru",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "[DON!! x1] [When Attacking] You may add 1 card from the top or bottom of your Life cards to your hand: Play up to 1 yellow [Land of Wano] type Character card with a cost of 4 or less from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-008.jpg"
+  },
+  {
+    "id": "ST09-006",
+    "name": "Kouzuki Momonosuke",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Land of Wano Kouzuki Clan"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-006.jpg"
+  },
+  {
+    "id": "ST09-009",
+    "name": "Fugetsu Omusubi",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "[Trigger] K.O. up to 1 of your opponent's Characters with a cost of 1 or less and add this card to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-009.jpg"
+  },
+  {
+    "id": "ST09-011",
+    "name": "Monkey.D.Luffy",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Land of Wano Straw Hat Crew"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "NULL",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-011.jpg"
+  },
+  {
+    "id": "ST09-002",
+    "name": "Uzuki Tempura",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "ST-09",
+    "rarity": "C",
+    "effectText": "[Trigger] Rest up to 1 of your opponent's Characters with a cost of 2 or less and add this card to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST09-002.jpg"
+  }
+]

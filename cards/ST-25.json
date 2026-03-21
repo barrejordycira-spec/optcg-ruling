@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ST25-003",
+    "name": "Crocodile & Mihawk",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 8,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash special",
+    "traits": [
+      "Former Baroque Works Cross Guild"
+    ],
+    "set": "ST-25",
+    "rarity": "SR",
+    "effectText": "[On Play] Draw 2 cards and trash 1 card from your hand. Then, play up to 1 \"Cross Guild\" type Character card with a cost of 4 or less from your hand.\n[Once Per Turn] If your \"Cross Guild\" type Character would be removed from the field by your opponent's effect, you may trash 1 card from your hand instead.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST25-003.jpg"
+  },
+  {
+    "id": "ST25-001",
+    "name": "Alvida",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Cross Guild"
+    ],
+    "set": "ST-25",
+    "rarity": "C",
+    "effectText": "If you have 2 or more Characters with a base cost of 5 or more, this Character gains +1 cost.\n[On Play] If your Leader is [Buggy], draw 3 cards and trash 2 cards from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST25-001.jpg"
+  },
+  {
+    "id": "ST25-004",
+    "name": "Buggy",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "The Four Emperors Cross Guild"
+    ],
+    "set": "ST-25",
+    "rarity": "SR",
+    "effectText": "[Activate:Main] You may trash 1 card from your hand and trash this Character: If your Leader is [Buggy], play up to 1 \"Cross Guild\" type Character card with a cost of 6 or less from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST25-004.jpg"
+  },
+  {
+    "id": "ST25-003",
+    "name": "Crocodile & Mihawk",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 8,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash special",
+    "traits": [
+      "Former Baroque Works Cross Guild"
+    ],
+    "set": "ST-25",
+    "rarity": "SR",
+    "effectText": "[On Play] Draw 2 cards and trash 1 card from your hand. Then, play up to 1 \"Cross Guild\" type Character card with a cost of 4 or less from your hand.\n[Once Per Turn] If your \"Cross Guild\" type Character would be removed from the field by your opponent's effect, you may trash 1 card from your hand instead.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST25-003_0QHazIj.jpg"
+  },
+  {
+    "id": "ST25-001",
+    "name": "Alvida",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Cross Guild"
+    ],
+    "set": "ST-25",
+    "rarity": "C",
+    "effectText": "If you have 2 or more Characters with a base cost of 5 or more, this Character gains +1 cost.\n[On Play] If your Leader is [Buggy], draw 3 cards and trash 2 cards from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST25-001_xelVoJm.jpg"
+  },
+  {
+    "id": "ST25-004",
+    "name": "Buggy",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "The Four Emperors Cross Guild"
+    ],
+    "set": "ST-25",
+    "rarity": "SR",
+    "effectText": "[Activate:Main] You may trash 1 card from your hand and trash this Character: If your Leader is [Buggy], play up to 1 \"Cross Guild\" type Character card with a cost of 6 or less from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST25-004_8Zo1qx2.jpg"
+  },
+  {
+    "id": "ST25-002",
+    "name": "Cabaji",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 1000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Cross Guild"
+    ],
+    "set": "ST-25",
+    "rarity": "C",
+    "effectText": "If you have 2 or more Characters with a base cost of 5 or more, this Character gains [Blocker] and +1 cost.\n(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[Opponent's Turn] This Character gains +5000 power.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST25-002.jpg"
+  },
+  {
+    "id": "ST25-005",
+    "name": "Mohji",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 1000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Cross Guild"
+    ],
+    "set": "ST-25",
+    "rarity": "C",
+    "effectText": "If you have 2 or more Characters with a base cost of 5 or more, this Character gains [Blocker] and +1 cost.\n(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On K.O.] If your Leader is [Buggy] and you have 3 or less cards in your hand, draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST25-005.jpg"
+  }
+]

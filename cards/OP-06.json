@@ -1,0 +1,2386 @@
+[
+  {
+    "id": "OP06-035",
+    "name": "Hody Jones (035)",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 7,
+    "power": 8000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Fish-Man New Fish-Man Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "SR",
+    "effectText": "[Rush] (This card can attack on the turn in which it is played.)\n[On Play] Rest up to a total of 2 of your opponent's Characters or DON!! cards. Then, add 1 card from the top of your Life cards to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-035.jpg"
+  },
+  {
+    "id": "OP06-058",
+    "name": "Gravity Blade Raging Tiger",
+    "type": "event",
+    "colors": [
+      "blue"
+    ],
+    "cost": 7,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[Main] Place up to 2 Characters with a cost of 6 or less at the bottom of the owner's deck in any order.\n[Trigger] Place up to 1 Character with a cost of 5 or less at the bottom of the owner's deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-058.jpg"
+  },
+  {
+    "id": "OP06-115",
+    "name": "You're the One Who Should Disappear",
+    "type": "event",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 0,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Sky Island"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[Counter] You may trash 1 card from your hand: Up to 1 of your Leader or Character cards gains +3000 power during this battle.\n[Trigger] If you have 0 Life cards, you may add up to 1 card from the top of your deck to the top of your Life cards. Then, trash 1 card from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-115.jpg"
+  },
+  {
+    "id": "OP06-069",
+    "name": "Vinsmoke Reiju (069)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "SR",
+    "effectText": "[On Play] If the number of DON!! cards on your field is equal to or less than the number on your opponent's field and you have 5 or less cards in your hand, draw 2 cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-069.jpg"
+  },
+  {
+    "id": "OP06-106",
+    "name": "Kouzuki Hiyori",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 2,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Land of Wano Kouzuki Clan"
+    ],
+    "set": "OP-06",
+    "rarity": "SR",
+    "effectText": "[On Play] You may add 1 card from the top or bottom of your Life cards to your hand: Add up to 1 card from your hand to the top of your Life cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-106.jpg"
+  },
+  {
+    "id": "OP06-104",
+    "name": "Kikunojo",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano The Akazaya Nine"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On K.O.] If your opponent has 3 or less Life cards, add up to 1 card from the top of your deck to the top of your Life cards.\n[Trigger] If your opponent has 3 or less Life cards, play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-104.jpg"
+  },
+  {
+    "id": "OP06-047",
+    "name": "Charlotte Pudding",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] Your opponent returns all cards in their hand to their deck and shuffles their deck. Then, your opponent draws 5 cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-047.jpg"
+  },
+  {
+    "id": "OP06-061",
+    "name": "Vinsmoke Ichiji (061)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 7,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, give up to 1 of your opponent's Characters -2000 power during this turn and this Character gains [Rush]. (This card can attack on the turn in which it is played.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-061.jpg"
+  },
+  {
+    "id": "OP06-101",
+    "name": "O-Nami",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] Up to 1 of your Leader or Character cards gains [Banish] during this turn.\n(When this card deals damage, the target card is trashed without activating its Trigger.)\n[Trigger] K.O. up to 1 of your opponent's Characters with a cost of 5 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-101.jpg"
+  },
+  {
+    "id": "OP06-063",
+    "name": "Vinsmoke Sora",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "The Vinsmoke Family Kingdom of GERMA"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[On Play] You may trash 1 card from your hand: If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, add up to 1 [The Vinsmoke Family] type Character card with 4000 power or less from your trash to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-063.jpg"
+  },
+  {
+    "id": "OP06-119",
+    "name": "Sanji",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 9,
+    "power": 9000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-06",
+    "rarity": "SEC",
+    "effectText": "[On Play] Reveal 1 card from the top of your deck and play up to 1 Character with a cost of 9 or less other than [Sanji]. Then, place the rest at the bottom of your deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-119.jpg"
+  },
+  {
+    "id": "OP06-043",
+    "name": "Aramaki",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 8,
+    "power": 8000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "SR",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[Activate:Main] [Once Per Turn] You may trash 1 card from your hand and place 1 Character with a cost of 2 or less at the bottom of the owner's deck: This Character gains +3000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-043.jpg"
+  },
+  {
+    "id": "OP06-003",
+    "name": "Emporio.Ivankov",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Revolutionary Army"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[On Play] Look at 3 cards from the top of your deck and play up to 1 [Revolutionary Army] type Character card with 5000 power or less. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-003.jpg"
+  },
+  {
+    "id": "OP06-077",
+    "name": "Black Bug",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 4,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[Main] If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, place up to 1 of your opponent's Characters with a cost of 5 or less at the bottom of the owner's deck.\n[Trigger] Place up to 1 of your opponent's Characters with a cost of 4 or less at the bottom of the owner's deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-077.jpg"
+  },
+  {
+    "id": "OP06-007",
+    "name": "Shanks",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 10,
+    "power": 12000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "FILM The Four Emperors Red-Haired Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "SR",
+    "effectText": "[On play] K.O. up to 1 of your opponent's Characters with 10000 power or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-007.jpg"
+  },
+  {
+    "id": "OP06-051",
+    "name": "Tsuru",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 4000,
+    "counter": 4000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] You may trash 2 cards from your hand: Your opponent returns 1 of their Characters to the owner's hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-051.jpg"
+  },
+  {
+    "id": "OP06-016",
+    "name": "Raise Max",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 0,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "FILM Revolutionary Army"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Activate:Main] You may place this Character at the bottom of the owner's deck: Give up to 1 of your opponent's Characters -3000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-016.jpg"
+  },
+  {
+    "id": "OP06-118",
+    "name": "Roronoa Zoro",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 9,
+    "power": 9000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-06",
+    "rarity": "SEC",
+    "effectText": "[When Attacking][Once Per Turn](1)(You may rest the specified number of DON!! cards in your cost area.): Set this Character as active.\n[Activate:Main][Once Per Turn](2)(You may rest the specified number of DON!! cards in your cost area.): Set this Character as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-118.jpg"
+  },
+  {
+    "id": "OP06-076",
+    "name": "Hitokiri Kamazo",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Kid Pirates Supernovas SMILE"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Your Turn][Once Per Turn] When a DON!! card on your field is returned to your DON!! deck, K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-076.jpg"
+  },
+  {
+    "id": "OP06-086",
+    "name": "Gecko Moria (086)",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 8,
+    "power": 9000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "The Seven Warlords of the Sea Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "SR",
+    "effectText": "[On Play] Choose up to 1 Character card with a cost of 4 or less and up to 1 Character card with a cost of 2 or less from your trash. Play 1 card and play the other card rested.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-086.jpg"
+  },
+  {
+    "id": "OP06-107",
+    "name": "Kouzuki Momonosuke",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Land of Wano Kouzuki Clan"
+    ],
+    "set": "OP-06",
+    "rarity": "SR",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On Play] Add up to 1 of your \"Land of Wano\" type Characters other than [Kouzuki Momonosuke] to the top or bottom of the owner's Life cards face-up.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-107.jpg"
+  },
+  {
+    "id": "OP06-093",
+    "name": "Perona (093)",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "SR",
+    "effectText": "[On Play] If your opponent has 5 or more cards in their hand, choose one:\n• Your opponent trashes 1 card from their hand.\n• Give up to 1 of your opponent's Characters -3 cost during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-093.jpg"
+  },
+  {
+    "id": "OP06-062",
+    "name": "Vinsmoke Judge",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 8,
+    "power": 8000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "SR",
+    "effectText": "[On Play] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.) You may trash 2 cards from your hand: Play up to 4 \"GERMA 66\" type Character cards with different card names and 4000 power or less from your trash.\n[Activate:Main] [Once Per Turn] DON!! -1: Rest up to 1 of your opponent's DON!! cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-062.jpg"
+  },
+  {
+    "id": "OP06-068",
+    "name": "Vinsmoke Reiju (068)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Activate:Main] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.)You may trash this Character: If your Leader has the [GERMA 66] type, play up to 1 [Vinsmoke Reiju] with a cost of 4 from your hand or trash.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-068.jpg"
+  },
+  {
+    "id": "OP06-079",
+    "name": "Kingdom of GERMA",
+    "type": "stage",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": 0,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Kingdom of GERMA"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Activate:Main] You may trash 1 card from your hand and rest this Stage: Look at 3 cards from the top of your deck; reveal up to 1 card with a type including \"GERMA\" and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-079.jpg"
+  },
+  {
+    "id": "OP06-033",
+    "name": "Vander Decken IX",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Fish-Man Flying Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] You may trash 1 \"Fish-Man\" type card from your hand or 1 [The Ark Noah] from your hand or field: K.O. up to 1 of your opponent's rested Characters.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-033.jpg"
+  },
+  {
+    "id": "OP06-050",
+    "name": "Tashigi",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 \"Navy\" type card other than [Tashigi] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-050.jpg"
+  },
+  {
+    "id": "OP06-059",
+    "name": "White Snake",
+    "type": "event",
+    "colors": [
+      "blue"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +1000 power during this turn, and draw 1 card.\n[Trigger] Look at 5 cards from the top of your deck and place them at the top or bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-059.jpg"
+  },
+  {
+    "id": "OP06-060",
+    "name": "Vinsmoke Ichiji (060)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 4,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Activate:Main] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.)You may trash this Character: If your Leader has the [GERMA 66] type, play up to 1 [Vinsmoke Ichiji] with a cost of 7 from your hand or trash.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-060.jpg"
+  },
+  {
+    "id": "OP06-072",
+    "name": "Cosette",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Kingdom of GERMA"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "If your Leader has the [GERMA 66] type and the number of DON!! cards on your field is at least 2 less than the number on your opponent's field, this Character gains [Blocker]. (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-072.jpg"
+  },
+  {
+    "id": "OP06-113",
+    "name": "Raki",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Sky Island Shandian Warrior"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "If you have a [Shandian Warrior] type Character other than [Raki], this Character gains [Blocker].\n(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-113.jpg"
+  },
+  {
+    "id": "OP06-009",
+    "name": "Shuraiya",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Shipbuilding Town"
+    ],
+    "set": "OP-06",
+    "rarity": "SR",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[When Attacking] / [On Block] [Once Per Turn] This Character's base power becomes the same as your opponent's Leader until the start of your next turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-009.jpg"
+  },
+  {
+    "id": "OP06-078",
+    "name": "GERMA 66",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Main] Look at 5 cards from the top of your deck; reveal up to 1 card with a type including \"GERMA\" other than [GERMA 66] and add it to your hand. Then, place the rest at the bottom of your deck in any order.\n[Trigger] Draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-078.jpg"
+  },
+  {
+    "id": "OP06-025",
+    "name": "Camie",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Merfolk"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] Look at 4 cards from the top of your deck; reveal up to 1 \"Fish-Man\" or \"Merfolk\" type card other than [Camie] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-025.jpg"
+  },
+  {
+    "id": "OP06-036",
+    "name": "Ryuma",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] / [On K.O.] K.O. up to 1 of your opponent's rested Characters with a cost of 4 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-036.jpg"
+  },
+  {
+    "id": "OP06-111",
+    "name": "Braham",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Sky Island Shandian Warrior"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Activate:Main][Once Per Turn] You may place 1 Stage with a cost of 1 at the bottom of the owner's deck: Rest up to 1 of your opponent's Characters with a cost of 4 or less.\n[Trigger] If you have 2 or less Life cards, play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-111.jpg"
+  },
+  {
+    "id": "OP06-013",
+    "name": "Monkey.D.Luffy",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Straw Hat Crew"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] Look at 3 cards from the top of your deck; reveal up to 1 \"FILM\" type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.\n[Trigger] Activate this card's [On Play] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-013.jpg"
+  },
+  {
+    "id": "OP06-092",
+    "name": "Brook",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 6,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Former Rumbar Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] Choose one:\n• Trash up to 1 of your opponent's Characters with a cost of 4 or less.\n• Your opponent places 3 cards from their trash at bottom of their deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-092.jpg"
+  },
+  {
+    "id": "OP06-056",
+    "name": "Ama no Murakumo Sword",
+    "type": "event",
+    "colors": [
+      "blue"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Main] Place up to 1 of your opponent's Characters with a cost of 2 or less and up to 1 of your opponent's Characters with a cost of 1 or less at the bottom of the owner's deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-056.jpg"
+  },
+  {
+    "id": "OP06-065",
+    "name": "Vinsmoke Niji (065)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, choose one:\n• K.O. up to 1 of your opponent's Characters with a cost of 2 or less.\n• Return up to 1 of your opponent's Characters with a cost of 4 or less to the owner's hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-065.jpg"
+  },
+  {
+    "id": "OP06-097",
+    "name": "Negative Hollow",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[Main] Trash 1 card from your opponent's hand.\n[Trigger] Activate this card's [Main] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-097.jpg"
+  },
+  {
+    "id": "OP06-081",
+    "name": "Absalom",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] You may return 2 cards from your trash to the bottom of your deck in any order: K.O. up to 1 Character with a cost of 2 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-081.jpg"
+  },
+  {
+    "id": "OP06-071",
+    "name": "Gild Tesoro",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM Grantesoro"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[On Play] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your Leader has the [FILM] type, add up to 2 [FILM] type Character cards with a cost of 4 or less from your trash to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-071.jpg"
+  },
+  {
+    "id": "OP06-023",
+    "name": "Arlong",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Fish-Man Arlong Pirates East Blue"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] You may trash 1 card from your hand: Up to 1 of your opponent's rested Leader cannot attack until the end of your opponent's next turn.\n[Trigger] Rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-023.jpg"
+  },
+  {
+    "id": "OP06-042",
+    "name": "Vinsmoke Reiju (042)",
+    "type": "leader",
+    "colors": [
+      "blue",
+      "purple"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 4,
+    "attribute": "special",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "L",
+    "effectText": "[Your Turn] [Once Per Turn] When a DON!! card on your field is returned to your DON!! deck, draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-042.jpg"
+  },
+  {
+    "id": "OP06-044",
+    "name": "Gion",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Your Turn][Once Per Turn] When your opponent activates an Event, your opponent must place 1 card from their hand at the bottom of their deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-044.jpg"
+  },
+  {
+    "id": "OP06-018",
+    "name": "Gum-Gum King Kong Gatling",
+    "type": "event",
+    "colors": [
+      "red"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "FILM Straw Hat Crew"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[Main] Up to 1 of your Leader or Character cards gains +3000 power during this turn. Then, if your opponent has a Character with 7000 power or more, up to 1 of your Leader or Character cards gains +1000 power during this turn.\n[Trigger] K.O. up to 1 of your opponent's Characters with 5000 power or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-018.jpg"
+  },
+  {
+    "id": "OP06-114",
+    "name": "Wyper",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Sky Island Shandian Warrior"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[On Play] You may place 1 Stage with a cost of 1 at the bottom of the owner's deck: Look at 5 cards from the top of your deck; reveal up to 1 [Upper Yard] or [Shandian Warrior] type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-114.jpg"
+  },
+  {
+    "id": "OP06-110",
+    "name": "Nekomamushi",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano Minks The Akazaya Nine"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[DON!! x2] This Character can also attack your opponent's active Characters.\n[Trigger] If your opponent has 3 or less Life cards, play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-110.jpg"
+  },
+  {
+    "id": "OP06-010",
+    "name": "Douglas Bullet",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM The Pirates Fest"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "If your Leader has the \"FILM\" type, this Character gains [Blocker].\n(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-010.jpg"
+  },
+  {
+    "id": "OP06-002",
+    "name": "Inazuma",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Revolutionary Army"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "If this Character has 7000 power or more, this Character gains [Banish].\n(When this card deals damage, the target card is trashed without activating its Trigger.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-002.jpg"
+  },
+  {
+    "id": "OP06-090",
+    "name": "Dr. Hogback",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] You may return 2 cards from your trash to the bottom of your deck in any order: Add up to 1 \"Thriller Bark Pirates\" type card other than [Dr. Hogback] from your trash to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-090.jpg"
+  },
+  {
+    "id": "OP06-067",
+    "name": "Vinsmoke Yonji (067)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "If the number of DON!! cards on your field is equal to or less than the number on your opponent's field, this Character gains +1000 power.\n[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-067.jpg"
+  },
+  {
+    "id": "OP06-087",
+    "name": "Cerberus",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-087.jpg"
+  },
+  {
+    "id": "OP06-022",
+    "name": "Yamato",
+    "type": "leader",
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 4,
+    "attribute": "strike",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "OP-06",
+    "rarity": "L",
+    "effectText": "[Double Attack] (This card deals 2 damage.)\n[Activate:Main] [Once Per Turn] If your opponent has 3 or less Life cards, give up to 2 rested DON!! cards to 1 of your Characters.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-022.jpg"
+  },
+  {
+    "id": "OP06-098",
+    "name": "Thriller Bark",
+    "type": "stage",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": 0,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Activate:Main] (1) (You may rest the specified number of DON!! cards in your cost area.) You may rest this Stage: If your Leader has the [Thriller Bark Pirates] type, play up to 1 [Thriller Bark Pirates] type Character card with a cost of 2 or less from your trash rested.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-098.jpg"
+  },
+  {
+    "id": "OP06-041",
+    "name": "The Ark Noah",
+    "type": "stage",
+    "colors": [
+      "green"
+    ],
+    "cost": 6,
+    "power": null,
+    "counter": 0,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Fish-Man Island"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[On Play] Rest all of your opponent's Characters.\n[Trigger] Play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-041.jpg"
+  },
+  {
+    "id": "OP06-064",
+    "name": "Vinsmoke Niji (064)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Activate:Main] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.)You may trash this Character: If your Leader has the [GERMA 66] type, play up to 1 [Vinsmoke Niji] with a cost of 5 from your hand or trash.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-064.jpg"
+  },
+  {
+    "id": "OP06-074",
+    "name": "Zephyr (Navy)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 7,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[On Play] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Negate the effect of up to 1 of your opponent's Characters during this turn. Then, if that Character has 5000 power or less, K.O. it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-074.jpg"
+  },
+  {
+    "id": "OP06-102",
+    "name": "Kamakiri",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Sky Island Shandian Warrior"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Activate:Main][Once Per Turn] You may place 1 Stage with a cost of 1 at the bottom of the owner's deck: K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-102.jpg"
+  },
+  {
+    "id": "OP06-039",
+    "name": "You Ain't Even Worth Killing Time!!",
+    "type": "event",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[Main] Choose one:\n• Rest up to 1 of your opponent's Characters with a cost of 6 or less.\n• K.O. up to 1 of your opponent's rested Characters with a cost of 6 or less.\n[Trigger] Activate this card's [Main] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-039.jpg"
+  },
+  {
+    "id": "OP06-028",
+    "name": "Zeo",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Fish-Man New Fish-Man Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[DON!! x1][When Attacking] If your Leader has the [New FIsh-Man Pirates] type, set up to 1 of your DON!! cards as active and this Character gains +1000 power during this turn. Then, add 1 card from the top of your Life cards to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-028.jpg"
+  },
+  {
+    "id": "OP06-021",
+    "name": "Perona (021)",
+    "type": "leader",
+    "colors": [
+      "black",
+      "green"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 4,
+    "attribute": "special",
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "L",
+    "effectText": "[Activate:Main] [Once Per Turn] Choose one:\n• Rest up to 1 of your opponent's Characters with a cost of 4 or less.\n• Give up to 1 of your opponent's Characters -1 cost tot your opponent's during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-021.jpg"
+  },
+  {
+    "id": "OP06-109",
+    "name": "Denjiro",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano The Akazaya Nine"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[DON!! x2] If your opponent has 3 or less Life cards, this Character cannot be K.O.'d by effects.\n[Trigger] If your opponent has 3 or less Life cards, play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-109.jpg"
+  },
+  {
+    "id": "OP06-045",
+    "name": "Kuzan",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[On Play] Draw 2 cards and place 2 cards from your hand at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-045.jpg"
+  },
+  {
+    "id": "OP06-073",
+    "name": "Shiki",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM Golden Lion Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n[On Play] If you have 8 or more DON!! cards on your field, draw 1 card and trash 1 card from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-073.jpg"
+  },
+  {
+    "id": "OP06-085",
+    "name": "Kumacy",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[DON!! x2][Your Turn] This Character gains +1000 power for every 5 cards in your trash.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-085.jpg"
+  },
+  {
+    "id": "OP06-091",
+    "name": "Victoria Cindry",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[On Play] If your Leader has the [Thriller Bark Pirates] type, trash 5 cards from the top of your deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-091.jpg"
+  },
+  {
+    "id": "OP06-038",
+    "name": "The Billion-fold World Trichiliocosm",
+    "type": "event",
+    "colors": [
+      "green"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew Dressrosa"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, if you have 8 or more rested cards, that card gains an additional +2000 power during this battle.\n[Trigger] K.O. up to 1 of your opponent's rested Characters with a cost of 3 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-038.jpg"
+  },
+  {
+    "id": "OP06-011",
+    "name": "Tot Musica",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[Activate:Main] [Once Per Turn] You may rest 1 of your [Uta] cards: This Character gains +5000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-011.jpg"
+  },
+  {
+    "id": "OP06-082",
+    "name": "Inuppe",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[On Play] / [On K.O.] If your Leader has the [Thriller Bark Pirates] type, draw 2 cards and trash 2 cards from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-082.jpg"
+  },
+  {
+    "id": "OP06-100",
+    "name": "Inuarashi",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano Minks The Akazaya Nine"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[DON!! x2][When Attacking] You may trash 1 card from your hand: K.O. up to 1 of your opponent's Characters with a cost equal to or less than the number of your opponent's Life cards.\n[Trigger] If your opponent has 3 or less Life cards, play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-100.jpg"
+  },
+  {
+    "id": "OP06-020",
+    "name": "Hody Jones (020)",
+    "type": "leader",
+    "colors": [
+      "green"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "attribute": "strike",
+    "traits": [
+      "Fish-Man New Fish-Man Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "L",
+    "effectText": "[Activate:Main] You may rest this Leader: Rest up to 1 of your opponent's DON!! cards or Characters with a cost of 3 or less. Then, you cannot add Life cards to your hand using your own effects during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-020.jpg"
+  },
+  {
+    "id": "OP06-066",
+    "name": "Vinsmoke Yonji (066)",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "The Vinsmoke Family GERMA 66"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Activate:Main] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.)You may trash this Character: If your Leader has the [GERMA 66] type, play up to 1 [Vinsmoke Yonji] with a cost of 4 from your hand or trash.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-066.jpg"
+  },
+  {
+    "id": "OP06-083",
+    "name": "Oars",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Giant Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "This Character cannot attack.\n[Activate:Main] You may K.O. 1 of your [Thriller Bark Pirates] type Characters: This Character's effect is negated during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-083.jpg"
+  },
+  {
+    "id": "OP06-001",
+    "name": "Uta",
+    "type": "leader",
+    "colors": [
+      "purple",
+      "red"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 4,
+    "attribute": "special",
+    "traits": [
+      "FILM"
+    ],
+    "set": "OP-06",
+    "rarity": "L",
+    "effectText": "[When Attacking] You may trash 1 \"FILM\" type card from your hand: Give up to 1 of your opponent's Characters -2000 power during this turn. Then, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-001.jpg"
+  },
+  {
+    "id": "OP06-031",
+    "name": "Hatchan",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Fish-Man Former Arlong Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Trigger] Play up to 1 [Fish-Man] or [Merfolk] type Character card with a cost of 3 or less from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-031.jpg"
+  },
+  {
+    "id": "OP06-019",
+    "name": "Blue Dragon Seal Water Stream",
+    "type": "event",
+    "colors": [
+      "red"
+    ],
+    "cost": 3,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "FILM Straw Hat Crew"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Main] K.O. up to 1 of your opponent's Characters with 5000 power or less.\n[Trigger] K.O. up to 1 of your opponent's Characters with 4000 power or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-019.jpg"
+  },
+  {
+    "id": "OP06-032",
+    "name": "Hammond",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Fish-Man New Fish-Man Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-032.jpg"
+  },
+  {
+    "id": "OP06-089",
+    "name": "Taralan",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[On Play] / [On K.O.] Trash 3 cards from the top of your deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-089.jpg"
+  },
+  {
+    "id": "OP06-008",
+    "name": "Schneider",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "FILM Mugiwara Chase"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-008.jpg"
+  },
+  {
+    "id": "OP06-080",
+    "name": "Gecko Moria (080)",
+    "type": "leader",
+    "colors": [
+      "black"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "attribute": "special",
+    "traits": [
+      "The Seven Warlords of the Sea Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "L",
+    "effectText": "[DON!!×1] [When Attacking] 2 (You may rest the specified number of DON!! cards in your cost area.) You may trash 1 card from your hand: Trash 2 cards from the top of your deck and play up to 1 \"Thriller Bark Pirates\" type Character card with a cost of 4 or less from your trash.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-080.jpg"
+  },
+  {
+    "id": "OP06-024",
+    "name": "Ikaros Much",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Fish-Man New Fish-Man Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[On Play] If your Leader has the [New FIsh-Man Pirates] type, play up to 1 [Fish-Man] type Character card with a cost of 4 or less from your hand. Then, add 1 card from the top of your Life cards to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-024.jpg"
+  },
+  {
+    "id": "OP06-006",
+    "name": "Saga",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "FILM Asuka Island"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[DON!! x1][When Attacking] This Character gains +1000 power until the start of your next turn. Then, trash 1 of your [FILM] type Characters at the end of this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-006.jpg"
+  },
+  {
+    "id": "OP06-048",
+    "name": "Zeff",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "East Blue"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Your Turn] When your opponent activates [Blocker] or an Event, if your Leader has the [East Blue] type, you may trash 4 cards from the top of your deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-048.jpg"
+  },
+  {
+    "id": "OP06-054",
+    "name": "Borsalino",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "If you have 4 or less cards in your hand, this Character gains [Blocker].\n(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-054.jpg"
+  },
+  {
+    "id": "OP06-057",
+    "name": "But I Will Never Doubt a Woman's Tears!!!!",
+    "type": "event",
+    "colors": [
+      "blue"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew Dressrosa"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Main] Up to 1 of your Leader or Character cards gains +1000 power during this turn. Then, reveal 1 card from the top of your deck, play up to 1 Character card with a cost of 2, and place the rest at the top or bottom of your deck.\n[Trigger] Play up to 1 Character card with a cost of 2 from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-057.jpg"
+  },
+  {
+    "id": "OP06-116",
+    "name": "Reject",
+    "type": "event",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 4,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Sky Island Shandian Warrior"
+    ],
+    "set": "OP-06",
+    "rarity": "R",
+    "effectText": "[Main] Choose one:\n• K.O. up to 1 of your opponent's Characters with a cost of 5 or less.\n• If your opponent has 1 Life card, deal 1 damage to your opponent.\nThen, add 1 card from the top of your Life cards to your hand.\n[Trigger] Draw 1 cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-116.jpg"
+  },
+  {
+    "id": "OP06-046",
+    "name": "Sakazuki",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[On Play] Place up to 1 Character with a cost of 2 or less at the bottom of the owner's deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-046.jpg"
+  },
+  {
+    "id": "OP06-055",
+    "name": "Monkey.D.Garp",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[DON!! x2][When Attacking] If you have 4 or less cards in your hand, your opponent cannot activate [Blocker] during this battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-055.jpg"
+  },
+  {
+    "id": "OP06-112",
+    "name": "Raizo",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Land of Wano The Akazaya Nine"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[When Attacking] You may trash 1 card from your hand: Rest up to 1 of your opponent's DON!! cards.\n[Trigger] If your opponent has 3 or less Life cards, play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-112.jpg"
+  },
+  {
+    "id": "OP06-103",
+    "name": "Kawamatsu",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Fish-Man Land of Wano The Akazaya Nine"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[When Attacking] You may trash 2 cards from your hand: Add up to 1 of your Characters with 0 power to the top or bottom of the owner's Life cards face-up.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-103.jpg"
+  },
+  {
+    "id": "OP06-029",
+    "name": "Daruma",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Fish-Man New Fish-Man Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[DON!! x1][When Attacking][Once Per Turn] If your Leader has the [New FIsh-Man Pirates] type, set this Character as active and this Character gains +1000 power during this turn. Then, add 1 card from the top of your Life cards to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-029.jpg"
+  },
+  {
+    "id": "OP06-084",
+    "name": "Jigoro of the Wind",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[On K.O.] Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-084.jpg"
+  },
+  {
+    "id": "OP06-096",
+    "name": "...Nothing...at All!!!",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 3,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Counter] You may add 1 card from the top of your Life cards to your hand.: Your Characters with a cost of 7 or less cannot be K.O.'d in battle during this turn.\n[Trigger] Activate this card's [Counter] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-096.jpg"
+  },
+  {
+    "id": "OP06-117",
+    "name": "The Ark Maxim",
+    "type": "stage",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": 0,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Sky Island"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Activate:Main][Once Per Turn] You may rest this card and 1 of your [Enel] cards: K.O. all of your opponent's Characters with a cost of 2 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-117.jpg"
+  },
+  {
+    "id": "OP06-099",
+    "name": "Aisa",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Sky Island"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[On Play] Look at up to 1 card from the top of your or your opponent's Life cards and place it at the top or bottom of the Life cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-099.jpg"
+  },
+  {
+    "id": "OP06-034",
+    "name": "Hyouzou",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Fish-Man"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Activate:Main][Once Per Turn] Rest up to 1 of your opponent's Characters with a cost of 4 or less and this Character gains +1000 power during this turn. Then, add 1 card from the top of your Life cards to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-034.jpg"
+  },
+  {
+    "id": "OP06-095",
+    "name": "Shadows Asgard",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "The Seven Warlords of the Sea Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "[Main] / [Counter] Your Leader gains +1000 power during this turn. Then, you may K.O. any number of your [Thriller Bark Pirates] type Characters with a cost of 2 or less. Your Leader gains an additional +1000 power during this turn for every Character K.O.'d.\n[Trigger] Draw 2 cards and trash 1 card from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-095.jpg"
+  },
+  {
+    "id": "OP06-088",
+    "name": "Sai",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Happosui Army Dressrosa"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "If your Leader has the [Dressrosa] type and is active, this Character gains +2000 power.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-088.jpg"
+  },
+  {
+    "id": "OP06-030",
+    "name": "Dosun",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Fish-Man New Fish-Man Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[When Attacking] If your Leader has the [New Fish-Man Pirates] type, this Character cannot be K.O.'d in battle and gains +2000 power until the start of your next turn. Then, add 1 card from the top of your Life cards to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-030.jpg"
+  },
+  {
+    "id": "OP06-015",
+    "name": "Lily Carnation",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 4,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM Omatsuri Island"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Activate:Main][Once Per Turn] You may trash 1 of your Characters with 6000 power or more: Play up to 1 [FILM] type Character card with 2000 to 5000 power from your trash rested.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-015.jpg"
+  },
+  {
+    "id": "OP06-040",
+    "name": "Shark Arrows",
+    "type": "event",
+    "colors": [
+      "green"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Fish-Man New Fish-Man Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Main] K.O. up to 2 of your opponent's rested Characters with a cost of 3 or less.\n[Trigger] Activate this card's [Main] effect.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-040.jpg"
+  },
+  {
+    "id": "OP06-108",
+    "name": "Tenguyama Hitetsu",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Land of Wano Kouzuki Clan"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Trigger] Up to 1 of your [Land of Wano] type Leader or Character cards gains +2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-108.jpg"
+  },
+  {
+    "id": "OP06-052",
+    "name": "Tokikake",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[DON!! x1] If you have 4 or less cards in your hand, this Character cannot be K.O.'d in battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-052.jpg"
+  },
+  {
+    "id": "OP06-017",
+    "name": "Meteor-Strike of Love",
+    "type": "event",
+    "colors": [
+      "red"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "FILM Straw Hat Crew"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[Main] / [Counter] You may add 1 card from the top of your Life cards to your hand: Up to 1 of your Leader or Character cards gains +3000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-017.jpg"
+  },
+  {
+    "id": "OP06-094",
+    "name": "Lola",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Thriller Bark Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-094.jpg"
+  },
+  {
+    "id": "OP06-005",
+    "name": "Gasparde",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 6,
+    "power": 8000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM Former Navy Gasparde Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-005.jpg"
+  },
+  {
+    "id": "OP06-049",
+    "name": "Sengoku",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-049.jpg"
+  },
+  {
+    "id": "OP06-105",
+    "name": "Genbo",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Sky Island Shandian Warrior"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-105.jpg"
+  },
+  {
+    "id": "OP06-026",
+    "name": "Koushirou",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 3,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Frost Moon Village"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[On Play] Set up to 1 of your \"Slash\" attribute Characters with a cost of 4 or less as active. Then, you cannot attack a Leader during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-026.jpg"
+  },
+  {
+    "id": "OP06-012",
+    "name": "Bear.King",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "FILM Trump Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "UC",
+    "effectText": "If your opponent has a Leader or Character with a base power of 6000 or more, this Character cannot be K.O.'d in battle.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-012.jpg"
+  },
+  {
+    "id": "OP06-037",
+    "name": "Wadatsumi",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 6,
+    "power": 8000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Fish-Man Flying Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-037.jpg"
+  },
+  {
+    "id": "OP06-070",
+    "name": "Eldoraggo",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM Eldoraggo Crew"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-070.jpg"
+  },
+  {
+    "id": "OP06-014",
+    "name": "Ratchet",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 1,
+    "power": 0,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "FILM Mecha Island"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[On Your Opponent's Attack] You may trash any number of [FILM] type cards from your hand. Your Leader or 1 of your Characters gains +1000 power during this battle for every card trashed.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-014.jpg"
+  },
+  {
+    "id": "OP06-053",
+    "name": "Jaguar.D.Saul",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Giant Navy"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[On K.O.] Place up to 1 Character with a cost of 2 or less at the bottom of the owner's deck.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-053.jpg"
+  },
+  {
+    "id": "OP06-075",
+    "name": "Count Battler",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM Crown Island"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[On Play] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Rest up to 2 of your opponent's Characters with a cost of 2 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-075.jpg"
+  },
+  {
+    "id": "OP06-027",
+    "name": "Gyro",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 1,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Gyro Pirates"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[On K.O.] Rest up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-027.jpg"
+  },
+  {
+    "id": "OP06-004",
+    "name": "Baron Omatsuri",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "FILM Omatsuri Island"
+    ],
+    "set": "OP-06",
+    "rarity": "C",
+    "effectText": "[On Play] Play up to 1 [Lily Carnation] from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-004.jpg"
+  }
+]

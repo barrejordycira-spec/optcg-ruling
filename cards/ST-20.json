@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ST20-005",
+    "name": "Charlotte Linlin",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "The Four Emperors Big Mom Pirates"
+    ],
+    "set": "ST-20",
+    "rarity": "SR",
+    "effectText": "[On Play] You may trash 1 card from your hand: Your opponent chooses one:\n\n• Your opponent trashes 2 cards from their hand.\n\n• Trash 1 card from the top of your opponent's Life cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST20-005.jpg"
+  },
+  {
+    "id": "ST20-001",
+    "name": "Charlotte Katakuri (ST20-001)",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "ST-20",
+    "rarity": "SR",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\n\n[Activate: Main] [Once Per Turn] You may turn 1 card from the top of your Life cards face-up: Give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST20-001.jpg"
+  },
+  {
+    "id": "ST20-003",
+    "name": "Charlotte Brulee",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "ST-20",
+    "rarity": "C",
+    "effectText": "[Trigger] Look at up to 1 card from the top of your or your opponent's Life cards, and place it at the top or bottom of the Life cards. Then, add this card to your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST20-003.jpg"
+  },
+  {
+    "id": "ST20-004",
+    "name": "Charlotte Pudding (ST20-004)",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 3,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "ST-20",
+    "rarity": "C",
+    "effectText": "[On Play] You may add 1 card from the top of your Life cards to your hand: Set up to 1 of your \"Big Mom Pirates\" type Characters with a cost of 3 or less as active.\n\n[Trigger] Rest up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST20-004.jpg"
+  },
+  {
+    "id": "ST20-002",
+    "name": "Charlotte Cracker",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "ST-20",
+    "rarity": "C",
+    "effectText": "[Once Per Turn] If this Character would be K.O.'d by an effect, you may trash 1 card from the top of your Life cards instead.\n\n[Trigger] You may trash 1 card from your hand: Play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST20-002.jpg"
+  }
+]

@@ -1,0 +1,622 @@
+[
+  {
+    "id": "PRB02-008",
+    "name": "Marco",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Former Whitebeard Pirates Land of Wano"
+    ],
+    "set": "PRB-02",
+    "rarity": "SR",
+    "effectText": "[Blocker](After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On K.O.] Draw 2 cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-008.jpg"
+  },
+  {
+    "id": "PRB02-002",
+    "name": "Trafalgar Law - PRB02-002",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Heart Pirates The Seven Warlords of the Sea Punk Hazard"
+    ],
+    "set": "PRB-02",
+    "rarity": "SR",
+    "effectText": "[Once Per Turn] If this Character would be removed from the field by your opponent's effect, you may give this Character -2000 power during this turn instead.[When Attacking] Give up to 1 of your opponent's Characters -2000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-002.jpg"
+  },
+  {
+    "id": "PRB02-012",
+    "name": "Nami",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 \"Straw Hat Crew\" type card other than [Nami] and add it to your hand. Then, place the rest at the bottom of your deck in any order.[Trigger] Play this card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-012.jpg"
+  },
+  {
+    "id": "PRB02-018",
+    "name": "Portgas.D.Ace - PRB02-018",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Whitebeard Pirates"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[On Play] If you have a face-up Life card, play up to 1 [Sabo], [Portgas.D.Ace], or [Monkey.D.Luffy] with a cost of 2 from your hand or trash.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-018.jpg"
+  },
+  {
+    "id": "PRB02-001",
+    "name": "Koby",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Navy SWORD"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[Opponent's Turn] If your Leader has the \"Navy\" type, this Character gains +1000 power.[When Attacking] K.O. up to 1 of your opponent's Characters with 3000 base power or less. Then, if you have 6 or less cards in your hand, draw 1 card.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-001.jpg"
+  },
+  {
+    "id": "PRB02-010",
+    "name": "Charlotte Pudding - PRB02-010",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 7,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "PRB-02",
+    "rarity": "SR",
+    "effectText": "[On Play] DON!! -2: If your Leader has the \"Big Mom Pirates\" type and your opponent has 6 or more DON!! cards on their field, draw 2 cards. Then, play up to 1 \"Big Mom Pirates\" type Character card with 6000 to 8000 power from your hand.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-010.jpg"
+  },
+  {
+    "id": "PRB02-014",
+    "name": "Sabo - PRB02-014",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 6,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Revolutionary Army Dressrosa"
+    ],
+    "set": "PRB-02",
+    "rarity": "SR",
+    "effectText": "If you have 15 or more cards in your trash, give this card in your hand -3 cost.[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-014.jpg"
+  },
+  {
+    "id": "PRB02-006",
+    "name": "Roronoa Zoro - PRB02-006",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 4000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Straw Hat Crew Supernovas"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[Opponent's Turn] If this Character would be rested by your opponent's Character's effect, you may rest 1 of your other Characters instead.[Blocker]",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-006.jpg"
+  },
+  {
+    "id": "PRB02-017",
+    "name": "Boa Hancock",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 5,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "FILM Kuja Pirates The Seven Warlords of the Sea"
+    ],
+    "set": "PRB-02",
+    "rarity": "SR",
+    "effectText": "[Once Per Turn] You may trash 1 card with a [Trigger] from your hand: Your opponent's rested Leader or up to 1 of your opponent's Characters other than [Monkey.D.Luffy] cannot attack until the end of your opponent's next End Phase.[Trigger] K.O up to 1 of your opponent's Characters with a cost of 4 or less",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-017.jpg"
+  },
+  {
+    "id": "PRB02-004",
+    "name": "Jewelry Bonney -PRB02-004",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Bonney Pirates Supernovas"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Your Opponent's Attack] [Once Per Turn] Set up to 1 of your DON!! cards as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-004_GgQQXru.jpg"
+  },
+  {
+    "id": "PRB02-016",
+    "name": "Otama",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 2,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[Activate: Main] You may rest this Character and add 1 card from the top or bottom of your Life cards to your hand: Up to 1 of your Leader or Character cards gains +3000 power during this turn.[Trigger] Rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-016.jpg"
+  },
+  {
+    "id": "PRB02-013",
+    "name": "Gecko Moria",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 0,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "The Seven Warlords of the Sea Thriller Bark Pirates"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[On Play] If your Leader has the \"Thriller Bark Pirates\" type, play up to 1 Character card with a cost of 4 or less from your trash rested. Then, give up to 1 rested DON!! card to your Leader or 1 of your Characters.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-013.jpg"
+  },
+  {
+    "id": "PRB02-005",
+    "name": "Monkey.D.Luffy - PRB02-005",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Straw Hat Crew Supernovas"
+    ],
+    "set": "PRB-02",
+    "rarity": "SR",
+    "effectText": "[Your Turn] [On Play] If your Leader is multicolored and your opponent has 7 or less DON!! cards on their field, your opponent rests 1 of their active DON!! cards at the start of their next Main Phase.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-005.jpg"
+  },
+  {
+    "id": "PRB02-011",
+    "name": "Donquixote Doflamingo",
+    "type": "character",
+    "colors": [
+      "purple"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Donquixote Pirates The Seven Warlords of the Sea"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[Blocker][On Play] If your Leader is multicolored, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-011.jpg"
+  },
+  {
+    "id": "PRB02-003",
+    "name": "Lucky.Roux",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 4,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "ranged",
+    "traits": [
+      "Red-Haired Pirates"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)[On Play] You may trash 1 Character card with 6000 power or more from your hand: Draw 2 cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-003.jpg"
+  },
+  {
+    "id": "PRB02-007",
+    "name": "Jinbe - PRB02-007",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "strike",
+    "traits": [
+      "Fish-Man The Seven Warlords of the Sea The Sun Pirates"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[On Play] Look at 5 cards from the top of your deck; reveal up to 1 \"The Seven Warlords of the Sea\" type card other than [Jinbe] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-007.jpg"
+  },
+  {
+    "id": "PRB02-015",
+    "name": "Shiryu",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "slash",
+    "traits": [
+      "Blackbeard Pirates"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "If your Leader has the \"Blackbeard Pirates\" type, this Character gains [Blocker] and +4 cost.[On K.O.] If your Leader has the \"Blackbeard Pirates\" type, K.O. up to 1 of your opponent's Characters with a base cost of 4 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-015.jpg"
+  },
+  {
+    "id": "PRB02-009",
+    "name": "Mr.3(Galdino) - PRB02-009",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 2,
+    "power": 1000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Former Baroque Works Cross Guild"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "This effect can be activated when this Character is rested by your opponent's effect. You may trash this Character and draw 2 cards.[Blocker]",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-009.jpg"
+  },
+  {
+    "id": "OP10-018",
+    "name": "Ten-Layer Igloo (Pirate Foil)",
+    "type": "event",
+    "colors": [
+      "red"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Donquixote Pirates Punk Hazard"
+    ],
+    "set": "PRB-02",
+    "rarity": "C",
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +3000 power during this battle. Then, give up to 1 of your opponent's Leader or Character cards 2000 power during this turn.[Trigger] Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP10-018_OO8g5lU.jpg"
+  },
+  {
+    "id": "OP09-078-r1",
+    "name": "Gum-Gum Giant (Reprint)",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew The Four Emperors"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[Counter] DON!! 2, You may trash 1 card from your hand: If your Leader has the \"Straw Hat Crew\" type, up to 1 of your Leader or Character cards gains +4000 power during this battle. Then, draw 2 cards.Disclaimer: This card was reprinted from the original set with changes to the copyright information (Note: the original print did not include \"EN\" at the end of the copyright).",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP09-078_r1.jpg"
+  },
+  {
+    "id": "PRB02-016",
+    "name": "Otama (Alternate Art)",
+    "type": "character",
+    "colors": [
+      "yellow"
+    ],
+    "cost": 2,
+    "power": 0,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Land of Wano"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[Activate: Main] You may rest this Character and add 1 card from the top or bottom of your Life cards to your hand: Up to 1 of your Leader or Character cards gains +3000 power during this turn.[Trigger] Rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/PRB02-016_p1.jpg"
+  },
+  {
+    "id": "OP07-076",
+    "name": "Slow-Slow Beam Sword (Pirate Foil)",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Foxy Pirates"
+    ],
+    "set": "PRB-02",
+    "rarity": "C",
+    "effectText": "[Counter] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, rest up to 1 of your opponent's Characters.[Trigger] Add up to 1 DON!! card from your DON!! deck and set it as active.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP07-076_p1.jpg"
+  },
+  {
+    "id": "OP04-016_P1",
+    "name": "Bad Manners Kick Course (Alternate Art)",
+    "type": "event",
+    "colors": [
+      "red"
+    ],
+    "cost": 0,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Alabasta Straw Hat Crew"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[Counter] You may trash 1 card from your hand: Up to 1 of your Leader or Character cards gains +3000 power during this battle.[Trigger] Give up to 1 of your opponent's Leader or Character cards -3000 power during this turn.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP04-016_p1.jpg"
+  },
+  {
+    "id": "P-044",
+    "name": "Sabo - P-044 (Pirate Foil)",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Revolutionary Army"
+    ],
+    "set": "PRB-02",
+    "rarity": "PR",
+    "effectText": "[DON!! x1] If you have 4 or less cards in your hand, this Character gains +2000 power.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/P-044.jpg"
+  },
+  {
+    "id": "OP06-047",
+    "name": "Charlotte Pudding (SP)",
+    "type": "character",
+    "colors": [
+      "blue"
+    ],
+    "cost": 4,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "wisdom",
+    "traits": [
+      "Big Mom Pirates"
+    ],
+    "set": "PRB-02",
+    "rarity": "R",
+    "effectText": "[On Play] Your opponent returns all cards in their hand to their deck and shuffles their deck. Then, your opponent draws 5 cards.",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP06-047_p1.jpg"
+  },
+  {
+    "id": "EB01-038",
+    "name": "Oh Come My Way (Reprint)",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Baroque Works"
+    ],
+    "set": "PRB-02",
+    "rarity": "C",
+    "effectText": "[Counter] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your Leader's type includes \"Baroque Works\", select 1 of your Characters. Change the attack target to the selected Character.[Trigger] DON!! -1: Draw 2 cards.Disclaimer: This card was reprinted from the original set with changes to the copyright information (Note: the original print did not include \"EN\" at the end of the copyright).",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/EB01-038_r1.jpg"
+  },
+  {
+    "id": "OP07-076",
+    "name": "Slow-Slow Beam Sword (Reprint)",
+    "type": "event",
+    "colors": [
+      "purple"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Foxy Pirates"
+    ],
+    "set": "PRB-02",
+    "rarity": "C",
+    "effectText": "[Counter] DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, rest up to 1 of your opponent's Characters.[Trigger] Add up to 1 DON!! card from your DON!! deck and set it as active.Disclaimer: This card was reprinted from the original set with changes to the copyright information (Note: the original print did not include \"EN\" at the end of the copyright).",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP07-076_r1.jpg"
+  },
+  {
+    "id": "OP09-084",
+    "name": "Catarina Devon (Reprint)",
+    "type": "character",
+    "colors": [
+      "black"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Blackbeard Pirates"
+    ],
+    "set": "PRB-02",
+    "rarity": "UC",
+    "effectText": "[Activate: Main] [Once Per Turn] If your Leader has the \"Blackbeard Pirates\" type, this Character gains [Double Attack], [Banish] or [Blocker] until the end of your opponent's next turn.Disclaimer: This card was reprinted from the original set with changes to the copyright information (Note: the original print did not include \"EN\" at the end of the copyright).",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP09-084_r1.jpg"
+  },
+  {
+    "id": "OP09-033",
+    "name": "Nico Robin - OP09-033 (Reprint)",
+    "type": "character",
+    "colors": [
+      "green"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "attribute": "straw hat crew odyssey",
+    "traits": [
+      "Straw Hat Crew ODYSSEY"
+    ],
+    "set": "PRB-02",
+    "rarity": "C",
+    "effectText": "[On Play] If you have 2 or more rested Characters, none of your \"ODYSSEY\" or \"Straw Hat Crew\" type Characters can be K.O.'d by effects until the end of your opponent's next turn.Disclaimer: This card was reprinted from the original set with changes to the copyright information (Note: the original print did not include \"EN\" at the end of the copyright).",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP09-033_r1.jpg"
+  },
+  {
+    "id": "ST14-016",
+    "name": "I Have My Crew!! (Reprint)",
+    "type": "event",
+    "colors": [
+      "black"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "attribute": null,
+    "traits": [
+      "Straw Hat Crew"
+    ],
+    "set": "PRB-02",
+    "rarity": "C",
+    "effectText": "[Main] Draw 1 card. Then, up to 1 of your Characters gains +3 cost until the end of your opponent's next turn.[Trigger] K.O. up to 1 of your opponent's Characters with a cost of 3 or less.Disclaimer: This card was reprinted from the original set with changes to the copyright information (Note: the original print did not include \"EN\" at the end of the copyright).",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/ST14-016_r1.jpg"
+  },
+  {
+    "id": "OP09-014",
+    "name": "Limejuice (Reprint)",
+    "type": "character",
+    "colors": [
+      "red"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 2000,
+    "life": null,
+    "attribute": "special",
+    "traits": [
+      "Red-Haired Pirates"
+    ],
+    "set": "PRB-02",
+    "rarity": "UC",
+    "effectText": "[On Play] Your opponent cannot activate up to 1 [Blocker] Character that has 4000 power or less during this turn.Disclaimer: This card was reprinted from the original set with changes to the copyright information (Note: the original print did not include \"EN\" at the end of the copyright).",
+    "imageUrl": "https://optcgapi.com/media/static/Card_Images/OP09-014_r1_hX8Bgxy.jpg"
+  }
+]
