@@ -51,21 +51,14 @@ export function loadRulesJSON(): string {
   return cachedRules
 }
 
-/** Compact catalog: one line per card for the system prompt */
+/** Light catalog: ID + name + type + colors only (saves ~110k tokens vs full) */
 export function buildCatalog(): string {
   if (cachedCatalog) return cachedCatalog
 
   const cards = loadAllCards()
-  const lines = cards.map(c => {
-    const colors = c.colors.join('/')
-    const cost = c.cost !== null ? `C:${c.cost}` : ''
-    const power = c.power !== null ? `P:${c.power}` : ''
-    const counter = c.counter !== null ? `CT:${c.counter}` : ''
-    const keywords = extractKeywords(c.effectText)
-    const kwStr = keywords.length > 0 ? `[${keywords.join(',')}]` : ''
-    const effect = c.effectText ? c.effectText.replace(/\n/g, ' ').substring(0, 200) : ''
-    return `${c.id} "${c.name}" ${c.type} ${colors} ${cost} ${power} ${counter} ${kwStr} | ${effect}`
-  })
+  const lines = cards.map(c =>
+    `${c.id} ${c.name} ${c.type} ${c.colors.join('/')}`
+  )
 
   cachedCatalog = lines.join('\n')
   return cachedCatalog
@@ -101,6 +94,17 @@ const COLOR_MAP: Record<string, string> = {
 const TYPE_MAP: Record<string, string> = {
   personnage: 'character', evenement: 'event', lieu: 'stage',
 }
+
+const KEYWORD_FR_MAP: Record<string, string> = {
+  bloqueur: 'blocker', hate: 'rush', declenchement: 'trigger',
+  bannir: 'banish', contre: 'counter',
+}
+
+const EFFECT_KEYWORDS = [
+  'Rush', 'Blocker', 'Double Attack', 'Banish', 'Trigger',
+  'On Play', 'When Attacking', 'On K.O.', 'Counter', 'Main',
+  'Activate: Main', 'On Block', 'End of Your Turn',
+]
 
 const STOP_WORDS = new Set([
   'le', 'la', 'les', 'un', 'une', 'des', 'du', 'de', 'et', 'ou', 'est',
@@ -142,12 +146,12 @@ export function findRelevantCards(query: string): SearchResult {
   // 2. Prepare search terms (translate FR→EN, filter stop words)
   const rawTerms = query.toLowerCase().split(/\s+/)
   const terms = rawTerms
-    .map(t => COLOR_MAP[t] || TYPE_MAP[t] || t)
+    .map(t => COLOR_MAP[t] || TYPE_MAP[t] || KEYWORD_FR_MAP[t] || t)
     .filter(t => t.length > 2 && !STOP_WORDS.has(t))
 
   if (terms.length === 0) return { cards: foundCards, cardIds: foundIds }
 
-  // 3. Score remaining cards by name/trait match
+  // 3. Score remaining cards by name/trait/keyword match
   const scored: Array<{ card: Card; score: number }> = []
   for (const card of cards) {
     if (foundIds.includes(card.id)) continue
@@ -156,15 +160,20 @@ export function findRelevantCards(query: string): SearchResult {
     const traitsLower = (card.traits || []).join(' ').toLowerCase()
     const typeLower = card.type.toLowerCase()
     const colorsLower = card.colors.join(' ').toLowerCase()
+    const effectLower = (card.effectText || '').toLowerCase()
 
     let score = 0
     for (const term of terms) {
       // Name match is highest priority
-      if (nameLower.includes(term)) score += 3
+      if (nameLower.includes(term)) score += 5
+      // Keyword match in effect text (Blocker, Rush, Trigger, etc.)
+      else if (effectLower.includes(`[${term}]`)) score += 3
+      // Partial effect keyword match (e.g. "blocker" in "[Blocker]")
+      else if (EFFECT_KEYWORDS.some((kw: string) => kw.toLowerCase().includes(term) && effectLower.includes(kw.toLowerCase()))) score += 3
       // Type/color match
       else if (typeLower === term || colorsLower.includes(term)) score += 1
       // Trait match
-      else if (traitsLower.includes(term)) score += 1
+      else if (traitsLower.includes(term)) score += 2
     }
 
     if (score > 0) scored.push({ card, score })

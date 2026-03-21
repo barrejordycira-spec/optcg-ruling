@@ -49,8 +49,9 @@ Si la question n'est pas liée au OPTCG : "Je suis un juge One Piece Card Game. 
 === RÈGLES OFFICIELLES ===
 ${rules}
 
-=== CATALOGUE DES CARTES (${totalCards} cartes) ===
-Format: ID "Nom" type couleurs C:coût P:puissance CT:contre [keywords] | effet
+=== INDEX DES CARTES (${totalCards} cartes) ===
+Ceci est un index léger (ID, nom, type, couleur). Les EFFETS DÉTAILLÉS des cartes pertinentes sont fournis dans le message utilisateur sous "CARTES PERTINENTES".
+BASE-TOI EN PRIORITÉ sur les cartes pertinentes pré-recherchées. N'utilise cet index que pour vérifier l'existence d'une carte.
 ${catalog}`
 }
 
