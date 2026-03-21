@@ -1,51 +1,85 @@
 import { NextRequest } from 'next/server'
-import { searchCards, formatCardForPrompt, getRelevantRules } from '@/lib/data-loader'
+import {
+  loadRulesJSON,
+  buildCatalog,
+  findRelevantCards,
+  formatCardDetailed,
+  extractCardIds,
+  loadAllCards,
+} from '@/lib/data-loader'
 
-const BASE_PROMPT = `Tu es juge officiel OPTCG (tournoi compétitif).
-Réponds UNIQUEMENT avec les données fournies. Ne jamais inventer.
-Si info absente: "Information indisponible dans la base."
-Si hors-sujet OPTCG: "Je suis un juge One Piece Card Game. Je ne peux répondre qu'aux questions de ruling."
+function buildSystemPrompt(): string {
+  const rules = loadRulesJSON()
+  const catalog = buildCatalog()
+  const totalCards = loadAllCards().length
 
-Format OBLIGATOIRE:
-**[Cartes concernées]** (carte + effet exact)
-**[Règles appliquées]** (règles utilisées)
-**[Analyse]** (raisonnement étape par étape)
-**[Ruling]** (réponse finale)`
+  return `Tu es un juge expert du One Piece Card Game (OPTCG). Tu donnes des rulings précis et définitifs.
+
+COMPORTEMENT:
+- Réponds TOUJOURS en français.
+- Les cartes pertinentes à la question ont été PRÉ-RECHERCHÉES et sont listées dans "CARTES PERTINENTES" avec leurs effets complets. BASE-TOI EN PRIORITÉ sur ces cartes.
+- Le catalogue complet est aussi disponible si tu as besoin de chercher d'autres cartes.
+- Cite les règles officielles qui s'appliquent.
+- Structure: 1) Résumé du scénario 2) Cartes impliquées (avec ID et effet) 3) Règles applicables 4) Verdict clair
+- Si une interaction est ambiguë, explique les interprétations possibles.
+- Tiens compte de la conversation précédente.
+- Ne réponds qu'aux questions OPTCG. Si hors-sujet: "Je suis un juge One Piece Card Game. Je ne peux répondre qu'aux questions de ruling."
+
+RÈGLES OFFICIELLES:
+${rules}
+
+=== CATALOGUE COMPLET DES CARTES (${totalCards} cartes) ===
+Format: ID "Nom" type couleurs C:coût P:puissance CT:contre [keywords] | effet
+${catalog}`
+}
+
+// Cache the system prompt (built once per cold start)
+let cachedSystemPrompt: string | null = null
+
+function getSystemPrompt(): string {
+  if (!cachedSystemPrompt) {
+    cachedSystemPrompt = buildSystemPrompt()
+  }
+  return cachedSystemPrompt
+}
 
 export async function POST(request: NextRequest) {
   const apiKey = process.env.GEMINI_API_KEY
-  console.log('[RULING] API key present:', !!apiKey)
-  console.log('[RULING] API key length:', apiKey?.length ?? 0)
-  console.log('[RULING] API key prefix:', apiKey?.substring(0, 8) ?? 'N/A')
-
   if (!apiKey) {
-    console.error('[RULING] GEMINI_API_KEY is not set in environment variables')
-    return Response.json({ error: 'GEMINI_API_KEY non configurée' }, { status: 500 })
+    return Response.json(
+      { error: 'GEMINI_API_KEY non configurée. Obtenez une clé gratuite sur https://aistudio.google.com/apikey' },
+      { status: 503 }
+    )
   }
 
-  const { question, history } = await request.json()
-  console.log('[RULING] Question received:', question)
-  console.log('[RULING] History length:', history?.length ?? 0)
-
-  if (!question || typeof question !== 'string') {
-    return Response.json({ error: 'Question requise' }, { status: 400 })
+  let body: { question?: string; history?: Array<{ role: string; content: string }> }
+  try {
+    body = await request.json()
+  } catch {
+    return Response.json({ error: 'Body JSON invalide' }, { status: 400 })
   }
 
-  // Get only relevant rule sections based on question keywords
-  const rulesContext = getRelevantRules(question)
-  console.log('[RULING] Rules context length:', rulesContext.length)
+  const { question, history } = body
+  if (!question || typeof question !== 'string' || question.length < 3 || question.length > 2000) {
+    return Response.json({ error: 'Question requise (3-2000 caractères)' }, { status: 400 })
+  }
 
-  // Search for relevant cards (max 5)
-  const relevantCards = searchCards(question)
-  const topCards = relevantCards.slice(0, 5)
-  console.log('[RULING] Cards found:', topCards.length)
+  // Pre-search relevant cards
+  const searchResult = findRelevantCards(question)
+  console.log('[RULING] Question:', question.substring(0, 80))
+  console.log('[RULING] Pre-searched cards:', searchResult.cardIds.length)
 
-  // Build conversation for Gemini
+  // Build the pre-searched cards section for the user message
+  const preSearchedSection = searchResult.cards.length > 0
+    ? `\n=== CARTES PERTINENTES À LA QUESTION (effets complets) ===\n${searchResult.cards.map(formatCardDetailed).join('\n\n')}\n\n`
+    : ''
+
+  // Build conversation contents
   const contents: Array<{ role: string; parts: Array<{ text: string }> }> = []
 
-  // Add history (last 4 messages max to save tokens)
+  // Add history (max 20 messages)
   if (history && Array.isArray(history)) {
-    for (const msg of history.slice(-4)) {
+    for (const msg of history.slice(-20)) {
       contents.push({
         role: msg.role === 'user' ? 'user' : 'model',
         parts: [{ text: msg.content }],
@@ -53,98 +87,64 @@ export async function POST(request: NextRequest) {
     }
   }
 
-  // Add current question with card context
-  const cardsText = topCards.length > 0
-    ? `CARTES:\n${topCards.map(formatCardForPrompt).join('\n---\n')}\n\n`
-    : ''
-
+  // Add current question with pre-searched cards
   contents.push({
     role: 'user',
-    parts: [{
-      text: `${cardsText}QUESTION: ${question}`,
-    }],
+    parts: [{ text: `${preSearchedSection}QUESTION: ${question}` }],
   })
 
-  // Call Gemini API with streaming
-  const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:streamGenerateContent?alt=sse&key=${apiKey}`
-  console.log('[RULING] Calling Gemini API...')
+  // Call Gemini 2.5 Flash
+  const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`
 
-  const geminiResponse = await fetch(geminiUrl, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      system_instruction: {
-        parts: [{ text: `${BASE_PROMPT}\n\nRÈGLES:\n${rulesContext}` }],
-      },
-      contents,
-      generationConfig: {
-        temperature: 0.1,
-        maxOutputTokens: 2048,
-      },
-    }),
-  })
+  try {
+    const geminiResponse = await fetch(geminiUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        system_instruction: {
+          parts: [{ text: getSystemPrompt() }],
+        },
+        contents,
+      }),
+    })
 
-  console.log('[RULING] Gemini response status:', geminiResponse.status)
+    if (!geminiResponse.ok) {
+      const errorText = await geminiResponse.text()
+      console.error('[RULING] Gemini error:', geminiResponse.status, errorText)
+      return Response.json(
+        { error: 'Erreur API Gemini', details: errorText },
+        { status: 500 }
+      )
+    }
 
-  if (!geminiResponse.ok) {
-    const errorText = await geminiResponse.text()
-    console.error('[RULING] Gemini API error:', geminiResponse.status, errorText)
+    const data = await geminiResponse.json()
+    const answer = data.candidates?.[0]?.content?.parts?.[0]?.text || ''
+
+    if (!answer) {
+      console.error('[RULING] Empty response from Gemini:', JSON.stringify(data).substring(0, 500))
+      return Response.json(
+        { error: 'Réponse vide de Gemini' },
+        { status: 500 }
+      )
+    }
+
+    // Extract card IDs from both question and answer
+    const questionIds = extractCardIds(question)
+    const answerIds = extractCardIds(answer)
+    const preSearchIds = searchResult.cardIds
+    const allIds: string[] = []
+    for (const id of [...preSearchIds, ...questionIds, ...answerIds]) {
+      if (!allIds.includes(id)) allIds.push(id)
+    }
+
+    console.log('[RULING] Response length:', answer.length, '| Cards used:', allIds.length)
+
+    return Response.json({ answer, cardsUsed: allIds })
+  } catch (err) {
+    console.error('[RULING] Fetch error:', err)
     return Response.json(
-      { error: 'Erreur API Gemini', details: errorText },
-      { status: geminiResponse.status }
+      { error: 'Erreur de connexion à Gemini' },
+      { status: 500 }
     )
   }
-
-  console.log('[RULING] Gemini OK, starting stream...')
-
-  // Stream the response
-  const encoder = new TextEncoder()
-  const stream = new ReadableStream({
-    async start(controller) {
-      const reader = geminiResponse.body!.getReader()
-      const decoder = new TextDecoder()
-      let buffer = ''
-
-      try {
-        while (true) {
-          const { done, value } = await reader.read()
-          if (done) break
-
-          buffer += decoder.decode(value, { stream: true })
-          const lines = buffer.split('\n')
-          buffer = lines.pop() || ''
-
-          for (const line of lines) {
-            if (line.startsWith('data: ')) {
-              const data = line.slice(6).trim()
-              if (data === '[DONE]') continue
-
-              try {
-                const parsed = JSON.parse(data)
-                const text = parsed.candidates?.[0]?.content?.parts?.[0]?.text
-                if (text) {
-                  controller.enqueue(encoder.encode(`data: ${JSON.stringify({ text })}\n\n`))
-                }
-              } catch {
-                // Skip malformed JSON
-              }
-            }
-          }
-        }
-      } catch (err) {
-        console.error('Stream error:', err)
-      } finally {
-        controller.enqueue(encoder.encode('data: [DONE]\n\n'))
-        controller.close()
-      }
-    },
-  })
-
-  return new Response(stream, {
-    headers: {
-      'Content-Type': 'text/event-stream',
-      'Cache-Control': 'no-cache',
-      Connection: 'keep-alive',
-    },
-  })
 }

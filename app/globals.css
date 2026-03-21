@@ -291,27 +291,49 @@ html, body {
   cursor: not-allowed;
 }
 
-/* Loading dots */
-.loading-dots {
-  display: flex;
-  gap: 4px;
-  padding: 4px 0;
+/* Cards used badge */
+.cards-used {
+  margin-top: 10px;
+  padding: 6px 10px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--accent-gold);
+  font-style: italic;
 }
 
-.loading-dots span {
-  width: 6px;
-  height: 6px;
-  background: var(--text-secondary);
-  border-radius: 50%;
-  animation: bounce 1.4s infinite ease-in-out both;
+/* Loading animation */
+.loading-text {
+  color: var(--text-secondary);
+  font-style: italic;
+  animation: pulse 1.5s ease-in-out infinite;
 }
 
-.loading-dots span:nth-child(1) { animation-delay: -0.32s; }
-.loading-dots span:nth-child(2) { animation-delay: -0.16s; }
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
 
-@keyframes bounce {
-  0%, 80%, 100% { transform: scale(0); }
-  40% { transform: scale(1); }
+/* Error banner */
+.error-banner {
+  padding: 10px 16px;
+  background: rgba(200, 16, 46, 0.15);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  color: #ff6b7a;
+  font-size: 13px;
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+/* Input hint */
+.input-hint {
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 6px;
+  opacity: 0.7;
 }
 
 /* Responsive */

@@ -4,21 +4,28 @@ import { useState, useRef, useEffect, useCallback, FormEvent, KeyboardEvent } fr
 import ReactMarkdown from 'react-markdown'
 
 interface Message {
-  role: 'user' | 'bot'
+  id: string
+  role: 'user' | 'assistant'
   content: string
+  cardsUsed?: string[]
 }
 
 const EXAMPLES = [
   "Est-ce qu'un Blocker peut bloquer une attaque ciblant un personnage ?",
-  "Comment fonctionne Double Attack si l'adversaire a 1 vie ?",
+  "Comment fonctionne Double Attack avec OP01-024 si l'adversaire a 1 vie ?",
   "Peut-on jouer un événement [Contre] pendant la phase principale ?",
-  "Que se passe-t-il si mon deck est vide pendant la phase de pioche ?",
 ]
+
+let msgCounter = 0
+function genId() {
+  return `msg-${Date.now()}-${++msgCounter}`
+}
 
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const textareaRef = useRef<HTMLTextAreaElement>(null)
 
@@ -30,7 +37,6 @@ export default function Home() {
     scrollToBottom()
   }, [messages, scrollToBottom])
 
-  // Auto-resize textarea
   useEffect(() => {
     const ta = textareaRef.current
     if (ta) {
@@ -42,20 +48,17 @@ export default function Home() {
   const sendMessage = async (question: string) => {
     if (!question.trim() || loading) return
 
-    const userMessage: Message = { role: 'user', content: question.trim() }
-    const newMessages = [...messages, userMessage]
+    const userMsg: Message = { id: genId(), role: 'user', content: question.trim() }
+    const newMessages = [...messages, userMsg]
     setMessages(newMessages)
     setInput('')
     setLoading(true)
-
-    // Add empty bot message for streaming
-    const botMessage: Message = { role: 'bot', content: '' }
-    setMessages([...newMessages, botMessage])
+    setError('')
 
     try {
-      // Build history (last 10 messages for context)
-      const history = newMessages.slice(-10).map(m => ({
-        role: m.role === 'user' ? 'user' : 'assistant',
+      // Build history for API (exclude current question)
+      const history = messages.map(m => ({
+        role: m.role === 'user' ? 'user' : 'model',
         content: m.content,
       }))
 
@@ -64,68 +67,27 @@ export default function Home() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           question: question.trim(),
-          history: history.slice(0, -1), // Exclude current question (sent separately)
+          history: history.slice(-20),
         }),
       })
 
       if (!response.ok) {
         const err = await response.json()
-        throw new Error(err.error || 'Erreur serveur')
+        throw new Error(err.error || `Erreur ${response.status}`)
       }
 
-      const reader = response.body!.getReader()
-      const decoder = new TextDecoder()
-      let accumulated = ''
-
-      while (true) {
-        const { done, value } = await reader.read()
-        if (done) break
-
-        const chunk = decoder.decode(value, { stream: true })
-        const lines = chunk.split('\n')
-
-        for (const line of lines) {
-          if (line.startsWith('data: ')) {
-            const data = line.slice(6).trim()
-            if (data === '[DONE]') continue
-
-            try {
-              const parsed = JSON.parse(data)
-              if (parsed.text) {
-                accumulated += parsed.text
-                setMessages(prev => {
-                  const updated = [...prev]
-                  updated[updated.length - 1] = { role: 'bot', content: accumulated }
-                  return updated
-                })
-              }
-            } catch {
-              // Skip malformed
-            }
-          }
-        }
+      const data = await response.json()
+      const botMsg: Message = {
+        id: genId(),
+        role: 'assistant',
+        content: data.answer || 'Aucune réponse reçue.',
+        cardsUsed: data.cardsUsed,
       }
 
-      // If no content received
-      if (!accumulated) {
-        setMessages(prev => {
-          const updated = [...prev]
-          updated[updated.length - 1] = {
-            role: 'bot',
-            content: 'Erreur: aucune réponse reçue. Vérifiez la clé API Gemini.',
-          }
-          return updated
-        })
-      }
+      setMessages([...newMessages, botMsg])
     } catch (err) {
-      setMessages(prev => {
-        const updated = [...prev]
-        updated[updated.length - 1] = {
-          role: 'bot',
-          content: `Erreur: ${err instanceof Error ? err.message : 'Erreur inconnue'}`,
-        }
-        return updated
-      })
+      setError(err instanceof Error ? err.message : 'Erreur inconnue')
+      // Remove the loading state without adding a bot message
     } finally {
       setLoading(false)
     }
@@ -149,7 +111,7 @@ export default function Home() {
         <div className="header-logo">&#9878;</div>
         <div className="header-info">
           <h1>OPTCG JUDGE</h1>
-          <p>Juge officiel One Piece Card Game &bull; Rulings comp&eacute;titifs</p>
+          <p>Juge expert One Piece Card Game &bull; Rulings comp&eacute;titifs</p>
         </div>
       </header>
 
@@ -157,11 +119,10 @@ export default function Home() {
         {messages.length === 0 ? (
           <div className="welcome">
             <div className="welcome-icon">&#9878;</div>
-            <h2>Bienvenue, joueur !</h2>
+            <h2>Ruling OPTCG</h2>
             <p>
-              Je suis un juge officiel OPTCG. Posez-moi vos questions de ruling
-              et j&apos;analyserai les cartes et r&egrave;gles pour vous fournir une
-              r&eacute;ponse pr&eacute;cise et fiable.
+              Posez vos questions de ruling et obtenez une analyse pr&eacute;cise
+              bas&eacute;e sur les r&egrave;gles officielles et les effets exacts des cartes.
             </p>
             <div className="examples">
               {EXAMPLES.map((ex, i) => (
@@ -176,26 +137,42 @@ export default function Home() {
             </div>
           </div>
         ) : (
-          messages.map((msg, i) => (
-            <div key={i} className={`message ${msg.role === 'user' ? 'user' : 'bot'}`}>
-              <div className="message-avatar">
-                {msg.role === 'user' ? '\u{1F3B4}' : '\u2696'}
+          <>
+            {messages.map(msg => (
+              <div key={msg.id} className={`message ${msg.role}`}>
+                <div className="message-avatar">
+                  {msg.role === 'user' ? '\u{1F3B4}' : '\u2696'}
+                </div>
+                <div className="message-content">
+                  {msg.role === 'assistant' ? (
+                    <>
+                      <ReactMarkdown>{msg.content}</ReactMarkdown>
+                      {msg.cardsUsed && msg.cardsUsed.length > 0 && (
+                        <div className="cards-used">
+                          Cartes analys&eacute;es : {msg.cardsUsed.join(', ')}
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <p>{msg.content}</p>
+                  )}
+                </div>
               </div>
-              <div className="message-content">
-                {msg.role === 'bot' && !msg.content && loading ? (
-                  <div className="loading-dots">
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                ) : msg.role === 'bot' ? (
-                  <ReactMarkdown>{msg.content}</ReactMarkdown>
-                ) : (
-                  <p>{msg.content}</p>
-                )}
+            ))}
+            {loading && (
+              <div className="message assistant">
+                <div className="message-avatar">&#9878;</div>
+                <div className="message-content">
+                  <div className="loading-text">Analyse du sc&eacute;nario...</div>
+                </div>
               </div>
-            </div>
-          ))
+            )}
+            {error && (
+              <div className="error-banner">
+                {error}
+              </div>
+            )}
+          </>
         )}
         <div ref={messagesEndRef} />
       </div>
@@ -215,6 +192,9 @@ export default function Home() {
             &#10148;
           </button>
         </form>
+        <div className="input-hint">
+          Mentionnez les IDs de cartes (ex: OP01-024) pour une analyse pr&eacute;cise
+        </div>
       </div>
     </div>
   )

@@ -18,8 +18,12 @@ export interface Card {
   imageUrl: string
 }
 
+// Module-level caches (loaded once per cold start)
 let cachedCards: Card[] | null = null
-let cachedRules: object | null = null
+let cachedRules: string | null = null
+let cachedCatalog: string | null = null
+
+// --- Loaders ---
 
 export function loadAllCards(): Card[] {
   if (cachedCards) return cachedCards
@@ -39,141 +43,164 @@ export function loadAllCards(): Card[] {
   return allCards
 }
 
-export function loadRules(): Record<string, unknown> {
-  if (cachedRules) return cachedRules as Record<string, unknown>
+export function loadRulesJSON(): string {
+  if (cachedRules) return cachedRules
 
   const rulesPath = path.join(process.cwd(), 'rules', 'rules.json')
-  cachedRules = JSON.parse(fs.readFileSync(rulesPath, 'utf-8'))
-  return cachedRules as Record<string, unknown>
+  cachedRules = fs.readFileSync(rulesPath, 'utf-8')
+  return cachedRules
 }
 
-// Map keywords to relevant rule sections
-const RULE_KEYWORDS: Record<string, string[]> = {
-  'combat': ['combat', 'powerCalculation'],
-  'attaque': ['combat', 'powerCalculation'],
-  'attack': ['combat', 'powerCalculation'],
-  'blocker': ['combat', 'keywords'],
-  'bloqueur': ['combat', 'keywords'],
-  'contre': ['combat', 'keywords', 'powerCalculation'],
-  'counter': ['combat', 'keywords', 'powerCalculation'],
-  'rush': ['keywords'],
-  'hate': ['keywords'],
-  'double': ['keywords'],
-  'banish': ['keywords'],
-  'trigger': ['keywords'],
-  'declenchement': ['keywords'],
-  'don': ['donSystem', 'turnStructure'],
-  'cout': ['donSystem'],
-  'cost': ['donSystem'],
-  'tour': ['turnStructure'],
-  'turn': ['turnStructure'],
-  'phase': ['turnStructure'],
-  'refresh': ['turnStructure'],
-  'pioche': ['turnStructure'],
-  'draw': ['turnStructure'],
-  'deck': ['deckBuilding', 'defeatConditions'],
-  'personnage': ['cardCategories'],
-  'character': ['cardCategories'],
-  'leader': ['cardCategories'],
-  'evenement': ['cardCategories'],
-  'event': ['cardCategories'],
-  'lieu': ['cardCategories'],
-  'stage': ['cardCategories'],
-  'zone': ['gameZones'],
-  'main': ['gameZones'],
-  'hand': ['gameZones'],
-  'defausse': ['gameZones'],
-  'trash': ['gameZones'],
-  'vie': ['gameZones', 'defeatConditions'],
-  'life': ['gameZones', 'defeatConditions'],
-  'ko': ['cardCategories', 'combat'],
-  'mulligan': ['mulligan'],
-  'defaite': ['defeatConditions'],
-  'perd': ['defeatConditions'],
-  'lose': ['defeatConditions'],
-}
+/** Compact catalog: one line per card for the system prompt */
+export function buildCatalog(): string {
+  if (cachedCatalog) return cachedCatalog
 
-export function getRelevantRules(question: string): string {
-  const rules = loadRules()
-  const words = question.toLowerCase().split(/\s+/)
-
-  const sections: string[] = []
-  const addUnique = (s: string) => { if (!sections.includes(s)) sections.push(s) }
-
-  for (const word of words) {
-    const matches = RULE_KEYWORDS[word]
-    if (matches) {
-      matches.forEach(addUnique)
-    }
-  }
-
-  // Always include keywords section (small, often relevant)
-  addUnique('keywords')
-
-  // If no specific match, send core sections
-  if (sections.length <= 1) {
-    addUnique('combat')
-    addUnique('turnStructure')
-    addUnique('cardCategories')
-  }
-
-  const filtered: Record<string, unknown> = {}
-  sections.forEach(key => {
-    if (rules[key]) {
-      filtered[key] = rules[key]
-    }
+  const cards = loadAllCards()
+  const lines = cards.map(c => {
+    const colors = c.colors.join('/')
+    const cost = c.cost !== null ? `C:${c.cost}` : ''
+    const power = c.power !== null ? `P:${c.power}` : ''
+    const counter = c.counter !== null ? `CT:${c.counter}` : ''
+    const keywords = extractKeywords(c.effectText)
+    const kwStr = keywords.length > 0 ? `[${keywords.join(',')}]` : ''
+    const effect = c.effectText ? c.effectText.replace(/\n/g, ' ').substring(0, 200) : ''
+    return `${c.id} "${c.name}" ${c.type} ${colors} ${cost} ${power} ${counter} ${kwStr} | ${effect}`
   })
 
-  return JSON.stringify(filtered)
+  cachedCatalog = lines.join('\n')
+  return cachedCatalog
 }
 
-// Common French/English words to ignore when searching cards
+// --- Keyword extraction from effectText ---
+
+const KEYWORD_PATTERNS = [
+  /\[Rush\]/i, /\[Blocker\]/i, /\[Double Attack\]/i, /\[Banish\]/i,
+  /\[On Play\]/i, /\[When Attacking\]/i, /\[On K\.?O\.?\]/i,
+  /\[Trigger\]/i, /\[Activate: Main\]/i, /\[On Block\]/i,
+  /\[End of Your Turn\]/i, /\[Your Turn\]/i, /\[Opponent's Turn\]/i,
+  /\[DON!! x\d+\]/i, /\[Counter\]/i, /\[Main\]/i,
+]
+
+function extractKeywords(effectText: string): string[] {
+  if (!effectText) return []
+  const found: string[] = []
+  for (const pattern of KEYWORD_PATTERNS) {
+    const match = effectText.match(pattern)
+    if (match) found.push(match[0])
+  }
+  return found
+}
+
+// --- Smart card search ---
+
+const COLOR_MAP: Record<string, string> = {
+  rouge: 'red', bleu: 'blue', vert: 'green',
+  violet: 'purple', noir: 'black', jaune: 'yellow',
+}
+
+const TYPE_MAP: Record<string, string> = {
+  personnage: 'character', evenement: 'event', lieu: 'stage',
+}
+
 const STOP_WORDS = new Set([
   'le', 'la', 'les', 'un', 'une', 'des', 'du', 'de', 'et', 'ou', 'est',
   'que', 'qui', 'dans', 'sur', 'par', 'pour', 'avec', 'son', 'ses', 'mon',
   'ma', 'ce', 'cette', 'il', 'elle', 'on', 'ne', 'pas', 'plus', 'si',
   'je', 'tu', 'nous', 'vous', 'ils', 'elles', 'se', 'sa', 'au', 'aux',
-  'en', 'peut', 'faire', 'quand', 'comment', 'pourquoi',
+  'en', 'peut', 'faire', 'quand', 'comment', 'pourquoi', 'carte', 'cartes',
+  'effet', 'utiliser', 'jouer', 'adversaire', 'question', 'ruling',
   'the', 'a', 'an', 'is', 'are', 'can', 'do', 'does', 'if', 'when',
   'how', 'what', 'my', 'his', 'her', 'its', 'to', 'of', 'and', 'or',
 ])
 
-export function searchCards(query: string): Card[] {
-  const cards = loadAllCards()
-  const terms = query.toLowerCase().split(/\s+/)
-    .filter(t => t.length > 2 && !STOP_WORDS.has(t))
+const CARD_ID_REGEX = /[A-Z]{2,3}\d{2}-\d{3}/gi
 
-  if (terms.length === 0) return []
-
-  // Score cards by number of matching terms
-  const scored = cards.map(card => {
-    const searchable = [card.id, card.name, ...(card.traits || [])]
-      .filter(Boolean)
-      .join(' ')
-      .toLowerCase()
-
-    const score = terms.filter(term => searchable.includes(term)).length
-    return { card, score }
-  })
-
-  return scored
-    .filter(s => s.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .map(s => s.card)
+export interface SearchResult {
+  cards: Card[]
+  cardIds: string[]
 }
 
-export function formatCardForPrompt(card: Card): string {
+export function findRelevantCards(query: string): SearchResult {
+  const cards = loadAllCards()
+  const foundIds: string[] = []
+  const foundCards: Card[] = []
+
+  const addCard = (card: Card) => {
+    if (!foundIds.includes(card.id)) {
+      foundIds.push(card.id)
+      foundCards.push(card)
+    }
+  }
+
+  // 1. Match by card ID (e.g., OP01-024, ST10-001)
+  const idMatches = query.match(CARD_ID_REGEX) || []
+  for (const idMatch of idMatches) {
+    const card = cards.find(c => c.id.toLowerCase() === idMatch.toLowerCase())
+    if (card) addCard(card)
+  }
+
+  // 2. Prepare search terms (translate FR→EN, filter stop words)
+  const rawTerms = query.toLowerCase().split(/\s+/)
+  const terms = rawTerms
+    .map(t => COLOR_MAP[t] || TYPE_MAP[t] || t)
+    .filter(t => t.length > 2 && !STOP_WORDS.has(t))
+
+  if (terms.length === 0) return { cards: foundCards, cardIds: foundIds }
+
+  // 3. Score remaining cards by name/trait match
+  const scored: Array<{ card: Card; score: number }> = []
+  for (const card of cards) {
+    if (foundIds.includes(card.id)) continue
+
+    const nameLower = card.name.toLowerCase()
+    const traitsLower = (card.traits || []).join(' ').toLowerCase()
+    const typeLower = card.type.toLowerCase()
+    const colorsLower = card.colors.join(' ').toLowerCase()
+
+    let score = 0
+    for (const term of terms) {
+      // Name match is highest priority
+      if (nameLower.includes(term)) score += 3
+      // Type/color match
+      else if (typeLower === term || colorsLower.includes(term)) score += 1
+      // Trait match
+      else if (traitsLower.includes(term)) score += 1
+    }
+
+    if (score > 0) scored.push({ card, score })
+  }
+
+  // Sort by score descending, take top results
+  scored.sort((a, b) => b.score - a.score)
+  const limit = 20 - foundCards.length
+  for (const s of scored.slice(0, limit)) {
+    addCard(s.card)
+  }
+
+  return { cards: foundCards, cardIds: foundIds }
+}
+
+// --- Formatters ---
+
+export function formatCardDetailed(card: Card): string {
   const parts = [
-    `[${card.id}] ${card.name}`,
-    `Type: ${card.type} | Couleurs: ${card.colors.join(', ')}`,
+    `>>> ${card.id} "${card.name}"`,
+    `    Type: ${card.type} | Couleurs: ${card.colors.join(', ')} | Coût: ${card.cost ?? '-'} | Puissance: ${card.power ?? '-'} | Contre: ${card.counter ?? '-'}`,
   ]
-  if (card.cost !== null) parts.push(`Coût: ${card.cost}`)
-  if (card.power !== null) parts.push(`Puissance: ${card.power}`)
-  if (card.counter !== null) parts.push(`Contre: +${card.counter}`)
-  if (card.life !== null) parts.push(`Vie: ${card.life}`)
-  if (card.attribute) parts.push(`Attribut: ${card.attribute}`)
-  if (card.traits?.length) parts.push(`Traits: ${card.traits.join(', ')}`)
-  parts.push(`Effet: ${card.effectText || 'Aucun'}`)
-  parts.push(`Set: ${card.set} (${card.rarity})`)
+  if (card.traits?.length) parts.push(`    Traits: ${card.traits.join(', ')}`)
+  const kw = extractKeywords(card.effectText)
+  if (kw.length) parts.push(`    Keywords: ${kw.join(', ')}`)
+  parts.push(`    Effet: ${card.effectText || 'Aucun'}`)
   return parts.join('\n')
+}
+
+/** Extract card IDs from any text */
+export function extractCardIds(text: string): string[] {
+  const matches = text.match(CARD_ID_REGEX) || []
+  const unique: string[] = []
+  for (const m of matches) {
+    const upper = m.toUpperCase()
+    if (!unique.includes(upper)) unique.push(upper)
+  }
+  return unique
 }
