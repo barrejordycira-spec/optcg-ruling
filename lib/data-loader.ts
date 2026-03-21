@@ -47,25 +47,39 @@ export function loadRules(): object {
   return cachedRules!
 }
 
+// Common French/English words to ignore when searching cards
+const STOP_WORDS = new Set([
+  'le', 'la', 'les', 'un', 'une', 'des', 'du', 'de', 'et', 'ou', 'est',
+  'que', 'qui', 'dans', 'sur', 'par', 'pour', 'avec', 'son', 'ses', 'mon',
+  'ma', 'ce', 'cette', 'il', 'elle', 'on', 'ne', 'pas', 'plus', 'si',
+  'je', 'tu', 'nous', 'vous', 'ils', 'elles', 'se', 'sa', 'au', 'aux',
+  'en', 'peut', 'faire', 'quand', 'comment', 'pourquoi',
+  'the', 'a', 'an', 'is', 'are', 'can', 'do', 'does', 'if', 'when',
+  'how', 'what', 'my', 'his', 'her', 'its', 'to', 'of', 'and', 'or',
+])
+
 export function searchCards(query: string): Card[] {
   const cards = loadAllCards()
   const terms = query.toLowerCase().split(/\s+/)
+    .filter(t => t.length > 2 && !STOP_WORDS.has(t))
 
-  return cards.filter(card => {
-    const searchable = [
-      card.id,
-      card.name,
-      card.effectText,
-      ...(card.traits || []),
-      card.type,
-      ...(card.colors || []),
-    ]
+  if (terms.length === 0) return []
+
+  // Score cards by number of matching terms
+  const scored = cards.map(card => {
+    const searchable = [card.id, card.name, ...(card.traits || [])]
       .filter(Boolean)
       .join(' ')
       .toLowerCase()
 
-    return terms.some(term => searchable.includes(term))
+    const score = terms.filter(term => searchable.includes(term)).length
+    return { card, score }
   })
+
+  return scored
+    .filter(s => s.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map(s => s.card)
 }
 
 export function formatCardForPrompt(card: Card): string {

@@ -83,16 +83,17 @@ export async function POST(request: NextRequest) {
   const rules = loadRules()
   console.log('[RULING] Rules loaded successfully')
 
-  // Search for relevant cards mentioned in the question
+  // Search for relevant cards mentioned in the question (max 5)
   const relevantCards = searchCards(question)
-  const topCards = relevantCards.slice(0, 20) // Limit to 20 most relevant
+  const topCards = relevantCards.slice(0, 5)
 
   // Build context
   const cardsContext = topCards.length > 0
-    ? `═══ CARTES TROUVÉES ═══\n${topCards.map(formatCardForPrompt).join('\n\n---\n\n')}`
-    : '═══ AUCUNE CARTE TROUVÉE ═══\nAucune carte correspondante trouvée dans la base.'
+    ? `CARTES:\n${topCards.map(formatCardForPrompt).join('\n---\n')}`
+    : ''
 
-  const rulesContext = `═══ RÈGLES OFFICIELLES ═══\n${JSON.stringify(rules, null, 2)}`
+  // Send rules as compact JSON (no indentation = ~3x fewer tokens)
+  const rulesContext = `RÈGLES:\n${JSON.stringify(rules)}`
 
   // Build conversation for Gemini
   const contents: Array<{ role: string; parts: Array<{ text: string }> }> = []
@@ -111,7 +112,7 @@ export async function POST(request: NextRequest) {
   contents.push({
     role: 'user',
     parts: [{
-      text: `${cardsContext}\n\n${rulesContext}\n\n═══ QUESTION DE RULING ═══\n${question}`,
+      text: `${cardsContext ? cardsContext + '\n\n' : ''}${rulesContext}\n\nQUESTION: ${question}`,
     }],
   })
 
@@ -130,7 +131,7 @@ export async function POST(request: NextRequest) {
       contents,
       generationConfig: {
         temperature: 0.1,
-        maxOutputTokens: 4096,
+        maxOutputTokens: 2048,
       },
     }),
   })
