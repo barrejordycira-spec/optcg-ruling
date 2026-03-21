@@ -366,6 +366,18 @@
           "Si la carte quitte sa zone, les DON!! reviennent en zone de Cout epuises."
         ]
       },
+      "donCondition": {
+        "description": "Condition [DON!! xN] sur les effets de cartes.",
+        "rules": [
+          "Quand un effet de carte est precede de [DON!! xN] (ex: [DON!! x1], [DON!! x2]), cela signifie que la carte doit avoir AU MINIMUM N cartes DON!! attachees (donnees) pour que cet effet soit ACTIF.",
+          "C'est une CONDITION PERMANENTE, pas un cout a payer. Les DON!! ne sont pas depenses, ils doivent juste etre presents sur la carte.",
+          "Si la carte n'a pas assez de DON!! attaches, l'effet est INACTIF et ne peut pas se declencher.",
+          "Exemple : [DON!! x1] signifie qu'il faut au moins 1 DON!! attache a cette carte pour que l'effet fonctionne.",
+          "Exemple : [DON!! x2] signifie qu'il faut au moins 2 DON!! attaches a cette carte pour que l'effet fonctionne.",
+          "Les DON!! attaches ne sont pas retires lors de l'activation de l'effet. Ils restent sur la carte.",
+          "Cette condition est distincte du cout entre parentheses (N) qui lui demande d'epuiser N DON!! de la zone de Cout."
+        ]
+      },
       "donProgression": {
         "description": "Nombre de DON!! gagnes par tour depuis le deck DON!!.",
         "schedule": [
