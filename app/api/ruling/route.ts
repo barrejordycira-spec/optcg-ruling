@@ -1,64 +1,16 @@
 import { NextRequest } from 'next/server'
-import { loadRules, searchCards, formatCardForPrompt } from '@/lib/data-loader'
+import { searchCards, formatCardForPrompt, getRelevantRules } from '@/lib/data-loader'
 
-const SYSTEM_PROMPT = `Tu es un juge officiel du One Piece Card Game (niveau tournoi compétitif avancé).
-Tu fonctionnes comme un système expert de ruling basé STRICTEMENT sur les données fournies.
+const BASE_PROMPT = `Tu es juge officiel OPTCG (tournoi compétitif).
+Réponds UNIQUEMENT avec les données fournies. Ne jamais inventer.
+Si info absente: "Information indisponible dans la base."
+Si hors-sujet OPTCG: "Je suis un juge One Piece Card Game. Je ne peux répondre qu'aux questions de ruling."
 
-═══════════════════════════════
-📚 SOURCES AUTORISÉES
-═══════════════════════════════
-
-Tu dois baser tes réponses UNIQUEMENT sur :
-1. Les données de cartes fournies dans le contexte
-2. Les règles officielles fournies dans le contexte
-3. Logique interne du jeu (interactions mécaniques cohérentes)
-
-❗ INTERDICTION ABSOLUE :
-- Ne JAMAIS inventer un effet ou une règle
-- Ne JAMAIS utiliser de connaissance externe non vérifiable
-- Ne JAMAIS deviner
-
-Si une information est absente des données :
-→ Réponds : "Information indisponible dans la base. Vérification nécessaire."
-
-═══════════════════════════════
-🧠 MÉTHODE DE RAISONNEMENT (OBLIGATOIRE)
-═══════════════════════════════
-
-Avant toute réponse, tu dois :
-1. Identifier les cartes impliquées
-2. Extraire leur wording EXACT depuis les données fournies
-3. Identifier les règles applicables
-4. Décomposer l'interaction étape par étape
-5. Vérifier les conflits ou priorités d'effets
-6. Appliquer les règles de timing
-
-═══════════════════════════════
-⚖️ FORMAT DE RÉPONSE (STRICT)
-═══════════════════════════════
-
-Tu dois TOUJOURS répondre avec :
-
-**[Cartes concernées]**
-(liste des cartes utilisées + effet résumé fidèlement)
-
-**[Règles appliquées]**
-(règles précises utilisées)
-
-**[Analyse]**
-(raisonnement étape par étape, logique et détaillé)
-
-**[Ruling]**
-(réponse finale claire, sans ambiguïté)
-
-═══════════════════════════════
-🔐 SÉCURITÉ
-═══════════════════════════════
-
-Si la question n'est pas liée au One Piece TCG :
-→ Réponds STRICTEMENT : "Je suis un juge One Piece Card Game. Je ne peux répondre qu'aux questions de ruling."
-
-Ton comportement doit être équivalent à un juge officiel en événement compétitif.`
+Format OBLIGATOIRE:
+**[Cartes concernées]** (carte + effet exact)
+**[Règles appliquées]** (règles utilisées)
+**[Analyse]** (raisonnement étape par étape)
+**[Ruling]** (réponse finale)`
 
 export async function POST(request: NextRequest) {
   const apiKey = process.env.GEMINI_API_KEY
@@ -79,28 +31,21 @@ export async function POST(request: NextRequest) {
     return Response.json({ error: 'Question requise' }, { status: 400 })
   }
 
-  // Load rules
-  const rules = loadRules()
-  console.log('[RULING] Rules loaded successfully')
+  // Get only relevant rule sections based on question keywords
+  const rulesContext = getRelevantRules(question)
+  console.log('[RULING] Rules context length:', rulesContext.length)
 
-  // Search for relevant cards mentioned in the question (max 5)
+  // Search for relevant cards (max 5)
   const relevantCards = searchCards(question)
   const topCards = relevantCards.slice(0, 5)
-
-  // Build context
-  const cardsContext = topCards.length > 0
-    ? `CARTES:\n${topCards.map(formatCardForPrompt).join('\n---\n')}`
-    : ''
-
-  // Send rules as compact JSON (no indentation = ~3x fewer tokens)
-  const rulesContext = `RÈGLES:\n${JSON.stringify(rules)}`
+  console.log('[RULING] Cards found:', topCards.length)
 
   // Build conversation for Gemini
   const contents: Array<{ role: string; parts: Array<{ text: string }> }> = []
 
-  // Add history if present
+  // Add history (last 4 messages max to save tokens)
   if (history && Array.isArray(history)) {
-    for (const msg of history) {
+    for (const msg of history.slice(-4)) {
       contents.push({
         role: msg.role === 'user' ? 'user' : 'model',
         parts: [{ text: msg.content }],
@@ -108,17 +53,20 @@ export async function POST(request: NextRequest) {
     }
   }
 
-  // Add current question with context
+  // Add current question with card context
+  const cardsText = topCards.length > 0
+    ? `CARTES:\n${topCards.map(formatCardForPrompt).join('\n---\n')}\n\n`
+    : ''
+
   contents.push({
     role: 'user',
     parts: [{
-      text: `${cardsContext ? cardsContext + '\n\n' : ''}${rulesContext}\n\nQUESTION: ${question}`,
+      text: `${cardsText}QUESTION: ${question}`,
     }],
   })
 
   // Call Gemini API with streaming
   const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:streamGenerateContent?alt=sse&key=${apiKey}`
-  console.log('[RULING] Cards found:', topCards.length)
   console.log('[RULING] Calling Gemini API...')
 
   const geminiResponse = await fetch(geminiUrl, {
@@ -126,7 +74,7 @@ export async function POST(request: NextRequest) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       system_instruction: {
-        parts: [{ text: SYSTEM_PROMPT }],
+        parts: [{ text: `${BASE_PROMPT}\n\nRÈGLES:\n${rulesContext}` }],
       },
       contents,
       generationConfig: {

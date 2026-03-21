@@ -39,12 +39,92 @@ export function loadAllCards(): Card[] {
   return allCards
 }
 
-export function loadRules(): object {
-  if (cachedRules) return cachedRules
+export function loadRules(): Record<string, unknown> {
+  if (cachedRules) return cachedRules as Record<string, unknown>
 
   const rulesPath = path.join(process.cwd(), 'rules', 'rules.json')
   cachedRules = JSON.parse(fs.readFileSync(rulesPath, 'utf-8'))
-  return cachedRules!
+  return cachedRules as Record<string, unknown>
+}
+
+// Map keywords to relevant rule sections
+const RULE_KEYWORDS: Record<string, string[]> = {
+  'combat': ['combat', 'powerCalculation'],
+  'attaque': ['combat', 'powerCalculation'],
+  'attack': ['combat', 'powerCalculation'],
+  'blocker': ['combat', 'keywords'],
+  'bloqueur': ['combat', 'keywords'],
+  'contre': ['combat', 'keywords', 'powerCalculation'],
+  'counter': ['combat', 'keywords', 'powerCalculation'],
+  'rush': ['keywords'],
+  'hate': ['keywords'],
+  'double': ['keywords'],
+  'banish': ['keywords'],
+  'trigger': ['keywords'],
+  'declenchement': ['keywords'],
+  'don': ['donSystem', 'turnStructure'],
+  'cout': ['donSystem'],
+  'cost': ['donSystem'],
+  'tour': ['turnStructure'],
+  'turn': ['turnStructure'],
+  'phase': ['turnStructure'],
+  'refresh': ['turnStructure'],
+  'pioche': ['turnStructure'],
+  'draw': ['turnStructure'],
+  'deck': ['deckBuilding', 'defeatConditions'],
+  'personnage': ['cardCategories'],
+  'character': ['cardCategories'],
+  'leader': ['cardCategories'],
+  'evenement': ['cardCategories'],
+  'event': ['cardCategories'],
+  'lieu': ['cardCategories'],
+  'stage': ['cardCategories'],
+  'zone': ['gameZones'],
+  'main': ['gameZones'],
+  'hand': ['gameZones'],
+  'defausse': ['gameZones'],
+  'trash': ['gameZones'],
+  'vie': ['gameZones', 'defeatConditions'],
+  'life': ['gameZones', 'defeatConditions'],
+  'ko': ['cardCategories', 'combat'],
+  'mulligan': ['mulligan'],
+  'defaite': ['defeatConditions'],
+  'perd': ['defeatConditions'],
+  'lose': ['defeatConditions'],
+}
+
+export function getRelevantRules(question: string): string {
+  const rules = loadRules()
+  const words = question.toLowerCase().split(/\s+/)
+
+  const sections: string[] = []
+  const addUnique = (s: string) => { if (!sections.includes(s)) sections.push(s) }
+
+  for (const word of words) {
+    const matches = RULE_KEYWORDS[word]
+    if (matches) {
+      matches.forEach(addUnique)
+    }
+  }
+
+  // Always include keywords section (small, often relevant)
+  addUnique('keywords')
+
+  // If no specific match, send core sections
+  if (sections.length <= 1) {
+    addUnique('combat')
+    addUnique('turnStructure')
+    addUnique('cardCategories')
+  }
+
+  const filtered: Record<string, unknown> = {}
+  sections.forEach(key => {
+    if (rules[key]) {
+      filtered[key] = rules[key]
+    }
+  })
+
+  return JSON.stringify(filtered)
 }
 
 // Common French/English words to ignore when searching cards
