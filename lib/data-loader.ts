@@ -98,6 +98,11 @@ const TYPE_MAP: Record<string, string> = {
 const KEYWORD_FR_MAP: Record<string, string> = {
   bloqueur: 'blocker', hate: 'rush', declenchement: 'trigger',
   bannir: 'banish', contre: 'counter',
+  // Effect text terms (FR → EN) for free text matching in card effects
+  cible: 'target', attaque: 'attack', changer: 'change', rediriger: 'change',
+  detruire: 'destroy', piocher: 'draw', defausser: 'trash',
+  puissance: 'power', cout: 'cost', terrain: 'field',
+  epuiser: 'rest', redresser: 'active', retourner: 'return',
 }
 
 const EFFECT_KEYWORDS = [
@@ -163,6 +168,7 @@ export function findRelevantCards(query: string): SearchResult {
     const effectLower = (card.effectText || '').toLowerCase()
 
     let score = 0
+    let effectTermHits = 0
     for (const term of terms) {
       // Name match is highest priority
       if (nameLower.includes(term)) score += 5
@@ -174,7 +180,12 @@ export function findRelevantCards(query: string): SearchResult {
       else if (typeLower === term || colorsLower.includes(term)) score += 1
       // Trait match
       else if (traitsLower.includes(term)) score += 2
+      // Effect text content match — count hits, score later
+      else if (effectLower.includes(term)) effectTermHits++
     }
+    // Bonus for effect text: only meaningful when 2+ terms match the same card
+    // 1 term = +1 (weak signal), 2 terms = +4, 3+ terms = +9 (strong signal)
+    if (effectTermHits > 0) score += effectTermHits * effectTermHits
 
     if (score > 0) scored.push({ card, score })
   }
