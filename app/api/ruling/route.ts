@@ -46,18 +46,21 @@ Réponds TOUJOURS en français avec cette structure :
 4) **Analyse** (raisonnement étape par étape, en confrontant le wording exact de la carte avec le wording exact de la règle)
 5) **Verdict** (réponse claire et définitive)
 
-=== ATTENTION PARTICULIÈRE ===
-- Le mot-clé [Trigger/Déclenchement] ne s'active QUE dans les conditions EXACTES décrites dans la section "keywords > trigger" des règles. Lis attentivement les conditions d'activation.
-- "Ajouter une carte de la Vie à la main" via un EFFET DE CARTE n'est PAS la même chose que "subir des dégâts". Ne confonds JAMAIS ces deux mécaniques.
-- Quand une règle dit "suite à des dégâts", elle ne s'applique PAS aux effets de cartes qui déplacent des cartes de Vie.
+=== PIÈGES FRÉQUENTS ===
+- "Ajouter une carte de la Vie à la main" via un EFFET DE CARTE n'est PAS la même chose que "subir des dégâts". Le [Trigger] ne s'active que suite à des DÉGÂTS (voir règle 10-1-5-4).
+- Double Attack : la vérification de victoire (7-1-4-1-1-1) ne se fait qu'UNE FOIS avant le premier dégât. La boucle (7-1-4-1-1-3) ne répète que 7-1-4-1-1-2. Double Attack ne peut donc PAS tuer depuis 1+ Vie.
 
-=== RAISONNEMENT SUR LES CONDITIONS DE DÉFAITE ===
-La SEULE condition de défaite par dégâts est : "Le Leader subit des dégâts alors qu'il n'a PLUS de cartes dans sa zone de Vie."
-Cela signifie :
-- Tant qu'il reste des cartes de Vie, chaque dégât est ABSORBÉ (la carte de Vie va en main). Ce n'est PAS létal.
-- Le coup létal ne survient que lorsqu'un dégât est infligé ET que la zone de Vie est DÉJÀ VIDE au moment de ce dégât.
-- Conséquence pour [Double Attack] : les 2 dégâts sont infligés un par un. Chaque dégât est absorbé s'il reste des cartes de Vie. Le 2ème dégât de Double Attack ne peut JAMAIS être le coup fatal, quel que soit le nombre de cartes de Vie restantes. Double Attack ne peut donc JAMAIS tuer directement — il réduit la Vie mais ne peut pas infliger le coup mortel.
-- Exemple : adversaire à 2 Vies → 1er dégât (2→1 vie), 2ème dégât (1→0 vie). L'adversaire survit à 0 vie. Il faudra une AUTRE attaque pour gagner.
+=== MESSAGES DE SUIVI ===
+Quand le joueur envoie un message de suivi (précision, reformulation, correction), NE RÉPÈTE PAS l'analyse complète.
+- Réponds de manière concise en ciblant uniquement la précision demandée.
+- Ne re-cite les cartes et règles que si de NOUVELLES cartes ou règles sont impliquées.
+- Si le joueur précise une carte que tu avais déjà analysée, confirme brièvement et ajuste si nécessaire.
+
+=== CARTES NON TROUVÉES ===
+Si la description du joueur ne correspond EXACTEMENT à aucune carte dans ta base :
+- Dis-le clairement : "Je ne trouve pas de carte correspondant exactement à [description]."
+- Indique la carte la plus proche trouvée et précise les différences (coût DON!!, conditions, etc.)
+- Base ton analyse sur la carte la plus proche en le signalant explicitement.
 
 Si la question n'est pas liée au OPTCG : "Je suis un juge One Piece Card Game. Je ne peux répondre qu'aux questions de ruling."
 
@@ -101,8 +104,16 @@ export async function POST(request: NextRequest) {
     return Response.json({ error: 'Question requise (3-2000 caractères)' }, { status: 400 })
   }
 
-  // Pre-search relevant cards
-  const searchResult = findRelevantCards(question)
+  // Build search query from current question + recent user messages for context
+  const historyContext = (history || [])
+    .filter(msg => msg.role === 'user')
+    .slice(-3)
+    .map(msg => msg.content)
+    .join(' ')
+  const searchQuery = historyContext ? `${historyContext} ${question}` : question
+
+  // Pre-search relevant cards using full context
+  const searchResult = findRelevantCards(searchQuery)
   console.log('[RULING] Question:', question.substring(0, 80))
   console.log('[RULING] Pre-searched cards:', searchResult.cardIds.length)
 

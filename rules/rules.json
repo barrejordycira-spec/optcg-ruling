@@ -1,166 +1,244 @@
 {
   "meta": {
     "game": "One Piece Card Game (OPTCG)",
-    "version": "1.1.9",
-    "lastUpdated": "2025-10-17",
-    "source": "fr.onepiece-cardgame.com/pdf/rule_comprehensive.pdf",
+    "version": "1.2.0",
+    "lastUpdated": "2026-01-16",
+    "source": "Comprehensive Rules v1.2.0",
     "language": "fr",
-    "note": "Ce fichier est en LECTURE SEULE. Il sert de reference pour l'IA. Les regles mecaniques sont appliquees par le game engine (game-rules.ts)."
+    "note": "Ce fichier est en LECTURE SEULE. Il sert de reference pour l'IA. Basé sur les Comprehensive Rules officielles v1.2.0."
+  },
+
+  "fundamentalPrinciples": {
+    "summary": "Principes fondamentaux qui régissent toutes les interactions du jeu (Section 1-3).",
+    "rules": [
+      "1-3-1. Quand le texte d'une carte contredit les Comprehensive Rules, le texte de la carte prévaut.",
+      "1-3-2. Si un joueur doit effectuer une action impossible, cette action n'est pas effectuée. Si un effet demande plusieurs actions dont certaines sont impossibles, le joueur effectue autant d'actions que possible.",
+      "1-3-2-1. Si un objet doit changer vers un état dans lequel il se trouve déjà, l'état reste le même et l'action n'est pas effectuée.",
+      "1-3-2-2. Si un joueur doit effectuer une action 0 fois ou un nombre négatif de fois, cette action n'est pas effectuée. Effectuer une action un nombre négatif de fois n'implique pas d'effectuer l'action inverse.",
+      "1-3-3. Si l'effet d'une carte demande d'effectuer une action tandis qu'un effet actuellement actif interdit cette action, l'effet d'interdiction prévaut TOUJOURS.",
+      "1-3-4. Si les deux joueurs doivent faire des choix simultanément, le joueur du tour choisit en premier, puis l'autre joueur.",
+      "1-3-5. Si une carte ou règle demande de choisir un nombre, sauf indication contraire, le joueur doit choisir un nombre entier de 0 ou plus.",
+      "1-3-5-1. Si 'jusqu'à...' est spécifié, le joueur peut choisir 0.",
+      "1-3-6. Les nombres sur une carte (sauf la puissance) ne peuvent pas devenir négatifs. S'ils deviennent négatifs, ils sont traités comme 0.",
+      "1-3-6-1. La puissance PEUT devenir négative. Même avec une puissance négative, la carte n'est PAS mise KO ou déplacée sauf indication contraire.",
+      "1-3-6-2. Si le coût est modifié par un effet et devient négatif, il est traité comme 0 en dehors des calculs en cours.",
+      "1-3-7. Sauf indication contraire, les effets d'une carte sont exécutés dans l'ordre du texte (du haut vers le bas).",
+      "1-3-8. Si un effet demande d'épuiser et de redresser une carte simultanément, l'épuisement prévaut.",
+      "1-3-9-1. Le coût (cost) est le paiement pour jouer une carte (nombre en haut à gauche).",
+      "1-3-9-2. Le coût d'activation (activation cost) est le paiement pour activer l'effet d'une carte.",
+      "1-3-10. Si les deux joueurs doivent effectuer une action en même temps selon un effet, le joueur du tour agit en premier."
+    ]
   },
 
   "deckBuilding": {
-    "summary": "Chaque joueur prepare 1 carte Leader, un deck de 50 cartes et un deck DON!! de 10 cartes.",
+    "summary": "Chaque joueur prépare 1 carte Leader, un deck de 50 cartes et un deck DON!! de 10 cartes.",
     "rules": [
-      "Le deck contient exactement 50 cartes (Personnage, Evenement, Lieu).",
+      "Le deck contient exactement 50 cartes (Personnage, Événement, Lieu).",
       "Le deck DON!! contient exactement 10 cartes DON!!.",
-      "Maximum 4 cartes avec le meme numero de carte dans le deck.",
-      "Seules les cartes dont la couleur figure sur la carte Leader peuvent etre incluses dans le deck.",
-      "Certains Leaders ont des regles de construction de deck specifiques indiquees dans leur texte."
+      "Maximum 4 cartes avec le même numéro de carte dans le deck.",
+      "Seules les cartes dont la couleur figure sur la carte Leader peuvent être incluses dans le deck.",
+      "Certains Leaders ont des règles de construction de deck spécifiques indiquées dans leur texte. Ces effets remplacent les règles de construction standard."
     ]
   },
 
   "cardCategories": {
     "leader": {
-      "description": "Carte placee dans la zone du Leader au debut de la partie. Represente votre capitaine.",
+      "description": "Carte placée dans la zone du Leader au début de la partie.",
       "properties": ["nom", "couleur", "type", "attribut", "puissance", "vie", "texte"],
       "rules": [
         "Chaque joueur a exactement 1 Leader.",
-        "Le Leader ne peut jamais etre deplace hors de sa zone.",
-        "Le Leader ne peut pas etre mis KO.",
-        "La valeur de Vie du Leader determine le nombre de cartes de Vie au debut de la partie."
+        "Le Leader ne peut JAMAIS être déplacé hors de sa zone par des effets de cartes ou des règles (3-6-3).",
+        "La valeur de Vie du Leader détermine le nombre de cartes de Vie au début de la partie.",
+        "Quand le texte d'une carte fait référence à 'Leader', cela désigne une carte Leader placée dans la zone Leader."
       ]
     },
     "character": {
-      "description": "Cartes jouees depuis la main vers la zone de Personnage en payant leur cout en DON!!.",
-      "properties": ["nom", "couleur", "type", "attribut", "puissance", "cout", "contre", "texte"],
+      "description": "Cartes jouées depuis la main vers la zone de Personnage en payant leur coût en DON!!.",
+      "properties": ["nom", "couleur", "type", "attribut", "puissance", "coût", "contre", "texte"],
       "rules": [
-        "Maximum 5 Personnages sur le terrain.",
-        "Pour jouer un 6eme Personnage, il faut defausser 1 Personnage existant (traitement de regle, pas un KO).",
-        "Les Personnages sont joues redresses.",
-        "Un Personnage ne peut pas attaquer le tour ou il est joue, sauf s'il a Rush.",
-        "Un Personnage mis KO est place dans la Defausse (sauf Banish)."
+        "Maximum 5 Personnages sur le terrain (3-7-6).",
+        "Pour jouer un 6ème Personnage, le joueur doit révéler la carte, défausser 1 Personnage existant, puis jouer le nouveau. Cette défausse est un traitement de règle : AUCUN effet ne peut s'appliquer dessus (3-7-6-1-1).",
+        "Les Personnages sont joués redressés sauf indication contraire.",
+        "Un Personnage ne peut pas attaquer le tour où il est joué, sauf s'il a [Rush].",
+        "'Personnage' dans un texte de carte = carte Personnage dans la zone Personnage. 'Carte Personnage' = carte de catégorie Personnage en dehors de la zone Personnage (2-2-4-1/2)."
       ]
     },
     "event": {
-      "description": "Cartes jouees depuis la main en payant leur cout. Elles sont defaussees pour activer leur effet.",
-      "properties": ["nom", "couleur", "type", "cout", "texte"],
+      "description": "Cartes jouées depuis la main en payant leur coût. Elles sont défaussées pour activer leur effet.",
+      "properties": ["nom", "couleur", "type", "coût", "texte"],
       "rules": [
-        "Les Evenements avec [Principale] s'activent pendant votre phase Principale.",
-        "Les Evenements avec [Contre] s'activent pendant l'etape de Contre d'un combat.",
-        "L'Evenement est defausse au moment de l'activation, pas apres.",
-        "Certains Evenements ont un symbole Contre et peuvent etre utilises comme Contre classique."
+        "Les Événements avec [Main] s'activent pendant la phase Principale.",
+        "Les Événements avec [Counter] s'activent pendant l'étape de Contre d'un combat.",
+        "L'Événement est défaussé AU MOMENT de l'activation, pas après (2-2-5-1).",
+        "Activer un Événement = 'card activation' (activation de carte). Activer l'effet d'une carte = 'effect activation'. Ce sont deux choses différentes (8-5)."
       ]
     },
     "stage": {
-      "description": "Cartes jouees depuis la main vers la zone de Lieu en payant leur cout.",
-      "properties": ["nom", "couleur", "type", "cout", "texte"],
+      "description": "Cartes jouées depuis la main vers la zone de Lieu en payant leur coût.",
+      "properties": ["nom", "couleur", "type", "coût", "texte"],
       "rules": [
         "Maximum 1 Lieu sur le terrain.",
-        "Pour jouer un nouveau Lieu, il faut defausser l'ancien.",
-        "Les Lieux sont joues redresses.",
-        "Les Lieux ont des effets permanents ou activables."
+        "Pour jouer un nouveau Lieu, il faut défausser l'ancien d'abord.",
+        "Les Lieux sont joués redressés sauf indication contraire."
       ]
     },
     "don": {
-      "description": "Cartes DON!! utilisees comme ressource pour payer les couts et booster la puissance.",
-      "properties": [],
+      "description": "Cartes DON!! utilisées comme ressource pour payer les coûts et booster la puissance.",
       "rules": [
         "Le deck DON!! contient 10 cartes identiques.",
-        "Les DON!! sont places dans la zone de Cout pendant la phase DON!!.",
-        "Les DON!! redresses dans la zone de Cout servent a payer les couts des cartes.",
-        "On peut donner 1 DON!! redresse de la zone de Cout a un Leader ou Personnage.",
-        "Chaque DON!! donne ajoute +1000 de puissance PENDANT VOTRE TOUR uniquement.",
-        "Les DON!! donnes retournent en zone de Cout EPUISES au debut de votre prochain tour (phase Refresh).",
-        "Quand une carte avec des DON!! donnes change de zone, les DON!! retournent en zone de Cout epuises."
+        "Les DON!! sont placés dans la zone de Coût pendant la phase DON!!.",
+        "Les DON!! redressés dans la zone de Coût servent à payer les coûts des cartes.",
+        "On peut donner 1 DON!! redressé de la zone de Coût à un Leader ou Personnage.",
+        "Chaque DON!! donné ajoute +1000 de puissance PENDANT VOTRE TOUR uniquement (6-5-5-2).",
+        "Les DON!! donnés retournent en zone de Coût ÉPUISÉS au début de votre prochain tour (phase Refresh).",
+        "Quand une carte avec des DON!! donnés change de zone, les DON!! retournent en zone de Coût épuisés (6-5-5-4).",
+        "Les DON!! donnés ne sont ni actifs ni épuisés (4-4-2).",
+        "Quand un DON!! change de zone, tous les effets précédemment appliqués à ce DON!! sont retirés (3-1-6-1)."
       ]
     }
   },
 
   "gameZones": {
+    "generalRules": [
+      "3-1-2. La zone Leader, la zone Personnage, la zone Lieu et la zone de Coût sont collectivement appelées 'le terrain' (the field).",
+      "3-1-4. Le nombre de cartes dans chaque zone est une information ouverte consultable par les deux joueurs à tout moment.",
+      "3-1-6. Quand une carte est déplacée de la zone Personnage ou Lieu vers une autre zone, sauf indication contraire, elle est traitée comme une NOUVELLE carte. Les effets appliqués dans la zone d'origine NE SONT PAS conservés.",
+      "3-1-7. Quand plusieurs cartes sont placées dans une zone simultanément, sauf indication contraire, le propriétaire décide de l'ordre."
+    ],
     "deck": {
-      "description": "Pile de cartes face cachee. On pioche depuis le dessus.",
-      "visibility": "secrete",
-      "rules": ["Aucun joueur ne peut consulter le contenu ou l'ordre.", "Si le deck est vide, le joueur perd la partie."]
+      "description": "Pile de cartes face cachée. On pioche depuis le dessus.",
+      "visibility": "secrète",
+      "rules": [
+        "Aucun joueur ne peut consulter le contenu ou l'ordre.",
+        "Si le deck est vide, le joueur a rempli une condition de défaite (1-2-2-2)."
+      ]
     },
     "donDeck": {
-      "description": "Pile de 10 cartes DON!! face cachee.",
+      "description": "Pile de 10 cartes DON!! face cachée.",
       "visibility": "ouverte",
-      "rules": ["Les deux joueurs peuvent consulter le contenu.", "Les DON!! sont places en zone de Cout pendant la phase DON!!."]
+      "rules": ["Les deux joueurs peuvent consulter le contenu et l'ordre."]
     },
     "hand": {
-      "description": "Cartes en main du joueur, piochees depuis le deck.",
-      "visibility": "secrete (visible par le proprietaire)",
+      "description": "Cartes en main du joueur.",
+      "visibility": "secrète (visible par le propriétaire)",
       "rules": ["L'adversaire ne peut pas voir votre main.", "Pas de limite de taille de main."]
     },
     "trash": {
-      "description": "Defausse. Personnages KO et Evenements actives y sont places.",
+      "description": "Défausse. Personnages KO et Événements activés y sont placés.",
       "visibility": "ouverte",
-      "rules": ["Les deux joueurs peuvent consulter le contenu.", "Les cartes sont empilees face visible."]
+      "rules": ["Les deux joueurs peuvent consulter le contenu.", "Les cartes sont empilées face visible."]
     },
     "leaderZone": {
-      "description": "Zone ou se trouve la carte Leader.",
+      "description": "Zone où se trouve la carte Leader.",
       "visibility": "ouverte",
-      "rules": ["Le Leader ne peut jamais quitter cette zone.", "Le Leader peut etre redresse ou epuise."]
+      "rules": ["Le Leader ne peut JAMAIS quitter cette zone (3-6-3)."]
     },
     "characterZone": {
-      "description": "Zone ou sont places les Personnages joues.",
+      "description": "Zone où sont placés les Personnages joués.",
       "visibility": "ouverte",
       "maxCards": 5,
-      "rules": ["Maximum 5 Personnages.", "Les Personnages sont places face visible."]
+      "rules": [
+        "Maximum 5 Personnages.",
+        "Les Personnages sont placés face visible.",
+        "Placer un Personnage dans cette zone s'appelle 'jouer' (play) cette carte (3-7-3)."
+      ]
     },
     "stageZone": {
-      "description": "Zone ou est place le Lieu actif.",
+      "description": "Zone où est placé le Lieu actif.",
       "visibility": "ouverte",
       "maxCards": 1,
-      "rules": ["Maximum 1 Lieu.", "Jouer un nouveau Lieu defausse l'ancien."]
+      "rules": ["Maximum 1 Lieu.", "Jouer un nouveau Lieu défausse l'ancien."]
     },
     "costZone": {
-      "description": "Zone ou sont placees les cartes DON!! disponibles.",
+      "description": "Zone où sont placées les cartes DON!! disponibles.",
       "visibility": "ouverte",
-      "rules": ["Les DON!! redresses peuvent payer des couts ou etre donnes.", "Les DON!! epuises ne peuvent rien faire jusqu'au Refresh."]
+      "rules": ["Les DON!! redressés peuvent payer des coûts ou être donnés."]
     },
     "lifeZone": {
-      "description": "Cartes de Vie placees face cachee au debut de la partie.",
-      "visibility": "secrete",
+      "description": "Cartes de Vie placées face cachée au début de la partie.",
+      "visibility": "secrète",
       "rules": [
         "Nombre initial = valeur de Vie du Leader.",
-        "Quand le Leader subit des degats, la carte du dessus de la Vie va en main.",
-        "Si la carte a [Declenchement], le joueur peut l'activer au lieu de l'ajouter a sa main.",
-        "Plus de Vie + degats au Leader = defaite."
+        "Aucun joueur ne peut consulter le contenu ou changer l'ordre des cartes de Vie (3-10-2).",
+        "Quand on déplace une carte de la zone de Vie, on prend celle du DESSUS sauf indication contraire.",
+        "Un effet peut ajouter une carte face visible dans la zone de Vie. Cette carte est alors traitée comme étant dans une zone ouverte (3-10-2-1)."
+      ]
+    }
+  },
+
+  "basicTerminology": {
+    "summary": "Termes de jeu fondamentaux utilisés dans les effets de cartes (Section 4).",
+    "damageProcessing": {
+      "ref": "4-6",
+      "rules": [
+        "4-6-1. L'acte d'infliger des dégâts est appelé 'traitement des dégâts' (damage processing).",
+        "4-6-2-1. Si les dégâts sont de 1 : le joueur dont le Leader a subi des dégâts déplace 1 carte du dessus de sa zone de Vie vers sa main.",
+        "4-6-2-2. Si les dégâts sont de X : si X=0 rien ne se passe. Si X>=1, répéter le processus de dégât de 1 autant de fois.",
+        "4-6-3. Si une carte avec [Trigger] est ajoutée à la main depuis la zone de Vie pendant ce processus, le joueur peut choisir d'activer le [Trigger].",
+        "4-6-3-1. Si une carte de Vie ne peut PAS être ajoutée à la main à cause d'un effet ou d'un effet de remplacement, le [Trigger] ne peut PAS être activé."
+      ]
+    },
+    "ifAndThen": {
+      "ref": "4-10",
+      "rules": [
+        "4-10-1. 'If' : Si la clause précédant 'if' ne peut pas être résolue, la clause suivante ne peut PAS non plus être résolue.",
+        "4-10-2. 'Then' : Si la clause précédant 'then' ne peut pas être résolue, la clause suivante PEUT quand même être résolue."
+      ]
+    },
+    "remove": {
+      "ref": "4-11",
+      "rules": [
+        "4-11-1. Le terme 'remove' (retirer) apparaît dans certains textes de cartes.",
+        "4-11-2. 'Remove' signifie déplacer une carte de la zone où elle se trouve vers une autre zone. Cela inclut : KO (vers défausse), bounce (vers main), bottom deck (vers deck), banish (hors du jeu), etc."
+      ]
+    },
+    "setPowerToZero": {
+      "ref": "4-12",
+      "rules": [
+        "4-12-1. 'Mettre la puissance à 0' est un effet qui RÉDUIT la puissance de la cible pour une durée spécifiée, d'un montant égal à la puissance actuelle de la cible au moment de l'activation.",
+        "4-12-2. Si la puissance de la cible est déjà négative, 'mettre la puissance à 0' n'a aucun effet."
+      ]
+    },
+    "upToXCards": {
+      "ref": "4-8",
+      "rules": [
+        "4-8-1. 'Jusqu'à X carte(s)' : quand l'effet est activé, choisir entre 0 et X cartes IMMÉDIATEMENT avant que l'effet ne soit résolu."
+      ]
+    },
+    "base": {
+      "ref": "4-9",
+      "rules": [
+        "4-9-1. Le terme 'de base' (base) fait référence au nombre ou texte tel qu'il apparaît sur la carte.",
+        "4-9-2-1. Si plusieurs effets définissent la puissance de base d'une même carte à des valeurs différentes, la valeur la plus ÉLEVÉE s'applique.",
+        "4-9-2-2. Si plusieurs effets définissent le coût de base d'une même carte à des valeurs différentes, la valeur la plus ÉLEVÉE s'applique."
       ]
     }
   },
 
   "turnStructure": {
-    "summary": "Un tour se compose de 5 phases executees dans l'ordre: Refresh, Draw, DON!!, Main, End.",
+    "summary": "Un tour se compose de 5 phases exécutées dans l'ordre : Refresh, Draw, DON!!, Main, End.",
     "phases": {
       "refresh": {
         "order": 1,
-        "name": "Phase de Recharge",
+        "name": "Phase de Recharge (Refresh Phase)",
         "steps": [
-          "Les effets 'jusqu'au debut de votre prochain tour' prennent fin.",
-          "Les effets 'au debut de votre tour' s'activent.",
-          "Retourner tous les DON!! donnes aux cartes vers la zone de Cout (ils arrivent EPUISES).",
-          "Redresser toutes les cartes epuisees dans les zones Leader, Personnage, Lieu et Cout."
+          "6-2-1. Les effets 'jusqu'au début de votre prochain tour' prennent fin.",
+          "6-2-2. Les effets 'au début de votre tour' et 'au début du tour de votre adversaire' s'activent.",
+          "6-2-3. Retourner tous les DON!! donnés aux cartes vers la zone de Coût et les ÉPUISER.",
+          "6-2-4. Redresser toutes les cartes épuisées dans les zones Leader, Personnage, Lieu et Coût."
         ],
-        "notes": "L'ordre est important: les DON!! reviennent d'abord epuises, PUIS tout est redresse."
+        "notes": "L'ordre est important : les DON!! reviennent d'abord ÉPUISÉS, PUIS tout est redressé."
       },
       "draw": {
         "order": 2,
-        "name": "Phase de Pioche",
-        "steps": [
-          "Piocher 1 carte du dessus du deck."
-        ],
-        "exceptions": [
-          "Le premier joueur ne pioche PAS pendant son premier tour."
-        ]
+        "name": "Phase de Pioche (Draw Phase)",
+        "steps": ["Piocher 1 carte du dessus du deck."],
+        "exceptions": ["Le premier joueur ne pioche PAS pendant son premier tour."]
       },
       "don": {
         "order": 3,
-        "name": "Phase DON!!",
-        "steps": [
-          "Placer 2 cartes DON!! du deck DON!! vers la zone de Cout (face visible, redressees)."
-        ],
+        "name": "Phase DON!! (DON!! Phase)",
+        "steps": ["Placer 2 cartes DON!! du deck DON!! vers la zone de Coût (face visible, redressées)."],
         "exceptions": [
           "Le premier joueur ne place que 1 DON!! pendant son premier tour.",
           "S'il ne reste qu'1 DON!! dans le deck DON!!, en placer 1 seul.",
@@ -169,257 +247,428 @@
       },
       "main": {
         "order": 4,
-        "name": "Phase Principale",
+        "name": "Phase Principale (Main Phase)",
         "steps": [
-          "Les effets 'au debut de la phase Principale' s'activent.",
-          "Le joueur peut effectuer les actions suivantes dans n'importe quel ordre, autant de fois que souhaite:",
-          "- Jouer une carte (Personnage, Lieu, ou Evenement [Principale]) en payant son cout",
-          "- Activer un effet [Principale] ou [Activation: Principale]",
-          "- Donner des DON!! (1 DON!! redresse de la zone de Cout vers Leader/Personnage)",
-          "- Declarer un combat",
-          "Quand le joueur declare la fin de la phase Principale, on passe a la phase de Fin."
+          "6-5-1. Les effets 'au début de la phase Principale' s'activent.",
+          "6-5-2. Le joueur peut effectuer les actions suivantes dans n'importe quel ordre, autant de fois que souhaité :",
+          "- Jouer une carte (Personnage, Lieu, ou Événement [Main]) en payant son coût (6-5-3)",
+          "- Activer un effet [Main] ou [Activate: Main] (6-5-4)",
+          "- Donner des DON!! (1 DON!! redressé de la zone de Coût vers Leader/Personnage) (6-5-5)",
+          "- Déclarer un combat (6-5-6)",
+          "Quand le joueur déclare la fin de la phase Principale, on passe à la phase de Fin."
         ]
       },
       "end": {
         "order": 5,
-        "name": "Phase de Fin",
+        "name": "Phase de Fin (End Phase)",
         "steps": [
-          "Les effets 'Fin de votre tour' s'activent (1 seule fois).",
-          "Les effets 'pour tout le tour' et 'jusqu'a la fin du tour' du joueur actif deviennent invalides.",
-          "Les effets 'pour tout le tour' et 'jusqu'a la fin du tour' du joueur non actif deviennent invalides.",
-          "Le tour se termine. L'adversaire devient le joueur actif et commence son tour."
+          "6-6-1-1. Les effets [End of Your Turn] s'activent et se résolvent (1 seule fois). Puis les effets [End of Your Opponent's Turn] s'activent et se résolvent (1 seule fois).",
+          "6-6-1-1-3. S'il y a plusieurs effets [End of Your Turn], le joueur du tour choisit l'ordre.",
+          "6-6-1-2. Les effets continus 'à la fin de ce tour' se résolvent. Les effets 'jusqu'à la fin du tour' et 'jusqu'à la fin de la End Phase' du joueur du tour deviennent invalides, puis ceux du non-joueur du tour.",
+          "6-6-1-3. Les effets 'pendant ce tour' (during this turn) du joueur du tour deviennent invalides, puis ceux du non-joueur du tour.",
+          "6-6-1-4. Le tour se termine. L'adversaire devient le joueur du tour et commence à la phase Refresh."
         ]
       }
     }
   },
 
   "combat": {
-    "summary": "Le joueur actif peut epuiser une carte redressee pour attaquer le Leader adverse ou un Personnage adverse epuise.",
-    "restriction": "AUCUN joueur ne peut attaquer pendant son premier tour. Cela s'applique au premier tour de CHAQUE joueur.",
+    "summary": "Le joueur actif peut épuiser une carte redressée pour attaquer le Leader adverse ou un Personnage adverse épuisé.",
+    "restriction": "AUCUN joueur ne peut attaquer pendant son premier tour (6-5-6-1).",
     "steps": {
       "attackStep": {
         "order": 1,
-        "name": "Etape d'Attaque",
+        "name": "Étape d'Attaque (Attack Step)",
+        "ref": "7-1-1",
         "description": [
-          "Le joueur actif epuise 1 carte redressee (Leader ou Personnage) pour declarer une attaque.",
-          "Il choisit une cible: le Leader adverse OU 1 Personnage EPUISE adverse.",
-          "Les effets [En attaquant] et [Attaque adverse] s'activent.",
-          "Si l'attaquant ou la cible change de zone, aller directement a Fin du combat."
+          "Le joueur du tour épuise 1 carte redressée (Leader ou Personnage) pour déclarer une attaque.",
+          "Il choisit une cible : le Leader adverse OU 1 Personnage ÉPUISÉ adverse.",
+          "Les effets [When Attacking], [On Your Opponent's Attack] et 'When Attacked' s'activent.",
+          "Si l'attaquant ou la cible change de zone à la fin de cette étape, aller directement à Fin du combat."
         ]
       },
       "blockStep": {
         "order": 2,
-        "name": "Etape de Blocage",
+        "name": "Étape de Blocage (Block Step)",
+        "ref": "7-1-2",
         "description": [
-          "Le defenseur peut activer [Bloqueur] sur 1 de ses cartes (1 seule fois par combat).",
-          "La carte avec [Bloqueur] doit etre redressee. Elle est epuisee et devient la nouvelle cible.",
-          "Les effets [En bloquant] s'activent.",
-          "Si l'attaquant ou la cible change de zone, aller directement a Fin du combat."
+          "Le défenseur peut activer [Blocker] sur 1 de ses cartes (1 seule fois par combat).",
+          "La carte avec [Blocker] doit être redressée. Elle est épuisée et devient la nouvelle cible.",
+          "Les effets [On Block] s'activent.",
+          "Si l'attaquant ou la cible change de zone à la fin de cette étape, aller directement à Fin du combat."
         ]
       },
       "counterStep": {
         "order": 3,
-        "name": "Etape de Contre",
+        "name": "Étape de Contre (Counter Step)",
+        "ref": "7-1-3",
         "description": [
-          "Les effets 'quand il est attaque' du defenseur s'activent.",
-          "Le defenseur peut, dans n'importe quel ordre et autant de fois qu'il veut:",
-          "- Defausser une carte Personnage avec Contre de sa main pour augmenter la puissance de la cible attaquee du montant du Contre (pour ce combat uniquement).",
-          "- Activer une carte Evenement [Contre] de sa main en payant son cout et en la defaussant.",
-          "Si l'attaquant ou la cible change de zone, aller directement a Fin du combat."
+          "Les effets 'when attacked' du défenseur s'activent.",
+          "Le défenseur peut, dans n'importe quel ordre et autant de fois qu'il veut :",
+          "- Défausser une carte Personnage avec (Symbol) Counter de sa main pour augmenter la puissance de son Leader ou 1 Personnage du montant du Counter (pour ce combat uniquement).",
+          "- Activer une carte Événement [Counter] de sa main en payant son coût et en la défaussant.",
+          "Si l'attaquant ou la cible change de zone à la fin de cette étape, aller directement à Fin du combat."
         ]
       },
       "damageStep": {
         "order": 4,
-        "name": "Etape de Degats",
+        "name": "Étape de Dégâts (Damage Step)",
+        "ref": "7-1-4",
         "description": [
           "Comparer la puissance de l'attaquant et de la cible.",
-          "Si attaquant >= cible (victoire):",
-          "  - Cible = Leader: infliger 1 degat (carte du dessus de la Vie -> main, avec option Declenchement).",
-          "  - Cible = Personnage: le Personnage est mis KO (-> Defausse, sauf Banish).",
-          "Si attaquant < cible: rien ne se passe.",
-          "Si le Leader n'a plus de Vie et subit des degats, le proprietaire du Leader perd la partie."
+          "Si attaquant >= cible (victoire) :",
+          "  - Cible = Leader : infliger 1 dégât. Si 0 Vie au moment où le dégât serait infligé, l'attaquant gagne (7-1-4-1-1-1). Sinon, la carte du dessus de la Vie va en main avec option Trigger (7-1-4-1-1-2).",
+          "  - Si dégâts >= 2 (ex: Double Attack) : répéter le processus 7-1-4-1-1-2 autant de fois (7-1-4-1-1-3).",
+          "  - Cible = Personnage : le Personnage est mis KO.",
+          "Si attaquant < cible : rien ne se passe."
         ]
       },
       "endOfBattle": {
         "order": 5,
-        "name": "Fin du combat",
+        "name": "Fin du combat (End of Battle)",
+        "ref": "7-1-5",
         "description": [
-          "Les effets 'a la fin de ce combat' s'activent.",
-          "Les effets 'pour tout le combat' deviennent invalides.",
-          "Retour a la phase Principale."
+          "Les effets 'à la fin de ce combat' / 'if this ... battles' s'activent.",
+          "Les effets 'pendant ce combat' du joueur du tour deviennent invalides.",
+          "Les effets 'pendant ce combat' du non-joueur du tour deviennent invalides.",
+          "Retour à la phase Principale (6-5-2)."
         ]
       }
     }
   },
 
-  "powerCalculation": {
-    "summary": "La puissance d'une carte au combat est calculee ainsi:",
-    "formula": "Puissance de base + (DON!! donnes x 1000, seulement pendant votre tour) + modificateurs d'effets + Contre (pendant ce combat uniquement)",
+  "effectSystem": {
+    "summary": "Système complet d'activation et résolution des effets (Section 8). CRITIQUE pour les rulings.",
+
+    "effectCategories": {
+      "summary": "Les effets sont classés en 4 catégories (8-1-3).",
+      "autoEffects": {
+        "ref": "8-1-3-1",
+        "description": "Les effets automatiques s'activent UNE FOIS automatiquement quand l'événement d'activation décrit dans le texte se produit. Si le même événement se reproduit, l'effet s'active à nouveau.",
+        "rules": [
+          "Les mots-clés auto incluent : [On Play], [When Attacking], [On Block], [On K.O.], [End of Your Turn], [End of Your Opponent's Turn], ainsi que 'when...' et 'on...'.",
+          "Certains effets auto nécessitent un coût d'activation et/ou des conditions.",
+          "8-1-3-1-3. Un effet auto ne s'active PAS et ne peut pas se résoudre si la carte qui a rempli la condition d'activation est déplacée vers une autre zone AVANT que l'effet ne soit activé."
+        ]
+      },
+      "activateEffects": {
+        "ref": "8-1-3-2",
+        "description": "Les effets d'activation peuvent être déclarés et activés par le joueur du tour pendant sa phase Principale.",
+        "rules": [
+          "Les mots-clés d'activation incluent : [Activate: Main], [Main].",
+          "Certains effets d'activation nécessitent un coût d'activation et/ou des conditions."
+        ]
+      },
+      "permanentEffects": {
+        "ref": "8-1-3-3",
+        "description": "Les effets permanents affectent le jeu en continu tant qu'ils sont valides.",
+        "rules": [
+          "Les effets permanents sont ceux qui ne sont ni auto, ni activation, ni remplacement.",
+          "Certains effets permanents nécessitent des conditions pour être valides.",
+          "Certains effets permanents indiquent 'according to/under the rules'. Dans ce cas, l'effet reste valide même quand la carte est dans une zone secrète.",
+          "8-1-3-3-5. Ordre de traitement des effets permanents : I. Le joueur du tour traite ses effets permanents (ordre au choix). II. Le non-joueur du tour traite les siens. III. Si I et II changent l'état du jeu, répéter jusqu'à ce qu'il n'y ait plus de changement."
+        ]
+      },
+      "replacementEffects": {
+        "ref": "8-1-3-4",
+        "description": "Les effets de remplacement sont identifiés par le mot 'instead' (à la place). Ils remplacent une action par une autre.",
+        "rules": [
+          "8-1-3-4-1. Si un remplacement est disponible mais que vous choisissez de ne pas l'appliquer, l'effet de remplacement n'est PAS résolu.",
+          "8-1-3-4-2. ORDRE DE PRIORITÉ : Si plusieurs effets de remplacement peuvent s'appliquer : 1) L'effet de remplacement de la carte qui a GÉNÉRÉ la situation remplacée a la priorité. 2) Ensuite, le joueur du tour applique ses remplacements dans l'ordre de son choix. 3) Puis le non-joueur du tour applique les siens.",
+          "8-1-3-4-3. Une fois qu'un processus individuel a été remplacé, les MÊMES effets de remplacement ne peuvent PAS s'appliquer à nouveau de manière répétée.",
+          "8-1-3-4-4. Un effet de remplacement remplace la TOTALITÉ de la partie du traitement indiquée, même si ce traitement est encore en cours.",
+          "8-1-3-4-4-1. Si un effet s'applique dans l'ordre du texte et qu'un remplacement s'applique au milieu, le texte restant est exécuté APRÈS le remplacement.",
+          "8-1-3-4-5. Si le remplacement spécifié par 'instead' est IMPOSSIBLE à effectuer, cet effet de remplacement ne peut PAS être appliqué.",
+          "8-1-3-4-6. Si l'activation d'un effet de remplacement remplit les conditions d'un AUTRE effet de remplacement, cet autre effet peut être activé.",
+          "8-1-3-4-7. La partie d'un effet où un remplacement a été appliqué est traitée comme un effet activé par le PROPRIÉTAIRE de l'effet de remplacement."
+        ]
+      }
+    },
+
+    "mandatoryVsOptional": {
+      "ref": "8-1-2",
+      "rules": [
+        "Si le texte inclut 'can' ou 'may', le joueur PEUT choisir de ne pas activer l'effet (optionnel).",
+        "Si le texte N'inclut PAS 'can' ou 'may', l'effet DOIT être activé et résolu autant que possible (obligatoire)."
+      ]
+    },
+
+    "oneShotVsContinuous": {
+      "ref": "8-1-4",
+      "rules": [
+        "8-1-4-1. Effets ponctuels (one-shot) : affectent le jeu au moment de la résolution et complètent leur traitement immédiatement.",
+        "8-1-4-2. Effets continus : continuent d'affecter le jeu pendant une durée spécifiée."
+      ]
+    },
+
+    "validAndInvalidEffects": {
+      "ref": "8-2",
+      "rules": [
+        "8-2-1-1. Si un effet est spécifié comme invalide sous certaines conditions, cet effet ne se produit pas. Les choix ne sont pas faits. Le coût d'activation ne peut pas être payé.",
+        "8-2-2. Les cartes avec des effets invalides ne sont PAS traitées comme des cartes 'sans effet de base'.",
+        "8-2-3. Les effets auto ou d'activation qui ont DÉJÀ été activés et résolus ne sont PAS invalidés par d'autres effets.",
+        "8-2-4. Si une carte avec un effet invalidé gagne un NOUVEL effet, ce nouvel effet n'est PAS invalidé sauf indication contraire."
+      ]
+    },
+
+    "activationCostAndConditions": {
+      "ref": "8-3",
+      "rules": [
+        "8-3-1. Le coût d'activation est l'action avant les ':' (deux-points). Il doit être payé pour activer l'effet.",
+        "8-3-1-1. S'il y a plusieurs actions dans un coût d'activation, elles sont exécutées dans l'ordre du texte.",
+        "8-3-1-3. S'il est IMPOSSIBLE de payer tout ou partie du coût d'activation, le coût ne peut PAS être payé du tout et l'effet ne peut pas être activé.",
+        "8-3-1-3-1. Exception : si le coût a commencé à être payé et devient impossible en cours de route, payer autant que possible. L'effet après ':' ne peut PAS être résolu.",
+        "8-3-1-5. Le symbole ① (ou un chiffre dans un cercle) signifie : sélectionner ce nombre de DON!! actifs de la zone de Coût et les épuiser.",
+        "8-3-1-6. 'DON!! −X' signifie : sélectionner X cartes DON!! depuis la zone Leader, Personnage OU Coût, et les retourner au deck DON!!.",
+        "8-3-2. Les conditions d'effet incluent [DON!! xX], [Your Turn], [Opponent's Turn]. Toutes les conditions doivent être remplies.",
+        "8-3-2-3. [DON!! xX] : cette condition est remplie quand le nombre de DON!! donnés à cette carte est >= X. Si l'effet a un timing d'activation spécifique, la condition [DON!! xX] doit aussi être remplie à ce moment.",
+        "8-3-2-4. [Your Turn] : cette condition est remplie pendant votre tour.",
+        "8-3-2-5. [Opponent's Turn] : cette condition est remplie pendant le tour de l'adversaire."
+      ]
+    },
+
+    "activationProcedure": {
+      "ref": "8-4",
+      "rules": [
+        "8-4-1. Procédure d'activation : 1) Vérifier les conditions. 2) Spécifier l'effet (révéler si en main). 3) Déterminer et payer les coûts d'activation. 4) Activer l'effet. 5) Résoudre l'effet.",
+        "8-4-4. Quand 'choose', 'select', 'up to' est inclus, les choix sont faits au moment requis pendant la résolution.",
+        "8-4-4-1. Quand un nombre est spécifié, le joueur doit choisir autant que possible jusqu'à ce nombre. Si 'up to' est spécifié, le joueur peut choisir 0.",
+        "8-4-4-2. Quand les cartes à choisir sont cachées (zone secrète), et que le choix nécessite des informations de la carte, le joueur peut décider de ne pas choisir.",
+        "8-4-5. Les effets auto qui s'activent quand une carte est déplacée ne s'activent QUE si la zone de destination est une zone OUVERTE (ex: [On K.O.]).",
+        "8-4-6. Quand un effet est activé, il prend en compte tous les effets continus résolus avant lui et tous les effets permanents valides."
+      ]
+    },
+
+    "effectResolutionOrder": {
+      "ref": "8-6",
+      "description": "Ordre de résolution quand plusieurs effets s'activent en même temps. CRITIQUE pour les interactions multi-cartes.",
+      "rules": [
+        "8-6-1. Quand les timings d'activation du joueur du tour ET du non-joueur du tour sont remplis en même temps, le joueur du tour résout son effet EN PREMIER.",
+        "8-6-1-1. Si la résolution de l'effet A du joueur du tour remplit le timing de l'effet B du joueur du tour, le non-joueur du tour résout D'ABORD son effet en attente, PUIS le joueur du tour résout l'effet B.",
+        "8-6-2. Si plusieurs effets du MÊME joueur s'activent en même temps, ce joueur choisit l'ordre de résolution.",
+        "8-6-3. Quand le timing d'activation d'un nouvel effet est rempli pendant la résolution d'un autre effet, le nouvel effet n'est PAS activé immédiatement. Il est activé et résolu APRÈS que l'effet en cours soit complètement résolu.",
+        "8-6-3-1. Quand le timing d'activation d'un effet est rempli par le traitement d'un coût d'activation, cet effet est activé et résolu APRÈS que l'effet dont le coût a été payé soit complètement résolu.",
+        "8-6-4. Les effets auto s'activent automatiquement même si un autre effet est en cours de résolution."
+      ]
+    }
+  },
+
+  "ruleProcessing": {
+    "summary": "Traitement des règles du jeu — vérifications automatiques effectuées par le jeu (Section 9).",
+    "ref": "9",
     "rules": [
-      "La puissance de base est celle inscrite sur la carte.",
-      "Chaque DON!! donne ajoute +1000, mais UNIQUEMENT pendant le tour du proprietaire de la carte.",
-      "Les effets peuvent augmenter ou reduire la puissance.",
-      "Le Contre augmente la puissance pour la duree du combat uniquement.",
-      "La puissance peut devenir negative mais la carte n'est pas detruite pour autant."
+      "9-1. Le traitement des règles est effectué chaque fois que les conditions de traitement des règles sont remplies et que tous les effets en cours ont été activés et résolus.",
+      "9-1-1. Si le traitement des règles remplit les conditions d'activation d'un effet, cet effet est activé et résolu. Après cela, le traitement des règles est à nouveau vérifié.",
+      "9-2. Traitements de règles effectués :",
+      "9-2-1. Si un Personnage a une puissance de 0 ou moins, ce Personnage est mis KO.",
+      "9-2-2. Si un joueur a rempli une condition de défaite, ce joueur perd la partie.",
+      "9-2-3. Si un joueur possède des effets permanents qui ont gagné ou perdu des conditions, ces effets sont réappliqués."
     ]
   },
 
   "keywords": {
+    "summary": "Mots-clés et effets spéciaux des cartes (Section 10).",
+    "ko": {
+      "ref": "10-2-1",
+      "name": "KO (K.O.)",
+      "rules": [
+        "10-2-1-1. 'KO' signifie placer une carte Personnage de la zone Personnage dans la défausse.",
+        "10-2-1-2. Les Leaders ne peuvent PAS être KO.",
+        "10-2-1-3. Les cartes dans des zones autres que la zone Personnage ne peuvent pas être KO.",
+        "10-2-1-4. Les cartes DON!! ne peuvent pas être KO."
+      ]
+    },
     "rush": {
-      "name": "Hate (Rush)",
-      "effect": "Ce Personnage peut attaquer le tour ou il est joue.",
-      "details": "Normalement, un Personnage ne peut pas attaquer le tour ou il est joue. Rush supprime cette restriction."
+      "name": "Hâte (Rush)",
+      "ref": "10-1-1",
+      "effect": "Ce Personnage peut attaquer le tour où il est joué.",
+      "details": "Normalement, un Personnage ne peut pas attaquer le tour où il est joué. Rush supprime cette restriction."
     },
     "blocker": {
       "name": "Bloqueur (Blocker)",
-      "effect": "Epuiser cette carte permet de rediriger une attaque vers elle.",
+      "ref": "10-1-2",
+      "effect": "Épuiser cette carte permet de rediriger une attaque vers elle.",
       "details": [
-        "La carte doit etre redressee pour activer [Bloqueur].",
-        "La carte est epuisee et devient la nouvelle cible de l'attaque.",
-        "Un seul [Bloqueur] peut etre active par combat.",
-        "[Bloqueur] peut etre active meme si la cible d'origine est le Leader."
+        "La carte doit être redressée pour activer [Blocker].",
+        "La carte est épuisée et devient la nouvelle cible de l'attaque.",
+        "Un seul [Blocker] peut être activé par combat.",
+        "[Blocker] peut être activé même si la cible d'origine est le Leader.",
+        "10-1-2-4. [Blocker] peut être activé par un Leader ou un Personnage."
       ]
     },
     "doubleAttack": {
-      "name": "Double attaque (Double Attack)",
-      "effect": "Quand cette carte attaque et gagne contre un Leader, elle inflige 2 degats au lieu de 1.",
+      "name": "Double Attaque (Double Attack)",
+      "ref": "10-1-3",
+      "effect": "Quand cette carte attaque et gagne contre un Leader, elle inflige 2 dégâts au lieu de 1.",
       "details": [
         "Ne s'applique que contre un Leader, pas contre un Personnage.",
-        "Les 2 degats sont infliges un par un (chaque carte de Vie peut declencher un Trigger).",
-        "Si l'adversaire a 1 carte de Vie, Double Attack ne peut PAS gagner la partie : le 1er degat retire la derniere Vie, mais le 2eme degat ne peut pas infliger le coup fatal dans la meme attaque",
-        "Le joueur ne peut pas choisir de n'infliger qu'1 seul degat avec Double Attack (Q34).",
-        "Si le Personnage avec Double Attack quitte le terrain ou perd le keyword a cause d'un Trigger du 1er degat, le 2eme degat est quand meme inflige (Q35).",
-        "Le Trigger de la 1ere carte de Vie est active AVANT que le 2eme degat ne soit inflige (Q51)."
+        "Les 2 dégâts sont infligés un par un selon le processus 7-1-4-1-1-3 (chaque carte de Vie peut déclencher un Trigger).",
+        "IMPORTANT : Le processus de dégât vérifie les Vies à chaque dégât. Le 1er dégât retire une Vie. Si c'était la dernière, le 2ème dégât NE peut PAS être le coup fatal car la vérification de victoire (7-1-4-1-1-1) ne se fait qu'AVANT chaque dégât individuel dans la boucle 7-1-4-1-1-3 qui répète 7-1-4-1-1-2.",
+        "Le joueur ne peut pas choisir de n'infliger qu'1 seul dégât avec Double Attack.",
+        "Si le Personnage avec Double Attack quitte le terrain ou perd le keyword à cause d'un Trigger du 1er dégât, le 2ème dégât est quand même infligé.",
+        "Le Trigger de la 1ère carte de Vie est activé AVANT que le 2ème dégât ne soit infligé."
       ]
     },
     "banish": {
       "name": "Banish",
-      "effect": "Quand cette carte met KO un Personnage adverse au combat, ce Personnage est retire du jeu au lieu d'aller dans la Defausse.",
+      "ref": "10-1-4",
+      "effect": "Quand cette carte met KO un Personnage adverse au combat, ce Personnage est retiré du jeu au lieu d'aller dans la Défausse.",
       "details": [
-        "Le Personnage est completement retire du jeu, il ne va pas en Defausse.",
-        "Les effets [En cas de KO] qui referencent la Defausse ne s'appliquent pas."
+        "Le Personnage est complètement retiré du jeu, il ne va pas en Défausse.",
+        "10-1-4-3. [Banish] est un effet de remplacement qui remplace 'placer en défausse' par 'retirer du jeu'.",
+        "10-1-4-4. Les cartes retirées du jeu par [Banish] ne sont plus considérées comme faisant partie du jeu."
+      ]
+    },
+    "trigger": {
+      "name": "Déclenchement (Trigger)",
+      "ref": "10-1-5",
+      "effect": "Quand cette carte quitte la zone de Vie pour aller en main suite à des dégâts, le joueur peut choisir d'activer l'effet [Trigger] au lieu de l'ajouter à sa main.",
+      "details": [
+        "10-1-5-1. Le joueur doit révéler la carte pour activer le Trigger.",
+        "10-1-5-2. L'activation est optionnelle.",
+        "10-1-5-4. [Trigger] ne s'active QUE quand la carte est ajoutée à la main depuis la zone de Vie suite à des DÉGÂTS. Pas quand elle est déplacée par un effet de carte.",
+        "10-1-5-5. Si la carte ne peut pas être ajoutée à la main à cause d'un effet, le Trigger ne peut pas être activé (4-6-3-1).",
+        "10-1-5-6. Après l'activation du [Trigger], la carte est placée en main (sauf si le Trigger la déplace ailleurs)."
       ]
     },
     "counter": {
       "name": "Contre (Counter)",
-      "effect": "Defausser cette carte Personnage de votre main pendant l'etape de Contre pour augmenter la puissance d'une de vos cartes.",
+      "ref": "10-1-6",
+      "effect": "Défausser cette carte Personnage de votre main pendant l'étape de Contre pour augmenter la puissance d'une de vos cartes.",
       "details": [
-        "La valeur du Contre est indiquee sur la carte (ex: +1000, +2000).",
+        "La valeur du Counter est indiquée sur la carte (ex: +1000, +2000).",
         "Le bonus de puissance ne dure que pour ce combat.",
-        "Plusieurs cartes Contre peuvent etre utilisees dans le meme combat."
+        "Plusieurs cartes Counter peuvent être utilisées dans le même combat."
       ]
     },
-    "trigger": {
-      "name": "Declenchement (Trigger)",
-      "effect": "Quand cette carte quitte la zone de Vie pour aller en main suite a des degats, le joueur peut choisir d'activer l'effet [Declenchement] au lieu de l'ajouter a sa main.",
-      "details": [
-        "Le joueur doit reveler la carte pour activer le Trigger.",
-        "L'activation est optionnelle.",
-        "Si la carte ne peut pas etre ajoutee a la main a cause d'un effet, le Trigger ne peut pas etre active."
+    "oncePerTurn": {
+      "name": "Une fois par tour (Once Per Turn)",
+      "ref": "10-2-13",
+      "rules": [
+        "10-2-13-1. [Once Per Turn] limite l'activation d'un effet à une seule fois par tour.",
+        "10-2-13-2. Si un effet [Once Per Turn] est activé par le joueur du tour, le non-joueur du tour peut aussi activer son propre effet [Once Per Turn] pendant ce même tour.",
+        "10-2-13-3. Si une carte avec [Once Per Turn] change de zone et revient, elle est traitée comme une nouvelle carte et peut activer [Once Per Turn] à nouveau.",
+        "10-2-13-5. Si le coût d'activation d'un effet [Once Per Turn] est payé mais que l'effet ne peut pas être résolu (ex: coût devenu impossible en cours de route), l'effet [Once Per Turn] est quand même considéré comme ayant été activé."
+      ]
+    },
+    "give": {
+      "name": "Donner (Give)",
+      "ref": "10-2-2",
+      "rules": [
+        "Le terme 'give' dans les effets de cartes signifie appliquer un effet spécifié à la carte désignée.",
+        "Si une carte quitte sa zone puis y revient, les effets qui lui avaient été 'donnés' ne sont plus actifs (3-1-6)."
+      ]
+    },
+    "trash": {
+      "name": "Défausser (Trash)",
+      "ref": "10-2-4",
+      "rules": [
+        "10-2-4-1. 'Trash' (défausser) signifie placer la carte spécifiée dans la défausse.",
+        "10-2-4-2. 'Trash' n'est PAS un 'KO'. Les effets [On K.O.] ne s'activent PAS quand une carte est défaussée."
+      ]
+    },
+    "bottomDeck": {
+      "name": "Placer sous le deck (Bottom Deck)",
+      "ref": "10-2-5",
+      "rules": [
+        "Placer une carte sous le deck la place en dessous de la pile du deck.",
+        "Ce n'est PAS un 'KO'. Les effets [On K.O.] ne s'activent pas."
       ]
     }
   },
 
+  "powerCalculation": {
+    "summary": "La puissance d'une carte est calculée ainsi (Section 2-6 et 6-5-5-2) :",
+    "formula": "Puissance de base + (DON!! donnés x 1000, seulement pendant votre tour) + modificateurs d'effets + Counter (pendant ce combat uniquement)",
+    "rules": [
+      "La puissance de base est celle inscrite sur la carte.",
+      "Chaque DON!! donné ajoute +1000, mais UNIQUEMENT pendant le tour du propriétaire de la carte.",
+      "Les effets peuvent augmenter ou réduire la puissance.",
+      "Le Counter augmente la puissance pour la durée du combat uniquement.",
+      "La puissance PEUT devenir négative (1-3-6-1). Mais la carte n'est PAS détruite pour autant (1-3-6-1-1).",
+      "EXCEPTION : Un Personnage dont la puissance est 0 ou moins est mis KO par le traitement des règles (9-2-1)."
+    ]
+  },
+
   "defeatConditions": {
-    "summary": "Un joueur perd la partie dans l'une de ces situations:",
+    "summary": "Un joueur perd la partie dans l'une de ces situations (Section 1-2) :",
     "conditions": [
       {
-        "name": "Degats sans Vie",
-        "description": "Le Leader du joueur subit des degats alors qu'il n'a plus de cartes dans sa zone de Vie."
+        "name": "Dégâts sans Vie",
+        "ref": "1-2-1-1-1",
+        "description": "Le Leader du joueur subit des dégâts alors qu'il n'a plus de cartes dans sa zone de Vie."
       },
       {
         "name": "Deck-out",
+        "ref": "1-2-1-1-2",
         "description": "Le joueur n'a plus de cartes dans son deck."
       },
       {
         "name": "Abandon",
-        "description": "Le joueur peut abandonner a tout moment. L'abandon est immediat et ne peut etre empeche par aucun effet."
+        "ref": "1-2-3",
+        "description": "Le joueur peut abandonner à tout moment. L'abandon est immédiat et ne peut être empêché par aucun effet (1-2-4). La défaite par abandon ne peut PAS être remplacée par un effet de remplacement."
+      },
+      {
+        "name": "Effet de carte",
+        "ref": "1-2-5",
+        "description": "Certains effets de cartes peuvent faire gagner ou perdre un joueur. Dans ce cas, le joueur gagne ou perd pendant le traitement de cet effet."
       }
-    ]
+    ],
+    "timing": "Quand un joueur remplit une condition de défaite, il perd au prochain moment de traitement des règles (9). La défaite n'est pas instantanée sauf pour l'abandon."
   },
 
   "mulligan": {
-    "summary": "Au debut de la partie, chaque joueur pioche 5 cartes puis peut choisir de repiocher.",
+    "summary": "Au début de la partie, chaque joueur pioche 5 cartes puis peut choisir de repiocher (Section 5-2-1-6).",
     "procedure": [
-      "Chaque joueur pioche 5 cartes pour former sa main de depart.",
-      "En commencant par le premier joueur, chaque joueur peut choisir de repiocher.",
-      "Pour repiocher: remettre TOUTES les cartes de la main dans le deck, remelanger, repiocher 5 cartes.",
-      "Le mulligan est tout-ou-rien: on ne peut pas garder certaines cartes et en repiocher d'autres.",
-      "Un seul mulligan est autorise par joueur."
+      "Chaque joueur pioche 5 cartes pour former sa main de départ.",
+      "En commençant par le premier joueur, chaque joueur peut choisir de repiocher.",
+      "Pour repiocher : remettre TOUTES les cartes de la main dans le deck, remélanger, repiocher 5 cartes.",
+      "Le mulligan est tout-ou-rien : on ne peut pas garder certaines cartes et en repiocher d'autres.",
+      "Un seul mulligan est autorisé par joueur."
     ]
   },
 
   "donSystem": {
-    "summary": "Le systeme DON!! est la ressource principale du jeu. Les DON!! servent a payer les couts et a booster la puissance des cartes.",
+    "summary": "Le système DON!! est la ressource principale du jeu (Sections 6-5-5 et 8-3-1-5/6).",
     "mechanics": {
       "costPayment": {
-        "description": "Pour jouer une carte, epuiser un nombre de DON!! redresses en zone de Cout egal au cout de la carte.",
-        "example": "Jouer un Personnage de cout 5 = epuiser 5 DON!! redresses."
+        "description": "Pour jouer une carte, épuiser un nombre de DON!! redressés en zone de Coût égal au coût de la carte.",
+        "example": "Jouer un Personnage de coût 5 = épuiser 5 DON!! redressés."
       },
       "donAttachment": {
-        "description": "Donner 1 DON!! redresse de la zone de Cout a un Leader ou Personnage.",
+        "description": "Donner 1 DON!! redressé de la zone de Coût à un Leader ou Personnage (6-5-5-1).",
         "rules": [
-          "1 DON!! a la fois seulement.",
-          "Le DON!! doit etre redresse.",
-          "+1000 puissance par DON!! donne, mais UNIQUEMENT pendant votre tour.",
-          "Les DON!! donnes reviennent en zone de Cout epuises au debut de votre prochain tour (Refresh).",
-          "Si la carte quitte sa zone, les DON!! reviennent en zone de Cout epuises."
+          "1 DON!! à la fois seulement.",
+          "Le DON!! doit être redressé et venir de la zone de Coût.",
+          "+1000 puissance par DON!! donné, mais UNIQUEMENT pendant votre tour.",
+          "Les DON!! donnés reviennent en zone de Coût épuisés au début de votre prochain tour (Refresh).",
+          "Si la carte quitte sa zone, les DON!! reviennent en zone de Coût épuisés."
         ]
       },
       "donCondition": {
-        "description": "Condition [DON!! xN] sur les effets de cartes.",
+        "description": "Condition [DON!! xN] sur les effets de cartes (8-3-2-3).",
         "rules": [
-          "Quand un effet de carte est precede de [DON!! xN] (ex: [DON!! x1], [DON!! x2]), cela signifie que la carte doit avoir AU MINIMUM N cartes DON!! attachees (donnees) pour que cet effet soit ACTIF.",
-          "C'est une CONDITION PERMANENTE, pas un cout a payer. Les DON!! ne sont pas depenses, ils doivent juste etre presents sur la carte.",
-          "Si la carte n'a pas assez de DON!! attaches, l'effet est INACTIF et ne peut pas se declencher.",
-          "Exemple : [DON!! x1] signifie qu'il faut au moins 1 DON!! attache a cette carte pour que l'effet fonctionne.",
-          "Exemple : [DON!! x2] signifie qu'il faut au moins 2 DON!! attaches a cette carte pour que l'effet fonctionne.",
-          "Les DON!! attaches ne sont pas retires lors de l'activation de l'effet. Ils restent sur la carte.",
-          "Cette condition est distincte du cout entre parentheses (N) qui lui demande d'epuiser N DON!! de la zone de Cout."
+          "[DON!! xN] est une CONDITION, pas un coût. Les DON!! ne sont pas dépensés.",
+          "La carte doit avoir AU MINIMUM N cartes DON!! attachées pour que l'effet soit ACTIF.",
+          "Les DON!! attachés restent sur la carte après l'activation de l'effet."
+        ]
+      },
+      "donMinusCost": {
+        "description": "Coût d'activation DON!! −X (8-3-1-6).",
+        "rules": [
+          "'DON!! −X' est un COÛT D'ACTIVATION (pas une condition).",
+          "Le joueur doit sélectionner X cartes DON!! depuis sa zone Leader, zone Personnage ET/OU zone de Coût, et les retourner au deck DON!!.",
+          "Si le joueur n'a pas assez de DON!! pour payer, le coût ne peut PAS être payé et l'effet ne s'active pas."
         ]
       },
       "donProgression": {
-        "description": "Nombre de DON!! gagnes par tour depuis le deck DON!!.",
+        "description": "Nombre de DON!! gagnés par tour depuis le deck DON!!.",
         "schedule": [
-          "Tour 1 du premier joueur: 1 DON!!",
-          "Tous les autres tours: 2 DON!!",
-          "Maximum: 10 DON!! (taille du deck DON!!)"
+          "Tour 1 du premier joueur : 1 DON!!",
+          "Tous les autres tours : 2 DON!!",
+          "Maximum : 10 DON!! (taille du deck DON!!)"
         ]
       }
     }
-  },
-
-  "strategicConcepts": {
-    "summary": "Concepts strategiques importants pour l'IA.",
-    "concepts": [
-      {
-        "name": "Gestion du tempo",
-        "description": "Equilibrer entre jouer des cartes (investir des DON!!) et attaquer. Jouer trop de cartes sans attaquer laisse l'adversaire construire son board."
-      },
-      {
-        "name": "Allocation des DON!!",
-        "description": "Decider combien de DON!! donner vs garder pour payer des couts. Donner des DON!! augmente la puissance d'attaque mais reduit les ressources disponibles pour jouer des cartes ou contrer."
-      },
-      {
-        "name": "Gestion de la Vie",
-        "description": "Les cartes de Vie vont en main quand le Leader est touche. Perdre de la Vie donne des cartes mais rapproche de la defaite. Parfois il vaut mieux prendre des degats pour avoir plus de cartes en main."
-      },
-      {
-        "name": "Attaquer le Leader vs les Personnages",
-        "description": "Attaquer le Leader inflige des degats mais donne des cartes a l'adversaire. Attaquer les Personnages epuises reduit le board adverse mais ne fait pas avancer la victoire directement."
-      },
-      {
-        "name": "Utilisation du Contre",
-        "description": "Garder des cartes avec Contre en main pour se defendre. Utiliser trop de Contres reduit les options de jeu, mais ne pas contrer peut mener a des pertes de Vie critiques."
-      },
-      {
-        "name": "Timing du Bloqueur",
-        "description": "Le Bloqueur redirige une attaque mais epuise la carte, la rendant vulnerable aux attaques suivantes. Bien choisir quand bloquer est crucial."
-      },
-      {
-        "name": "Pression vs Controle",
-        "description": "Certains decks cherchent a finir vite (aggro/rush), d'autres controlent le board et gagnent en valeur a long terme. L'IA doit adapter sa strategie a son deck et a celui de l'adversaire."
-      }
-    ]
   }
 }
